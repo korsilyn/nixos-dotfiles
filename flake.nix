@@ -22,30 +22,15 @@
       # https://github.com/sioodmy/dotfiles/blob/main/flake.nix
       mkSystem = pkgs: system: hostname:
         pkgs.lib.nixosSystem {
-          system = system;
+          specialArgs = {
+               DE = "sway";
+               username = "korsilyn";
+               hostName = hostname;
+               system = system;
+          }
           modules = [
-            { networking.hostName = hostname; }
-            # General configuration (users, networking, sound, etc)
-            ./modules/system/configuration.nix
-            # Hardware config (bootloader, kernel modules, filesystems, etc)
-            (./. + "/hosts/${hostname}/hardware-configuration.nix")
-            home-manager.nixosModules.home-manager
-            {
-              home-manager = {
-                useUserPackages = true;
-                useGlobalPkgs = true;
-                extraSpecialArgs = { inherit inputs; };
-                # Home manager config (configures programs like firefox, zsh, eww, etc)
-                users.korsilyn = (./. + "/hosts/${hostname}/user.nix");
-              };
-              nixpkgs.overlays = [
-                # Add nur overlay for Firefox addons
-                nur.overlay
-                (import ./overlays)
-              ];
-            }
+            ./.
           ];
-          specialArgs = { inherit inputs; };
         };
     in {
       nixosConfigurations = {

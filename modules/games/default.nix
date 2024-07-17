@@ -1,6 +1,0 @@
-{
-  imports = [
-    ./lutris
-    ./steam
-  ];
-}

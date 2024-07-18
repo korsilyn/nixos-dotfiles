@@ -60,6 +60,7 @@ in {
       {networking.hostName = "wasat";}
       ./wasat
       vmware
+      wayland
     ]
     ++ shared;
     specialArgs = {inherit inputs;};

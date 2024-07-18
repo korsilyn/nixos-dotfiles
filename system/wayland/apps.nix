@@ -6,5 +6,5 @@
     vesktop
 
     keepassxc
-  ]
+  ];
 }

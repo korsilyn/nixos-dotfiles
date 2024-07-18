@@ -6,7 +6,7 @@
       noto-fonts
       noto-fonts-cjk
       noto-fonts-emoji
-      (nerdfonts.override {fonts = ["Iosevka"})
+      (nerdfonts.override {fonts = ["Iosevka"];})
     ];
 
     enableDefaultPackages = false;

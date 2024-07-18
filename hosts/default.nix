@@ -6,7 +6,7 @@
   inherit (self) inputs;
   core = ../system/core;
   boot = ../system/core/boot;
-  virtualisation = ../system/core/virtualisation.nix;
+  docker = ../system/apps/docker.nix;
   vmware = ../system/apps/vmware.nix;
   wayland = ../system/wayland;
 
@@ -20,7 +20,7 @@ in {
       {networking.hostName = "castor";}
       ./castor
       wayland
-      virtualisation
+      docker
     ]
     ++ shared;
     specialArgs = {inherit inputs;};
@@ -33,7 +33,7 @@ in {
       {networking.hostName = "pollux";}
       ./pollux
       wayland
-      virtualisation
+      docker
     ]
     ++ shared;
     specialArgs = {inherit inputs;};
@@ -46,7 +46,7 @@ in {
       {networking.hostName = "alhena";}
       ./alhena
       wayland
-      virtualisation
+      docker
       vmware
     ]
     ++ shared;

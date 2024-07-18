@@ -7,6 +7,7 @@
     ./fonts.nix
     ./services.nix
     ./pipewire.nix
+    ./bluetooth.nix
     ./apps.nix
   ];
   environment = {

@@ -4,6 +4,7 @@
   ...
 }: {
   imports = [
+    ./wm.nix
     ./fonts.nix
     ./services.nix
     ./pipewire.nix
@@ -32,20 +33,32 @@
   };
 
   hardware = {
-    opengl.enable = true;
+    graphics.enable = true;
     pulseaudio.support32Bit = true;
   };
 
   xdg.portal = {
     enable = true;
     wlr.enable = true;
+    xdgOpenUsePortal = true;
     extraPortals = with pkgs; [
       xdg-desktop-portal-gtk
     ];
+    config = {
+      sway = {
+        default = [
+          "wlr"
+        ];
+        "org.freedesktop.impl.portal.Settings" = [
+          "wlr"
+          "gtk"
+        ];
+      };
+    };
   };
 
-  sound = {
-    enable = true;
-    mediaKeys.enable = true;
-  };
+  #sound = {
+  #  enable = true;
+  #  mediaKeys.enable = true;
+  #};
 }

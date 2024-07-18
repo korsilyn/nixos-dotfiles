@@ -1,9 +1,8 @@
 {...}: {
   imports = [
     ./system.nix
-    #./schizo.nix
+    ./security.nix
     ./network.nix
-    #./secrets.nix
     ./nix.nix
     ./users.nix
     ./git.nix

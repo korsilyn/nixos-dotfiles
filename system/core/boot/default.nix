@@ -14,7 +14,7 @@ in {
       cleanOnBoot = true;
       useTmpfs = false;
     };
-    kernelPackages = mkDefault pkgs.linuxPackages_zen;
+    kernelPackages = mkDefault pkgs.linuxPackages_latest;
     extraModulePackages = with config.boot.kernelPackages; [
       xpadneo
       zenpower

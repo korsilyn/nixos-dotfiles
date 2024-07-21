@@ -1,0 +1,111 @@
+{
+  "dns" : {
+    "hosts" : {
+      "one.one.one.one" : [
+        "1.1.1.1",
+        "1.0.0.1"
+      ]
+    },
+    "servers" : [
+      "fakedns",
+      "https:\/\/one.one.one.one\/dns-query"
+    ]
+  },
+  "fakedns" : [
+    {
+      "ipPool" : "198.20.0.0\/15",
+      "poolSize" : 512
+    },
+    {
+      "ipPool" : "fc00::\/64",
+      "poolSize" : 512
+    }
+  ],
+  "inbounds" : [
+    {
+      "listen" : "127.0.0.1",
+      "port" : 1080,
+      "protocol" : "socks",
+      "settings" : {
+        "auth" : "noauth",
+        "udp" : true
+      },
+      "sniffing" : {
+        "destOverride" : [
+          "http",
+          "tls",
+          "quic",
+          "fakedns"
+        ],
+        "enabled" : true,
+        "routeOnly" : true
+      },
+      "tag" : "socks"
+    }
+  ],
+  "outbounds" : [
+    {
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "YourIPGoesHere",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "flow" : "xtls-rprx-vision",
+                "id" : "UserXID"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "tcp",
+        "realitySettings" : {
+          "fingerprint" : "chrome",
+          "publicKey" : "YourPublicKey",
+          "serverName" : "www.googletagmanager.com",
+          "shortId" : "ShortID",
+          "spiderX" : "\/"
+        },
+        "security" : "reality",
+        "tcpSettings" : {
+
+        }
+      },
+      "tag" : "proxy"
+    },
+    {
+      "protocol" : "freedom",
+      "tag" : "direct"
+    },
+    {
+      "protocol" : "blackhole",
+      "tag" : "block"
+    }
+  ],
+  "routing" : {
+    "domainStrategy" : "AsIs",
+    "rules" : [
+      {
+        "ip" : [
+          "geoip:ru"
+        ],
+        "outboundTag" : "direct",
+        "type" : "field"
+      },
+      {
+        "domain" : [
+          ""
+        ],
+        "ip" : [
+          "geoip:private"
+        ],
+        "outboundTag" : "direct",
+        "type" : "field"
+      }
+    ]
+  }
+}

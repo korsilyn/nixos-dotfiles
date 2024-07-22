@@ -1,6 +1,6 @@
 {...}: {
   imports = [
-    ./hardware-configuration.nix
-    ./disk-config.nix
+    ./hardware-configuration-fs.nix
+    #./disk-config.nix
   ];
 }

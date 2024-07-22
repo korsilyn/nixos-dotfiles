@@ -68,6 +68,7 @@ in {
       wayland
       docker
       vmware
+      disko
       { inherit home-manager; }
     ]
     ++ shared;

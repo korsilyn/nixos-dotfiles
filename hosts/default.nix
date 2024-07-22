@@ -12,7 +12,7 @@
   disko = inputs.disko.nixosModules.default;
   hmModule = inputs.home-manager.nixosModules.home-manager;
 
-  shared = [boot core disco];
+  shared = [boot core disko];
 
   home-manager = {
     useUserPackages = true;
@@ -22,7 +22,7 @@
       inherit self;
     };
     users.korsilyn = {
-      imports [../home];
+      imports = [../home];
       _module.args.theme = import ../home/theme;
     };
   };
@@ -82,6 +82,8 @@ in {
       ./wasat
       vmware
       wayland
+      hmModule
+      { inherit home-manager; }
     ]
     ++ shared;
     specialArgs = {inherit inputs;};

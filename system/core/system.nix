@@ -31,30 +31,16 @@
     hardwareClockInLocalTime = true;
   };
 
-  i18n = let
+  i18n = {
     defaultLocale = "en_US.UTF-8";
-    ru = "ru_RU.UTF-8";
-  in {
-    inherit defaultLocale;
-    extraLocaleSettings = {
-      LANG = defaultLocale;
-      LC_COLLATE = defaultLocale;
-      LC_CTYPE = defaultLocale;
-      LC_MESSAGES = defaultLocale;
-
-      LC_ADDRESS = ru;
-      LC_IDENTIFICATION = ru;
-      LC_MEASUREMENT = ru;
-      LC_MONETARY = ru;
-      LC_NAME = ru;
-      LC_NUMERIC = ru;
-      LC_PAPER = ru;
-      LC_TELEPHONE = ru;
-      LC_TIME = ru;
-    };
+    supportedLocales = [
+      "C.UTF-8/UTF-8"
+      "en_US.UTF-8/UTF-8"
+      "ru_RU.UTF-8/UTF-8"
+    ];
   };
   console = let
-    variant = "u24n";
+    variant = "u18n";
   in {
     font = "${pkgs.terminus_font}/share/consolefonts/ter-${variant}.psf.gz";
     earlySetup = true;

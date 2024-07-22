@@ -1,0 +1,334 @@
+Tue May  7 17:31:42 MSK 2024 INFO - initAID - Set AID from STEAM_COMPAT_APP_ID to '250320'
+Tue May  7 17:31:43 MSK 2024 INFO - initAID - Set OSCDP to STEAM_COMPAT_DATA_PATH '/mnt/nvme/SteamLibrary/steamapps/compatdata/250320'
+Tue May  7 17:31:43 MSK 2024 INFO - loadLangFile - Language from command line is 'english'
+Tue May  7 17:31:43 MSK 2024 INFO - loadLangFile - SYSTEMSTLCFGDIR is '/usr/share/steamtinkerlaunch'
+Tue May  7 17:31:43 MSK 2024 INFO - loadLangFile - Command line language 'english' is no file - trying to find its absolute path
+Tue May  7 17:31:43 MSK 2024 INFO - loadLangFile - Loading found system wide /usr/share/steamtinkerlaunch/lang//english.txt
+Tue May  7 17:31:43 MSK 2024 INFO - getCurrentCommandline - No Proton in command line arguments 'waitforexitandrun /mnt/nvme/SteamLibrary/steamapps/common/The Wolf Among Us/TheWolfAmongUs.exe'
+Tue May  7 17:31:44 MSK 2024 INFO - saveOrgVars - Storing some original variables to restore them later
+Tue May  7 05:31:44 PM MSK 2024 INFO - emptyVars - Emptied some original variables as they slowdown several system calls when started from steam
+Tue May  7 05:31:44 PM MSK 2024 INFO - emptyVars - Set $PATH to '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:'
+Tue May  7 05:31:44 PM MSK 2024 START - ######### Initializing Game Launch 250320 using SteamTinkerLaunch v12.12 #########
+Tue May  7 05:31:44 PM MSK 2024 INFO - main - Starting with a clean log
+Tue May  7 05:31:44 PM MSK 2024 INFO - main - Start creating default configs
+Tue May  7 05:31:44 PM MSK 2024 INFO - createDefaultCfgs - START
+Tue May  7 05:31:44 PM MSK 2024 INFO - loadLanguage - First load the default language 'english' to make sure all variables are filled
+Tue May  7 05:31:44 PM MSK 2024 INFO - loadLangFile - Language from command line is 'english'
+Tue May  7 05:31:44 PM MSK 2024 INFO - loadLangFile - GLOBALSTLLANGDIR is '/usr/share/steamtinkerlaunch/lang'
+Tue May  7 05:31:44 PM MSK 2024 INFO - loadLangFile - Command line language 'english' is no file - trying to find its absolute path
+Tue May  7 05:31:44 PM MSK 2024 INFO - loadLangFile - Loading found system wide /usr/share/steamtinkerlaunch/lang/english.txt
+Tue May  7 05:31:44 PM MSK 2024 INFO - loadLanguage - Loading STLLANG from '/home/korsilyn//.config/steamtinkerlaunch/global.conf'
+Tue May  7 05:31:44 PM MSK 2024 INFO - loadLanguage - STLLANG from '/home/korsilyn//.config/steamtinkerlaunch/global.conf' is 'english'
+Tue May  7 05:31:44 PM MSK 2024 INFO - createDefaultCfgs - setSteamPaths:
+Tue May  7 05:31:44 PM MSK 2024 INFO - setSteamPaths - Reading Steam Path variables from '/dev/shm/steamtinkerlaunch/steampaths.txt'
+Tue May  7 05:31:44 PM MSK 2024 INFO - getGameOS - Starting game OS detection
+Tue May  7 05:31:44 PM MSK 2024 INFO - getGameOS - Making some checks on '/mnt/nvme/SteamLibrary/steamapps/common/The Wolf Among Us/TheWolfAmongUs.exe' to determine the OS version of the game
+Tue May  7 05:31:44 PM MSK 2024 INFO - getGameOS - Looks like this is a Windows game!
+Tue May  7 05:31:44 PM MSK 2024 INFO - setWin - 'TheWolfAmongUs' determined to be a Windows Game
+Tue May  7 05:31:44 PM MSK 2024 INFO - createDefaultCfgs - createProtonList:
+Tue May  7 05:31:44 PM MSK 2024 INFO - createDefaultCfgs - createProtonList end
+Tue May  7 05:31:44 PM MSK 2024 INFO - listAllSettingsEntries - '/dev/shm/steamtinkerlaunch/setentries.txt' already exists - nothing to do
+Tue May  7 05:31:44 PM MSK 2024 INFO - createDefaultCfgs - STOP
+Tue May  7 05:31:44 PM MSK 2024 SKIP - listSteamLibraries - not recreating already available '/dev/shm/steamtinkerlaunch/SteamLibraries.txt'
+Tue May  7 05:31:44 PM MSK 2024 INFO - setSteamLibraryPaths - STEAM_COMPAT_LIBRARY_PATHS set to '/mnt/nvme/SteamLibrary/steamapps:/home/korsilyn/.local/share/Steam/steamapps:/mnt/hdd/SteamLibrary/steamapps'
+Tue May  7 05:31:44 PM MSK 2024 INFO - setSteamLibraryPaths - STEAM_COMPAT_MOUNTS set to '/home/korsilyn/.local/share/Steam/steamapps/common/Steamworks Shared:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_soldier:/mnt/hdd/SteamLibrary/steamapps/common/SteamLinuxRuntime_sniper:/mnt/nvme/SteamLibrary/steamapps/common/SteamLinuxRuntime_soldier'
+Tue May  7 05:31:44 PM MSK 2024 INFO - setSteamLibraryPaths - STEAM_COMPAT_TOOL_PATHS set to '/home/korsilyn/.local/share/Steam/steamapps/common/Steamworks Shared:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_soldier:/mnt/hdd/SteamLibrary/steamapps/common/SteamLinuxRuntime_sniper:/mnt/nvme/SteamLibrary/steamapps/common/SteamLinuxRuntime_soldier'
+Tue May  7 05:31:44 PM MSK 2024 INFO - main - Checking internal dependencies:
+Tue May  7 05:31:44 PM MSK 2024 INFO - setAwkBin - Found 'gawk' as an 'awk' variant. It should work without any issues, because 'gawk' was tested completely
+Tue May  7 05:31:44 PM MSK 2024 INFO - checkIntDeps - Result of version check for yad binary '/usr/bin/yad' is '13.0'
+Tue May  7 05:31:44 PM MSK 2024 INFO - main - Initializing first Proton:
+Tue May  7 05:31:44 PM MSK 2024 INFO - initOldProtonArr - Creating an initial array with available Proton versions using the file '/dev/shm/steamtinkerlaunch/ProtonCSV.txt' which was created during a previous run
+Tue May  7 05:31:44 PM MSK 2024 INFO - initFirstProton - Initializing Proton
+Tue May  7 05:31:44 PM MSK 2024 INFO - fixProtonVersionMismatch - Incoming category is 'USEPROTON' with value 'proton-7.0-6e'
+Tue May  7 05:31:44 PM MSK 2024 INFO - fixProtonVersionMismatch - Looking for an alternative similar version for 'proton-7.0-6e'
+Tue May  7 05:31:44 PM MSK 2024 INFO - fixProtonVersionMismatch - Automatically selecting newest official one
+Tue May  7 05:31:44 PM MSK 2024 INFO - setNOP - Selecting newest official Proton available
+Tue May  7 05:31:44 PM MSK 2024 SKIP - setNOP - Haven't found anything
+Tue May  7 05:31:44 PM MSK 2024 INFO - fixProtonVersionMismatch - Automatically updating USEPROTON to 'proton-7.0-6e' in '/home/korsilyn//.config/steamtinkerlaunch/default_template.conf'
+Tue May  7 05:31:44 PM MSK 2024 INFO - updateConfigEntry - Option 'USEPROTON' is updated with the new value 'proton-7.0-6e' in config 'default_template.conf'
+Tue May  7 05:31:44 PM MSK 2024 INFO - initFirstProton - Initial Proton version 'FIRSTUSEPROTON' from '/home/korsilyn//.config/steamtinkerlaunch/default_template.conf' is 'proton-7.0-6e'
+Tue May  7 05:31:44 PM MSK 2024 INFO - main - Initializing default window resolution
+Tue May  7 05:31:44 PM MSK 2024 INFO - setInitWinXY - Using '1920x1080' from config '/dev/shm/steamtinkerlaunch/defres.txt'
+Tue May  7 05:31:44 PM MSK 2024 INFO - main - Welcome to SteamTinkerLaunch
+Tue May  7 05:31:44 PM MSK 2024 INFO - removeEmptyFiles - Removing empty files from '/home/korsilyn//.config/steamtinkerlaunch/games/appinfo'
+Tue May  7 05:31:44 PM MSK 2024 INFO - removeEmptyFiles - Removing empty files from '/home/korsilyn//.config/steamtinkerlaunch/games/header'
+Tue May  7 05:31:44 PM MSK 2024 INFO - main - Checking command line: incoming arguments 'waitforexitandrun /mnt/nvme/SteamLibrary/steamapps/common/The Wolf Among Us/TheWolfAmongUs.exe'
+Tue May  7 05:31:44 PM MSK 2024 SKIP - getGameOS - ISGAME is already set to '2' - nothing to determine
+Tue May  7 05:31:44 PM MSK 2024 INFO - linkLog - Symlink '/home/korsilyn//.config/steamtinkerlaunch/logs/steamtinkerlaunch/title/The Wolf Among Us.log' already exists
+Tue May  7 05:31:45 PM MSK 2024 START - ######### Game Launch: The Wolf Among Us (250320) #########
+Tue May  7 05:31:45 PM MSK 2024 INFO - prepareLaunch - Game launch args '/mnt/nvme/SteamLibrary/steamapps/common/The Wolf Among Us/TheWolfAmongUs.exe'
+Tue May  7 05:31:45 PM MSK 2024 INFO - prepareLaunch - Gamedir '/mnt/nvme/SteamLibrary/steamapps/common/The Wolf Among Us'
+Tue May  7 05:31:45 PM MSK 2024 INFO - prepareLaunch - Proton wineprefix '/mnt/nvme/SteamLibrary/steamapps/compatdata/250320/pfx'
+Tue May  7 05:31:45 PM MSK 2024 INFO - prepareLaunch -------------------
+Tue May  7 05:31:45 PM MSK 2024 INFO - prepareLaunch - CreateGameCfg:
+Tue May  7 05:31:45 PM MSK 2024 SKIP - updateConfigFile - Config file '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' already at version 'v12.12'
+Tue May  7 05:31:45 PM MSK 2024 INFO - linkGameCfg - Symlink '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/title/The Wolf Among Us.conf' already exists
+Tue May  7 05:31:45 PM MSK 2024 INFO - prepareLaunch - First LoadCfg: /home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf
+Tue May  7 05:31:45 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' START
+Tue May  7 05:31:45 PM MSK 2024 INFO - loadCfg - Loading game config '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf'
+Tue May  7 05:31:45 PM MSK 2024 INFO - migrateCfgOption - File '/home/korsilyn//.config/steamtinkerlaunch/dxvk/250320.conf' does not exist - nothing to do
+Tue May  7 05:31:45 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' STOP
+Tue May  7 05:31:46 PM MSK 2024 SKIP - autoBumpReShade - '5.4.2' is the latest version of 'ReShade' - not updating
+Tue May  7 05:31:46 PM MSK 2024 INFO - prepareLaunch - Initial Proton version from the game config: 'Proton-GE'
+Tue May  7 05:31:46 PM MSK 2024 INFO - prepareLaunch - Initializing internal Proton Vars for 'Proton-GE' using setNewProtVars
+Tue May  7 05:31:46 PM MSK 2024 INFO - setNewProtVars - Setting new Proton Variables based on '/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton'
+Tue May  7 05:31:46 PM MSK 2024 INFO - setNewProtVars - Continuing with RUNPROTON='/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton'
+Tue May  7 05:31:46 PM MSK 2024 INFO - setRunWineServer - Initiated from 'setNewProtVars'
+Tue May  7 05:31:46 PM MSK 2024 INFO - setRunWineServer - Set the wine binary for proton in path '/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton'
+Tue May  7 05:31:46 PM MSK 2024 INFO - setRunWineServer - to '/usr/share/steam/compatibilitytools.d/proton-ge-custom/files/bin/wine'
+Tue May  7 05:31:46 PM MSK 2024 INFO - setRunWineServer - and wineserver to '/usr/share/steam/compatibilitytools.d/proton-ge-custom/files/bin/wineserver'
+Tue May  7 05:31:46 PM MSK 2024 INFO - prepareLaunch - OpenTrayIcon:
+Tue May  7 05:31:46 PM MSK 2024 INFO - autoCollectionSettings - Searching collections for game '250320' in '/home/korsilyn/.local/share/Steam/userdata/1005184864/7/remote/sharedconfig.vdf'
+Tue May  7 05:31:46 PM MSK 2024 SKIP - autoCollectionSettings - Global Config '' not found - skipping
+Tue May  7 05:31:46 PM MSK 2024 SKIP - autoCollectionSettings - Collections Directory Config '' not found - skipping
+Tue May  7 05:31:46 PM MSK 2024 INFO - setFullGameExePath - Using the directory '/home/korsilyn/Downloads/govno' of the used custom command as absolute game exe path
+Tue May  7 05:31:46 PM MSK 2024 INFO - openTrayIcon - Opening trayIcon:
+Tue May  7 05:31:46 PM MSK 2024 INFO - prepareLaunch - sortGameArgs:
+Tue May  7 05:31:46 PM MSK 2024 SKIP - sortGameArgs - Sorting the game arguments is disabled
+Tue May  7 05:31:46 PM MSK 2024 INFO - prepareLaunch - AskSettings:
+Tue May  7 05:31:46 PM MSK 2024 INFO - askSettings - Using game specific requester timeout '2'
+Tue May  7 05:31:46 PM MSK 2024 INFO - askSettings - Opening Requester with timeout '2'
+Tue May  7 05:31:46 PM MSK 2024 INFO - getGameTextFiles - Searching for at least one editable textfile in '/mnt/nvme/SteamLibrary/steamapps/compatdata/250320/pfx/drive_c/users/steamuser'
+Tue May  7 05:31:46 PM MSK 2024 INFO - getRes - Detected screen resolution '2560x1440'
+Tue May  7 05:31:46 PM MSK 2024 INFO - pollWinRes - Using GEOM '--geometry=1920x1080+0+0' from '/home/korsilyn//.config/steamtinkerlaunch/guicfgs/2560x1440/250320/SteamTinkerLaunch-OpenSettings.conf'
+Tue May  7 05:31:46 PM MSK 2024 INFO - updateWinRes - Starting resolution-poll for '/home/korsilyn//.config/steamtinkerlaunch/guicfgs/2560x1440/250320/SteamTinkerLaunch-OpenSettings.conf' with incoming '1920x1080'
+Tue May  7 05:31:46 PM MSK 2024 INFO - setShowPic - Determining game picture
+Tue May  7 05:31:46 PM MSK 2024 INFO - setShowPic - Using '/home/korsilyn//.config/steamtinkerlaunch/games/header/250320.jpg' as game picture
+Tue May  7 05:31:46 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-OpenSettings'
+Tue May  7 05:31:46 PM MSK 2024 INFO - getSteamDeckCompatInfo - Steam Deck compatibility rating file '/home/korsilyn//.config/steamtinkerlaunch/games/deckinfo/250320-deckcompatrating.json' already exists - not redownloading
+Tue May  7 05:31:46 PM MSK 2024 INFO - getSteamDeckCompatInfo - Successfully retrieved Steam Deck compatility information - Stored to '/home/korsilyn//.config/steamtinkerlaunch/games/deckinfo/250320-deckcompatrating.json'
+Tue May  7 05:31:46 PM MSK 2024 INFO - getSteamDeckCompatInfo - Successfully retrieved Steam Deck compatibility rating of 'Playable' for '250320'
+Tue May  7 05:31:46 PM MSK 2024 INFO - getSteamDeckCompatInfo - Converting language tokens for Steam Deck compatibility criteria into SteamTinkerLaunch translated strings
+Tue May  7 05:31:46 PM MSK 2024 INFO - getSteamDeckCompatInfo - Seems like no developer comments were left for this game - This is fine as most games don't have this, so skipping
+Tue May  7 05:31:46 PM MSK 2024 INFO - getSteamDeckCompatInfo - Finished setting Steam Deck compatibility criteria strings
+Tue May  7 05:31:46 PM MSK 2024 INFO - askSettings - Steam Deck compatibility rating string is '<b>Steam Deck Compatibility:</b> Playable &#128712;'
+Tue May  7 05:31:46 PM MSK 2024 INFO - askSettings - Preparing to show Wait Requester
+Tue May  7 05:31:47 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-OpenSettings'
+Tue May  7 05:31:48 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-OpenSettings'
+Tue May  7 05:31:48 PM MSK 2024 INFO - MainMenu - Preparing to load Main Menu
+Tue May  7 05:31:48 PM MSK 2024 SKIP - createDLSpekList - Skipping looking for available SpecialK versions, because USESPECIALK is disabled
+Tue May  7 05:31:49 PM MSK 2024 SKIP - updateWinRes - Timeout waiting for Window 'SteamTinkerLaunch-OpenSettings'
+Tue May  7 05:31:49 PM MSK 2024 INFO - createDLReShadeList - Found the following 'ReShade' versions online '6.1.1!6.1.0!6.0.1'
+Tue May  7 05:31:49 PM MSK 2024 INFO - prepareMenu - Opening Menu
+Tue May  7 05:31:49 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/global.conf' START
+Tue May  7 05:31:49 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/global.conf' STOP
+Tue May  7 05:31:49 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' START
+Tue May  7 05:31:49 PM MSK 2024 INFO - loadCfg - Loading game config '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf'
+Tue May  7 05:31:49 PM MSK 2024 INFO - migrateCfgOption - File '/home/korsilyn//.config/steamtinkerlaunch/dxvk/250320.conf' does not exist - nothing to do
+Tue May  7 05:31:49 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' STOP
+Tue May  7 05:31:49 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/url.conf' START
+Tue May  7 05:31:49 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/url.conf' STOP
+Tue May  7 05:31:49 PM MSK 2024 SKIP - updateConfigFile - Config file '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' already at version 'v12.12'
+Tue May  7 05:31:49 PM MSK 2024 INFO - linkGameCfg - Symlink '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/title/The Wolf Among Us.conf' already exists
+Tue May  7 05:31:49 PM MSK 2024 INFO - createWineList - Updating the Wine Dropdown List
+Tue May  7 05:31:49 PM MSK 2024 INFO - getGameTextFiles - Searching for at least one editable textfile in '/mnt/nvme/SteamLibrary/steamapps/compatdata/250320/pfx/drive_c/users/steamuser'
+Tue May  7 05:31:49 PM MSK 2024 INFO - setShowPic - Determining game picture
+Tue May  7 05:31:49 PM MSK 2024 INFO - setShowPic - Using '/home/korsilyn//.config/steamtinkerlaunch/games/header/250320.jpg' as game picture
+Tue May  7 05:31:49 PM MSK 2024 INFO - setOPCustPath - Default path for custom exe file requester is '/home/korsilyn/Downloads/govno/WolfAmongUs_Tolma4.exe'
+Tue May  7 05:31:49 PM MSK 2024 INFO - getRes - Detected screen resolution '2560x1440'
+Tue May  7 05:31:49 PM MSK 2024 INFO - pollWinRes - Using GEOM '--geometry=1920x1080+0+0' from '/home/korsilyn//.config/steamtinkerlaunch/guicfgs/2560x1440/250320/SteamTinkerLaunch-MainMenu.conf'
+Tue May  7 05:31:49 PM MSK 2024 INFO - updateWinRes - Starting resolution-poll for '/home/korsilyn//.config/steamtinkerlaunch/guicfgs/2560x1440/250320/SteamTinkerLaunch-MainMenu.conf' with incoming '1920x1080'
+Tue May  7 05:31:49 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-MainMenu'
+Tue May  7 05:31:49 PM MSK 2024 INFO - MainMenu - Game Info Gotten!
+Tue May  7 05:31:50 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-MainMenu'
+Tue May  7 05:31:51 PM MSK 2024 INFO - MainMenu - Clicked '10' - 'GLOBAL'
+Tue May  7 05:31:51 PM MSK 2024 INFO - MainMenu - exiting 'Settings Menu' and opening 'Global Menu'
+Tue May  7 05:31:51 PM MSK 2024 INFO - prepareMenu - Opening Menu
+Tue May  7 05:31:51 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/global.conf' START
+Tue May  7 05:31:51 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/global.conf' STOP
+Tue May  7 05:31:51 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' START
+Tue May  7 05:31:51 PM MSK 2024 INFO - loadCfg - Loading game config '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf'
+Tue May  7 05:31:51 PM MSK 2024 INFO - migrateCfgOption - File '/home/korsilyn//.config/steamtinkerlaunch/dxvk/250320.conf' does not exist - nothing to do
+Tue May  7 05:31:51 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' STOP
+Tue May  7 05:31:51 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/url.conf' START
+Tue May  7 05:31:51 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/url.conf' STOP
+Tue May  7 05:31:51 PM MSK 2024 SKIP - updateConfigFile - Config file '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' already at version 'v12.12'
+Tue May  7 05:31:51 PM MSK 2024 INFO - linkGameCfg - Symlink '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/title/The Wolf Among Us.conf' already exists
+Tue May  7 05:31:51 PM MSK 2024 INFO - createWineList - Updating the Wine Dropdown List
+Tue May  7 05:31:51 PM MSK 2024 INFO - getGameTextFiles - Searching for at least one editable textfile in '/mnt/nvme/SteamLibrary/steamapps/compatdata/250320/pfx/drive_c/users/steamuser'
+Tue May  7 05:31:51 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-MainMenu'
+Tue May  7 05:31:52 PM MSK 2024 SKIP - updateWinRes - Timeout waiting for Window 'SteamTinkerLaunch-MainMenu'
+Tue May  7 05:31:52 PM MSK 2024 SKIP - autoBumpReShade - '5.4.2' is the latest version of 'ReShade' - not updating
+Tue May  7 05:31:52 PM MSK 2024 SKIP - updateConfigFile - Config file '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' already at version 'v12.12'
+Tue May  7 05:31:52 PM MSK 2024 INFO - linkGameCfg - Symlink '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/title/The Wolf Among Us.conf' already exists
+Tue May  7 05:31:52 PM MSK 2024 INFO - createWineList - Updating the Wine Dropdown List
+Tue May  7 05:31:53 PM MSK 2024 INFO - getRes - Detected screen resolution '2560x1440'
+Tue May  7 05:31:53 PM MSK 2024 INFO - pollWinRes - Creating initial '/home/korsilyn//.config/steamtinkerlaunch/guicfgs/2560x1440/250320/SteamTinkerLaunch-launchGlobalMenu.conf' with unused default values
+Tue May  7 05:31:53 PM MSK 2024 INFO - updateConfigEntry - 'COLCOUNT' option missing in config 'SteamTinkerLaunch-launchGlobalMenu.conf' - adding a new line
+Tue May  7 05:31:53 PM MSK 2024 INFO - updateWinRes - Starting resolution-poll for '/home/korsilyn//.config/steamtinkerlaunch/guicfgs/2560x1440/250320/SteamTinkerLaunch-launchGlobalMenu.conf' with incoming '1920x1080'
+Tue May  7 05:31:53 PM MSK 2024 INFO - openMenu - Starting createMenu "/dev/shm/steamtinkerlaunch/menutemp/globalmenu" "launchGlobalMenu" "/dev/shm/steamtinkerlaunch/empty.png" "EMPTY" "EMPTY" "Global settings" "MainMenu" "MENU_GLOBAL"
+Tue May  7 05:31:53 PM MSK 2024 INFO - createMenu - got '9' elements: '0 /dev/shm/steamtinkerlaunch/menutemp/globalmenu launchGlobalMenu /dev/shm/steamtinkerlaunch/empty.png EMPTY EMPTY Global settings MainMenu MENU_GLOBAL'
+Tue May  7 05:31:53 PM MSK 2024 INFO - createMenu - Creating menu template '/dev/shm/steamtinkerlaunch/menutemp/globalmenu-template'
+Tue May  7 05:31:53 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-launchGlobalMenu'
+Tue May  7 05:31:53 PM MSK 2024 INFO - getFilteredEntries - No blocked elements found in '/home/korsilyn//.config/steamtinkerlaunch/menublock.conf' - working with '/dev/shm/steamtinkerlaunch/rawentries.txt'
+Tue May  7 05:31:53 PM MSK 2024 INFO - getFilteredEntries - Sort config '/home/korsilyn//.config/steamtinkerlaunch/menusort.conf' found - sorting
+Tue May  7 05:31:53 PM MSK 2024 INFO - openMenu - Currently used tempfile is '/dev/shm/steamtinkerlaunch/menu.eGCGPrq0'
+Tue May  7 05:31:54 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-launchGlobalMenu'
+Tue May  7 05:31:55 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-launchGlobalMenu'
+Tue May  7 05:31:56 PM MSK 2024 SKIP - updateWinRes - Timeout waiting for Window 'SteamTinkerLaunch-launchGlobalMenu'
+Tue May  7 05:33:29 PM MSK 2024 INFO - openMenu - Clicked '2' - 'MAIN MENU'
+Tue May  7 05:33:30 PM MSK 2024 INFO - openMenu - exiting 'Favorite Menu' and opening 'Settings Menu'
+Tue May  7 05:33:30 PM MSK 2024 INFO - MainMenu - Preparing to load Main Menu
+Tue May  7 05:33:30 PM MSK 2024 SKIP - createDLSpekList - Skipping looking for available SpecialK versions, because USESPECIALK is disabled
+Tue May  7 05:33:31 PM MSK 2024 INFO - createDLReShadeList - Found the following 'ReShade' versions online '6.1.1!6.1.0!6.0.1'
+Tue May  7 05:33:31 PM MSK 2024 INFO - prepareMenu - Opening Menu
+Tue May  7 05:33:31 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/global.conf' START
+Tue May  7 05:33:31 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/global.conf' STOP
+Tue May  7 05:33:31 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' START
+Tue May  7 05:33:31 PM MSK 2024 INFO - loadCfg - Loading game config '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf'
+Tue May  7 05:33:31 PM MSK 2024 INFO - migrateCfgOption - File '/home/korsilyn//.config/steamtinkerlaunch/dxvk/250320.conf' does not exist - nothing to do
+Tue May  7 05:33:31 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' STOP
+Tue May  7 05:33:31 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/url.conf' START
+Tue May  7 05:33:31 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/url.conf' STOP
+Tue May  7 05:33:31 PM MSK 2024 SKIP - updateConfigFile - Config file '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' already at version 'v12.12'
+Tue May  7 05:33:31 PM MSK 2024 INFO - linkGameCfg - Symlink '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/title/The Wolf Among Us.conf' already exists
+Tue May  7 05:33:31 PM MSK 2024 INFO - createWineList - Updating the Wine Dropdown List
+Tue May  7 05:33:31 PM MSK 2024 INFO - getGameTextFiles - Searching for at least one editable textfile in '/mnt/nvme/SteamLibrary/steamapps/compatdata/250320/pfx/drive_c/users/steamuser'
+Tue May  7 05:33:31 PM MSK 2024 INFO - setShowPic - Determining game picture
+Tue May  7 05:33:31 PM MSK 2024 INFO - setShowPic - Using '/home/korsilyn//.config/steamtinkerlaunch/games/header/250320.jpg' as game picture
+Tue May  7 05:33:31 PM MSK 2024 INFO - setOPCustPath - Default path for custom exe file requester is '/home/korsilyn/Downloads/govno/WolfAmongUs_Tolma4.exe'
+Tue May  7 05:33:31 PM MSK 2024 INFO - getRes - Detected screen resolution '2560x1440'
+Tue May  7 05:33:31 PM MSK 2024 INFO - pollWinRes - Using GEOM '--geometry=1920x1080+0+0' from '/home/korsilyn//.config/steamtinkerlaunch/guicfgs/2560x1440/250320/SteamTinkerLaunch-MainMenu.conf'
+Tue May  7 05:33:31 PM MSK 2024 INFO - updateWinRes - Starting resolution-poll for '/home/korsilyn//.config/steamtinkerlaunch/guicfgs/2560x1440/250320/SteamTinkerLaunch-MainMenu.conf' with incoming '1920x1080'
+Tue May  7 05:33:31 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-MainMenu'
+Tue May  7 05:33:31 PM MSK 2024 INFO - MainMenu - Game Info Gotten!
+Tue May  7 05:33:32 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-MainMenu'
+Tue May  7 05:33:33 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-MainMenu'
+Tue May  7 05:33:34 PM MSK 2024 SKIP - updateWinRes - Timeout waiting for Window 'SteamTinkerLaunch-MainMenu'
+Tue May  7 05:33:35 PM MSK 2024 INFO - MainMenu - Clicked '8' - 'DEFAULT'
+Tue May  7 05:33:35 PM MSK 2024 INFO - MainMenu - exiting 'Settings Menu' and opening 'Game Default Menu'
+Tue May  7 05:33:35 PM MSK 2024 INFO - prepareMenu - Opening Menu
+Tue May  7 05:33:35 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/global.conf' START
+Tue May  7 05:33:35 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/global.conf' STOP
+Tue May  7 05:33:35 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' START
+Tue May  7 05:33:35 PM MSK 2024 INFO - loadCfg - Loading game config '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf'
+Tue May  7 05:33:35 PM MSK 2024 INFO - migrateCfgOption - File '/home/korsilyn//.config/steamtinkerlaunch/dxvk/250320.conf' does not exist - nothing to do
+Tue May  7 05:33:35 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' STOP
+Tue May  7 05:33:35 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/url.conf' START
+Tue May  7 05:33:35 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/url.conf' STOP
+Tue May  7 05:33:35 PM MSK 2024 SKIP - updateConfigFile - Config file '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' already at version 'v12.12'
+Tue May  7 05:33:35 PM MSK 2024 INFO - linkGameCfg - Symlink '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/title/The Wolf Among Us.conf' already exists
+Tue May  7 05:33:35 PM MSK 2024 INFO - createWineList - Updating the Wine Dropdown List
+Tue May  7 05:33:35 PM MSK 2024 INFO - getGameTextFiles - Searching for at least one editable textfile in '/mnt/nvme/SteamLibrary/steamapps/compatdata/250320/pfx/drive_c/users/steamuser'
+Tue May  7 05:33:35 PM MSK 2024 SKIP - updateConfigFile - Config file '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' already at version 'v12.12'
+Tue May  7 05:33:35 PM MSK 2024 INFO - linkGameCfg - Symlink '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/title/The Wolf Among Us.conf' already exists
+Tue May  7 05:33:35 PM MSK 2024 INFO - createWineList - Updating the Wine Dropdown List
+Tue May  7 05:33:35 PM MSK 2024 INFO - rmCfgTemp - Deleting and resetting MKCFG '/dev/shm/steamtinkerlaunch/menu.eGCGPrq0' - triggered from 'mkCfgTemp'
+Tue May  7 05:33:35 PM MSK 2024 INFO - getRes - Detected screen resolution '2560x1440'
+Tue May  7 05:33:35 PM MSK 2024 INFO - pollWinRes - Creating initial '/home/korsilyn//.config/steamtinkerlaunch/guicfgs/2560x1440/250320/SteamTinkerLaunch-launchGameTemplateMenu.conf' with unused default values
+Tue May  7 05:33:35 PM MSK 2024 INFO - updateConfigEntry - 'COLCOUNT' option missing in config 'SteamTinkerLaunch-launchGameTemplateMenu.conf' - adding a new line
+Tue May  7 05:33:35 PM MSK 2024 INFO - openMenu - Starting createMenu "/dev/shm/steamtinkerlaunch/menutemp/gametemplmenu" "launchGameTemplateMenu" "/dev/shm/steamtinkerlaunch/empty.png" "EMPTY" "EMPTY" "Default game settings template" "MainMenu" "MENU_GAME"
+Tue May  7 05:33:35 PM MSK 2024 INFO - updateWinRes - Starting resolution-poll for '/home/korsilyn//.config/steamtinkerlaunch/guicfgs/2560x1440/250320/SteamTinkerLaunch-launchGameTemplateMenu.conf' with incoming '1920x1080'
+Tue May  7 05:33:35 PM MSK 2024 INFO - createMenu - got '9' elements: '0 /dev/shm/steamtinkerlaunch/menutemp/gametemplmenu launchGameTemplateMenu /dev/shm/steamtinkerlaunch/empty.png EMPTY EMPTY Default game settings template MainMenu MENU_GAME'
+Tue May  7 05:33:35 PM MSK 2024 INFO - createMenu - Creating menu template '/dev/shm/steamtinkerlaunch/menutemp/gametemplmenu-template'
+Tue May  7 05:33:35 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-launchGameTemplateMenu'
+Tue May  7 05:33:35 PM MSK 2024 INFO - getFilteredEntries - No blocked elements found in '/home/korsilyn//.config/steamtinkerlaunch/menublock.conf' - working with '/dev/shm/steamtinkerlaunch/rawentries.txt'
+Tue May  7 05:33:35 PM MSK 2024 INFO - getFilteredEntries - Sort config '/home/korsilyn//.config/steamtinkerlaunch/menusort.conf' found - sorting
+Tue May  7 05:33:35 PM MSK 2024 INFO - openMenu - Currently used tempfile is '/dev/shm/steamtinkerlaunch/menu.YGhxh1Up'
+Tue May  7 05:33:36 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-launchGameTemplateMenu'
+Tue May  7 05:33:37 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-launchGameTemplateMenu'
+Tue May  7 05:33:38 PM MSK 2024 SKIP - updateWinRes - Timeout waiting for Window 'SteamTinkerLaunch-launchGameTemplateMenu'
+Tue May  7 05:33:42 PM MSK 2024 INFO - openMenu - Clicked '2' - 'MAIN MENU'
+Tue May  7 05:33:42 PM MSK 2024 INFO - openMenu - exiting 'Favorite Menu' and opening 'Settings Menu'
+Tue May  7 05:33:42 PM MSK 2024 INFO - MainMenu - Preparing to load Main Menu
+Tue May  7 05:33:42 PM MSK 2024 SKIP - createDLSpekList - Skipping looking for available SpecialK versions, because USESPECIALK is disabled
+Tue May  7 05:33:43 PM MSK 2024 INFO - createDLReShadeList - Found the following 'ReShade' versions online '6.1.1!6.1.0!6.0.1'
+Tue May  7 05:33:43 PM MSK 2024 INFO - prepareMenu - Opening Menu
+Tue May  7 05:33:43 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/global.conf' START
+Tue May  7 05:33:43 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/global.conf' STOP
+Tue May  7 05:33:43 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' START
+Tue May  7 05:33:43 PM MSK 2024 INFO - loadCfg - Loading game config '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf'
+Tue May  7 05:33:43 PM MSK 2024 INFO - migrateCfgOption - File '/home/korsilyn//.config/steamtinkerlaunch/dxvk/250320.conf' does not exist - nothing to do
+Tue May  7 05:33:43 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' STOP
+Tue May  7 05:33:43 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/url.conf' START
+Tue May  7 05:33:43 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/url.conf' STOP
+Tue May  7 05:33:43 PM MSK 2024 SKIP - updateConfigFile - Config file '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' already at version 'v12.12'
+Tue May  7 05:33:43 PM MSK 2024 INFO - linkGameCfg - Symlink '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/title/The Wolf Among Us.conf' already exists
+Tue May  7 05:33:43 PM MSK 2024 INFO - createWineList - Updating the Wine Dropdown List
+Tue May  7 05:33:43 PM MSK 2024 INFO - getGameTextFiles - Searching for at least one editable textfile in '/mnt/nvme/SteamLibrary/steamapps/compatdata/250320/pfx/drive_c/users/steamuser'
+Tue May  7 05:33:43 PM MSK 2024 INFO - setShowPic - Determining game picture
+Tue May  7 05:33:43 PM MSK 2024 INFO - setShowPic - Using '/home/korsilyn//.config/steamtinkerlaunch/games/header/250320.jpg' as game picture
+Tue May  7 05:33:43 PM MSK 2024 INFO - setOPCustPath - Default path for custom exe file requester is '/home/korsilyn/Downloads/govno/WolfAmongUs_Tolma4.exe'
+Tue May  7 05:33:43 PM MSK 2024 INFO - getRes - Detected screen resolution '2560x1440'
+Tue May  7 05:33:43 PM MSK 2024 INFO - pollWinRes - Using GEOM '--geometry=1920x1080+0+0' from '/home/korsilyn//.config/steamtinkerlaunch/guicfgs/2560x1440/250320/SteamTinkerLaunch-MainMenu.conf'
+Tue May  7 05:33:43 PM MSK 2024 INFO - updateWinRes - Starting resolution-poll for '/home/korsilyn//.config/steamtinkerlaunch/guicfgs/2560x1440/250320/SteamTinkerLaunch-MainMenu.conf' with incoming '1920x1080'
+Tue May  7 05:33:43 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-MainMenu'
+Tue May  7 05:33:43 PM MSK 2024 INFO - MainMenu - Game Info Gotten!
+Tue May  7 05:33:44 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-MainMenu'
+Tue May  7 05:33:45 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-MainMenu'
+Tue May  7 05:33:46 PM MSK 2024 SKIP - updateWinRes - Timeout waiting for Window 'SteamTinkerLaunch-MainMenu'
+Tue May  7 05:33:56 PM MSK 2024 INFO - MainMenu - Clicked '10' - 'GLOBAL'
+Tue May  7 05:33:56 PM MSK 2024 INFO - MainMenu - exiting 'Settings Menu' and opening 'Global Menu'
+Tue May  7 05:33:56 PM MSK 2024 INFO - prepareMenu - Opening Menu
+Tue May  7 05:33:56 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/global.conf' START
+Tue May  7 05:33:56 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/global.conf' STOP
+Tue May  7 05:33:56 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' START
+Tue May  7 05:33:56 PM MSK 2024 INFO - loadCfg - Loading game config '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf'
+Tue May  7 05:33:56 PM MSK 2024 INFO - migrateCfgOption - File '/home/korsilyn//.config/steamtinkerlaunch/dxvk/250320.conf' does not exist - nothing to do
+Tue May  7 05:33:56 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' STOP
+Tue May  7 05:33:56 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/url.conf' START
+Tue May  7 05:33:56 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/url.conf' STOP
+Tue May  7 05:33:56 PM MSK 2024 SKIP - updateConfigFile - Config file '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' already at version 'v12.12'
+Tue May  7 05:33:56 PM MSK 2024 INFO - linkGameCfg - Symlink '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/title/The Wolf Among Us.conf' already exists
+Tue May  7 05:33:56 PM MSK 2024 INFO - createWineList - Updating the Wine Dropdown List
+Tue May  7 05:33:56 PM MSK 2024 INFO - getGameTextFiles - Searching for at least one editable textfile in '/mnt/nvme/SteamLibrary/steamapps/compatdata/250320/pfx/drive_c/users/steamuser'
+Tue May  7 05:33:57 PM MSK 2024 SKIP - autoBumpReShade - '5.4.2' is the latest version of 'ReShade' - not updating
+Tue May  7 05:33:57 PM MSK 2024 SKIP - updateConfigFile - Config file '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' already at version 'v12.12'
+Tue May  7 05:33:57 PM MSK 2024 INFO - linkGameCfg - Symlink '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/title/The Wolf Among Us.conf' already exists
+Tue May  7 05:33:57 PM MSK 2024 INFO - createWineList - Updating the Wine Dropdown List
+Tue May  7 05:33:57 PM MSK 2024 INFO - rmCfgTemp - Deleting and resetting MKCFG '/dev/shm/steamtinkerlaunch/menu.YGhxh1Up' - triggered from 'mkCfgTemp'
+Tue May  7 05:33:57 PM MSK 2024 INFO - getRes - Detected screen resolution '2560x1440'
+Tue May  7 05:33:57 PM MSK 2024 INFO - pollWinRes - Using GEOM '--geometry=1920x1080+0+0' from '/home/korsilyn//.config/steamtinkerlaunch/guicfgs/2560x1440/250320/SteamTinkerLaunch-launchGlobalMenu.conf'
+Tue May  7 05:33:57 PM MSK 2024 INFO - updateWinRes - Starting resolution-poll for '/home/korsilyn//.config/steamtinkerlaunch/guicfgs/2560x1440/250320/SteamTinkerLaunch-launchGlobalMenu.conf' with incoming '1920x1080'
+Tue May  7 05:33:57 PM MSK 2024 INFO - openMenu - Starting createMenu "/dev/shm/steamtinkerlaunch/menutemp/globalmenu" "launchGlobalMenu" "/dev/shm/steamtinkerlaunch/empty.png" "EMPTY" "EMPTY" "Global settings" "MainMenu" "MENU_GLOBAL"
+Tue May  7 05:33:57 PM MSK 2024 INFO - createMenu - got '9' elements: '0 /dev/shm/steamtinkerlaunch/menutemp/globalmenu launchGlobalMenu /dev/shm/steamtinkerlaunch/empty.png EMPTY EMPTY Global settings MainMenu MENU_GLOBAL'
+Tue May  7 05:33:57 PM MSK 2024 INFO - openMenu - Currently used tempfile is '/dev/shm/steamtinkerlaunch/menu.OTFXefEP'
+Tue May  7 05:33:57 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-launchGlobalMenu'
+Tue May  7 05:33:58 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-launchGlobalMenu'
+Tue May  7 05:33:59 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-launchGlobalMenu'
+Tue May  7 05:34:00 PM MSK 2024 SKIP - updateWinRes - Timeout waiting for Window 'SteamTinkerLaunch-launchGlobalMenu'
+Tue May  7 05:34:33 PM MSK 2024 INFO - openMenu - Clicked '1' - 'BACK'
+Tue May  7 05:34:33 PM MSK 2024 INFO - openMenu - exiting 'Game Menu' and opening 'MainMenu'
+Tue May  7 05:34:33 PM MSK 2024 INFO - MainMenu - Preparing to load Main Menu
+Tue May  7 05:34:33 PM MSK 2024 SKIP - createDLSpekList - Skipping looking for available SpecialK versions, because USESPECIALK is disabled
+Tue May  7 05:34:35 PM MSK 2024 INFO - createDLReShadeList - Found the following 'ReShade' versions online '6.1.1!6.1.0!6.0.1'
+Tue May  7 05:34:35 PM MSK 2024 INFO - prepareMenu - Opening Menu
+Tue May  7 05:34:35 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/global.conf' START
+Tue May  7 05:34:35 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/global.conf' STOP
+Tue May  7 05:34:35 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' START
+Tue May  7 05:34:35 PM MSK 2024 INFO - loadCfg - Loading game config '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf'
+Tue May  7 05:34:35 PM MSK 2024 INFO - migrateCfgOption - File '/home/korsilyn//.config/steamtinkerlaunch/dxvk/250320.conf' does not exist - nothing to do
+Tue May  7 05:34:35 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' STOP
+Tue May  7 05:34:35 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/url.conf' START
+Tue May  7 05:34:35 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/url.conf' STOP
+Tue May  7 05:34:35 PM MSK 2024 SKIP - updateConfigFile - Config file '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/250320.conf' already at version 'v12.12'
+Tue May  7 05:34:35 PM MSK 2024 INFO - linkGameCfg - Symlink '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/title/The Wolf Among Us.conf' already exists
+Tue May  7 05:34:35 PM MSK 2024 INFO - createWineList - Updating the Wine Dropdown List
+Tue May  7 05:34:35 PM MSK 2024 INFO - getGameTextFiles - Searching for at least one editable textfile in '/mnt/nvme/SteamLibrary/steamapps/compatdata/250320/pfx/drive_c/users/steamuser'
+Tue May  7 05:34:35 PM MSK 2024 INFO - setShowPic - Determining game picture
+Tue May  7 05:34:35 PM MSK 2024 INFO - setShowPic - Using '/home/korsilyn//.config/steamtinkerlaunch/games/header/250320.jpg' as game picture
+Tue May  7 05:34:35 PM MSK 2024 INFO - setOPCustPath - Default path for custom exe file requester is '/home/korsilyn/Downloads/govno/WolfAmongUs_Tolma4.exe'
+Tue May  7 05:34:35 PM MSK 2024 INFO - getRes - Detected screen resolution '2560x1440'
+Tue May  7 05:34:35 PM MSK 2024 INFO - pollWinRes - Using GEOM '--geometry=1920x1080+0+0' from '/home/korsilyn//.config/steamtinkerlaunch/guicfgs/2560x1440/250320/SteamTinkerLaunch-MainMenu.conf'
+Tue May  7 05:34:35 PM MSK 2024 INFO - updateWinRes - Starting resolution-poll for '/home/korsilyn//.config/steamtinkerlaunch/guicfgs/2560x1440/250320/SteamTinkerLaunch-MainMenu.conf' with incoming '1920x1080'
+Tue May  7 05:34:35 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-MainMenu'
+Tue May  7 05:34:35 PM MSK 2024 INFO - MainMenu - Game Info Gotten!
+Tue May  7 05:34:36 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-MainMenu'
+Tue May  7 05:34:37 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-MainMenu'
+Tue May  7 05:34:38 PM MSK 2024 SKIP - updateWinRes - Timeout waiting for Window 'SteamTinkerLaunch-MainMenu'
+Tue May  7 05:34:39 PM MSK 2024 INFO - MainMenu - Clicked '0' - 'EXIT'
+Tue May  7 05:34:39 PM MSK 2024 INFO - MainMenu - exiting 'Settings Menu' and opening 'Exit'
+Tue May  7 05:34:39 PM MSK 2024 INFO - closeSTL - closing STL
+Tue May  7 05:34:39 PM MSK 2024 INFO - updateConfigEntry - Emptying 'CUSTOMCMD' for '/home/korsilyn//.config/steamtinkerlaunch/default_template.conf'
+Tue May  7 05:34:39 PM MSK 2024 INFO - updateConfigEntry - Option 'CUSTOMCMD' is updated with the new value 'echo' in config 'default_template.conf'
+Tue May  7 05:34:39 PM MSK 2024 INFO - closeSTL - Creating '/dev/shm/steamtinkerlaunch/steamtinkerlaunch-closing.tmp'
+Tue May  7 05:34:39 PM MSK 2024 INFO - checkPlayTime - The game was not even started
+Tue May  7 05:34:39 PM MSK 2024 INFO - closeSTL - Game 'The Wolf Among Us (250320)' exited - cleaning up custom processes if necessary
+Tue May  7 05:34:39 PM MSK 2024 INFO - closeTrayIcon - Closing TrayIcon '104072'
+Tue May  7 05:34:40 PM MSK 2024 INFO - closeSTL - Removing '/dev/shm/steamtinkerlaunch/steamtinkerlaunch-closing.tmp'
+Tue May  7 05:34:40 PM MSK 2024 STOP - ######### closeSTL SteamTinkerLaunch v12.12 #########
+Tue May  7 05:34:40 PM MSK 2024 INFO - writeLastRun - Recreating /home/korsilyn//.config/steamtinkerlaunch/logs/steamtinkerlaunch/lastrun.txt
+Tue May  7 05:34:40 PM MSK 2024 INFO - storeMetaData - Saving metadata for game 'The Wolf Among Us (250320)'
+Tue May  7 05:34:40 PM MSK 2024 INFO - updateConfigEntry - 'GAMENAME' option missing in config '250320.conf' - adding a new line
+Tue May  7 05:34:40 PM MSK 2024 INFO - getArch - Architecture for '/mnt/nvme/SteamLibrary/steamapps/common/The Wolf Among Us/TheWolfAmongUs.exe' is 32bit
+Tue May  7 05:34:40 PM MSK 2024 INFO - storeMetaData - '/home/korsilyn//.config/steamtinkerlaunch/meta/eval/id/evaluatorscript_250320.vdf' does not exists

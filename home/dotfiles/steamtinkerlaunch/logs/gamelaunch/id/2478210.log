@@ -1,0 +1,2 @@
+/home/korsilyn/.local/share/Steam/compatibilitytools.d/SteamTinkerLaunch/steamtinkerlaunch: line 17070: /mnt/nvme/SteamLibrary/steamapps/common/PAYDAY 3 Playtest/PAYDAY3.exe: cannot execute binary file: Exec format error
+pid 20023 != 15935, skipping destruction (fork without exec?)

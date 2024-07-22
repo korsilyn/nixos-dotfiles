@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Tiny Tina's Wonderlands
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/1286680
+Icon=/home/korsilyn//.config/steamtinkerlaunch/games/header/1286680.jpg
+Terminal=false
+Type=Application
+Categories=Game;

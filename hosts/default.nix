@@ -9,8 +9,23 @@
   docker = ../system/apps/docker.nix;
   vmware = ../system/apps/vmware.nix;
   wayland = ../system/wayland;
+  disko = inputs.disko.nixosModules.default;
+  hmModule = inputs.home-manager.nixosModules.home-manager;
 
-  shared = [boot core];
+  shared = [boot core disco];
+
+  home-manager = {
+    useUserPackages = true;
+    useGlobalPkgs = true;
+    extraSpecialArgs = {
+      inherit inputs;
+      inherit self;
+    };
+    users.korsilyn = {
+      imports [../home];
+      _module.args.theme = import ../home/theme;
+    };
+  };
 in {
   # Stars in Gemini
   # Main PC (alpha gem)
@@ -19,8 +34,10 @@ in {
     modules = [
       {networking.hostName = "castor";}
       ./castor
+      hmModule
       wayland
       docker
+      { inherit home-manager; }
     ]
     ++ shared;
     specialArgs = {inherit inputs;};
@@ -32,8 +49,10 @@ in {
     modules = [
       {networking.hostName = "pollux";}
       ./pollux
+      hmModule
       wayland
       docker
+      { inherit home-manager; }
     ]
     ++ shared;
     specialArgs = {inherit inputs;};
@@ -45,9 +64,11 @@ in {
     modules = [
       {networking.hostName = "alhena";}
       ./alhena
+      hmModule
       wayland
       docker
       vmware
+      { inherit home-manager; }
     ]
     ++ shared;
     specialArgs = {inherit inputs;};

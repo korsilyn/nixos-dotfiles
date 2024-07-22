@@ -11,7 +11,7 @@
   users.users = {
     korsilyn = {
       isNormalUser = true;
-      homix = true;
+      # homix = true;
       shell = pkgs.zsh;
       extraGroups = [
         "wheel"

@@ -1,0 +1,58 @@
+ERROR: ld.so: object '/home/korsilyn/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+ERROR: ld.so: object '/home/korsilyn/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+pressure-vessel-wrap[254854]: W: Not sharing path STEAM_COMPAT_TOOL_PATHS="...:/usr/share/steam/compatibilitytools.d/proton-ge-custom:..." with container because "/usr" is reserved by the container framework
+[34mProtonFixes[254946] INFO: Running protonfixes[0m
+[34mProtonFixes[254946] INFO: Running checks[0m
+[34mProtonFixes[254946] INFO: All checks successful[0m
+[34mProtonFixes[254946] INFO: Using global defaults for "Call of Duty: Black Ops III" (311210)[0m
+[34mProtonFixes[254946] INFO: Using global protonfix for "Call of Duty: Black Ops III" (311210)[0m
+[34mProtonFixes[254946] INFO: Checking if winetricks sound=alsa is installed[0m
+wine: using kernel write watches, use_kernel_writewatch 1.
+fsync: up and running.
+wine: using kernel write watches, use_kernel_writewatch 1.
+wine: using kernel write watches, use_kernel_writewatch 1.
+wine: using kernel write watches, use_kernel_writewatch 1.
+wine: using kernel write watches, use_kernel_writewatch 1.
+wine: using kernel write watches, use_kernel_writewatch 1.
+wine: using kernel write watches, use_kernel_writewatch 1.
+wine: using kernel write watches, use_kernel_writewatch 1.
+wine: using kernel write watches, use_kernel_writewatch 1.
+wine: using kernel write watches, use_kernel_writewatch 1.
+Setting breakpad minidump AppID = 311210
+Steam_SetMinidumpSteamID:  Caching Steam ID:  76561198965450592 [API loaded no]
+wine: using kernel write watches, use_kernel_writewatch 1.
+wine: setpriority -10 for pid -1 failed: 3
+Fossilize INFO: Overriding serialization path: "/mnt/hdd/SteamLibrary/steamapps/shadercache/311210/fozpipelinesv6/steamapprun_pipeline_cache".
+wine: setpriority 3 for pid -1 failed: 3
+wine: setpriority 3 for pid -1 failed: 3
+wine: setpriority 3 for pid -1 failed: 3
+wine: setpriority 3 for pid -1 failed: 3
+wine: setpriority 3 for pid -1 failed: 3
+wine: setpriority 3 for pid -1 failed: 3
+wine: setpriority 3 for pid -1 failed: 3
+wine: setpriority -2 for pid -1 failed: 3
+wine: setpriority -10 for pid -1 failed: 3
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+wine: setpriority -10 for pid -1 failed: 3
+wine: setpriority -10 for pid -1 failed: 3
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+ALSA lib pcm_params.c:2226:(snd1_pcm_hw_refine_slave) Slave PCM not usable
+wine: setpriority -10 for pid -1 failed: 3

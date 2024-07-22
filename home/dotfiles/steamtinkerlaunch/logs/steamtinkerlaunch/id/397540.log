@@ -1,0 +1,80 @@
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - initAID - Set AID from STEAM_COMPAT_APP_ID to '397540'
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - initAID - Set OSCDP to STEAM_COMPAT_DATA_PATH '/mnt/ssd/SteamLibrary/steamapps/compatdata/397540'
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - loadLangFile - Language from command line is 'english'
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - loadLangFile - SYSTEMSTLCFGDIR is '/usr/share/steamtinkerlaunch'
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - loadLangFile - Command line language 'english' is no file - trying to find its absolute path
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - loadLangFile - Loading found system wide /usr/share/steamtinkerlaunch/lang//english.txt
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - getCurrentCommandline - Running checkFirstTimeRun with arguments 'run /home/korsilyn/.local/share/Steam/legacycompat/iscriptevaluator.exe legacycompat\evaluatorscript_397540.vdf'
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - saveOrgVars - Storing some original variables to restore them later
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - emptyVars - Emptied some original variables as they slowdown several system calls when started from steam
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - emptyVars - Set $PATH to '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:'
+Sat Apr 22 07:47:36 PM MSK 2023 START - ######### Initializing Game Launch 397540 using SteamTinkerLaunch v12.12 #########
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - main - Starting with a clean log
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - main - Start creating default configs
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - createDefaultCfgs - START
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - loadLanguage - First load the default language 'english' to make sure all variables are filled
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - loadLangFile - Language from command line is 'english'
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - loadLangFile - GLOBALSTLLANGDIR is '/usr/share/steamtinkerlaunch/lang'
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - loadLangFile - Command line language 'english' is no file - trying to find its absolute path
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - loadLangFile - Loading found system wide /usr/share/steamtinkerlaunch/lang/english.txt
+Sat Apr 22 07:47:36 PM MSK 2023 WARN - updateEditor - 'xdg-open' selected as editor or configured editor not found - trying to find an installed editor installed
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - updateEditor - No valid editor found - will fall back to 'xdg-open'.
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - loadLanguage - Loading STLLANG from '/home/korsilyn/.config/steamtinkerlaunch/global.conf'
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - loadLanguage - STLLANG from '/home/korsilyn/.config/steamtinkerlaunch/global.conf' is 'english'
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - createDefaultCfgs - setSteamPaths:
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - setSteamPaths - Reading Steam Path variables from '/dev/shm/steamtinkerlaunch/steampaths.txt'
+Sat Apr 22 07:47:36 PM MSK 2023 WARN - updateEditor - 'xdg-open' selected as editor or configured editor not found - trying to find an installed editor installed
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - updateEditor - No valid editor found - will fall back to 'xdg-open'.
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - getGameOS - Starting game OS detection
+Sat Apr 22 07:47:36 PM MSK 2023 WARN - getGameOS - Could not extract the full game binary path from the incoming game launch command, so assuming this is a Windows game!
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - setWin - '' determined to be a Windows Game
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - delEmptyFile - Removing empty file '/dev/shm/steamtinkerlaunch/ProtonCSV.txt'
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - createProtonList - Looking for available Proton versions
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - getAvailableProtonVersions - Initially creating an array with available Proton versions
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - getAvailableProtonVersions - Adding Proton versions found in STEAMCOMPATOOLS '/home/korsilyn/.local/share/Steam/compatibilitytools.d'
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - getAvailableProtonVersions - Adding Proton versions found in SYSSTEAMCOMPATOOLS '/usr/share/steam/compatibilitytools.d'
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - getAvailableProtonVersions - Found proton directory: '/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton'
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - getAvailableProtonVersions - Adding Proton versions found in additional SteamLibrary Paths
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - getAvailableProtonVersions - Adding Proton versions found in CUSTOMPROTONLIST '/home/korsilyn/.config/steamtinkerlaunch/protonlist.txt'
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - getAvailableProtonVersions - Checking line '' in '/home/korsilyn/.config/steamtinkerlaunch/protonlist.txt'
+Sat Apr 22 07:47:36 PM MSK 2023 INFO - getAvailableProtonVersions - Removing invalid line '' from '/home/korsilyn/.config/steamtinkerlaunch/protonlist.txt'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - listAllSettingsEntries - '/dev/shm/steamtinkerlaunch/setentries.txt' already exists - nothing to do
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - createDefaultCfgs - STOP
+Sat Apr 22 07:47:37 PM MSK 2023 SKIP - listSteamLibraries - not recreating already available '/dev/shm/steamtinkerlaunch/SteamLibraries.txt'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - setSteamLibraryPaths - STEAM_COMPAT_LIBRARY_PATHS set to '/mnt/ssd/SteamLibrary/steamapps:/home/korsilyn/.local/share/Steam/steamapps:/mnt/hdd/SteamLibrary/steamapps:/mnt/hddwin/SteamLibrary/steamapps'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - setSteamLibraryPaths - STEAM_COMPAT_MOUNTS set to '/home/korsilyn/.local/share/Steam/steamapps/common/Steamworks Shared:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper:/mnt/ssd/SteamLibrary/steamapps/common/SteamLinuxRuntime_soldier'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - setSteamLibraryPaths - STEAM_COMPAT_TOOL_PATHS set to '/home/korsilyn/.local/share/Steam/steamapps/common/Steamworks Shared:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper:/mnt/ssd/SteamLibrary/steamapps/common/SteamLinuxRuntime_soldier'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - main - Checking internal dependencies:
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - setAwkBin - Found 'gawk' as an 'awk' variant. It should work without any issues, because 'gawk' was tested completely
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - checkIntDeps - Result of version check for yad binary '/usr/bin/yad' is '12.3'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - main - Initializing first Proton:
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - delEmptyFile - Removing empty file '/dev/shm/steamtinkerlaunch/ProtonCSV.txt'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - initFirstProton - Initializing Proton
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - initFirstProton - No Proton version available in template yet - searching for one
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - createProtonList - Looking for available Proton versions
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - getAvailableProtonVersions - Initially creating an array with available Proton versions
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - getAvailableProtonVersions - Adding Proton versions found in STEAMCOMPATOOLS '/home/korsilyn/.local/share/Steam/compatibilitytools.d'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - getAvailableProtonVersions - Adding Proton versions found in SYSSTEAMCOMPATOOLS '/usr/share/steam/compatibilitytools.d'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - getAvailableProtonVersions - Found proton directory: '/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - getAvailableProtonVersions - Adding Proton versions found in additional SteamLibrary Paths
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - getAvailableProtonVersions - Adding Proton versions found in CUSTOMPROTONLIST '/home/korsilyn/.config/steamtinkerlaunch/protonlist.txt'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - getAvailableProtonVersions - Checking line '' in '/home/korsilyn/.config/steamtinkerlaunch/protonlist.txt'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - getAvailableProtonVersions - Removing invalid line '' from '/home/korsilyn/.config/steamtinkerlaunch/protonlist.txt'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - initFirstProton - Updated 'USEPROTON' in '/home/korsilyn/.config/steamtinkerlaunch/default_template.conf' to ''
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - delEmptyFile - Removing empty file '/dev/shm/steamtinkerlaunch/ProtonCSV.txt'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - getProtPathFromCSV - Creating '/dev/shm/steamtinkerlaunch/ProtonCSV.txt'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - getAvailableProtonVersions - Initially creating an array with available Proton versions
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - getAvailableProtonVersions - Adding Proton versions found in STEAMCOMPATOOLS '/home/korsilyn/.local/share/Steam/compatibilitytools.d'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - getAvailableProtonVersions - Adding Proton versions found in SYSSTEAMCOMPATOOLS '/usr/share/steam/compatibilitytools.d'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - getAvailableProtonVersions - Found proton directory: '/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - getAvailableProtonVersions - Adding Proton versions found in additional SteamLibrary Paths
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - getAvailableProtonVersions - Adding Proton versions found in CUSTOMPROTONLIST '/home/korsilyn/.config/steamtinkerlaunch/protonlist.txt'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - getAvailableProtonVersions - Checking line '' in '/home/korsilyn/.config/steamtinkerlaunch/protonlist.txt'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - getAvailableProtonVersions - Removing invalid line '' from '/home/korsilyn/.config/steamtinkerlaunch/protonlist.txt'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - initFirstProton - Initial Proton version 'FIRSTUSEPROTON' from '/home/korsilyn/.config/steamtinkerlaunch/default_template.conf' is ''
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - main - Initializing default window resolution
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - setInitWinXY - Using '1920x1080' from config '/dev/shm/steamtinkerlaunch/defres.txt'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - main - Welcome to SteamTinkerLaunch
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - removeEmptyFiles - Removing empty files from '/home/korsilyn/.config/steamtinkerlaunch/games/appinfo'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - removeEmptyFiles - Removing empty files from '/home/korsilyn/.config/steamtinkerlaunch/games/header'
+Sat Apr 22 07:47:37 PM MSK 2023 INFO - main - Checking command line: incoming arguments 'run /home/korsilyn/.local/share/Steam/legacycompat/iscriptevaluator.exe legacycompat\evaluatorscript_397540.vdf'

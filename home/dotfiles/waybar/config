@@ -1,0 +1,79 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 56,
+    "width": 2530,
+    "spacing": 0,
+    "fixed-center": true,
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+
+    "modules-left": ["sway/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["idle_inhibitor", "cpu", "memory", "disk", "wireplumber", "network", "sway/language"],
+	"sway/workspaces": {
+         "disable-scroll-wraparound": true
+    },
+    "sway/language": {
+	    "format": "  {short}",
+        "on-click": "swaymsg input type:keyboard xkb_switch_layout next",
+		"min-length": 6
+	},
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": " ",
+            "deactivated": " "
+        }
+    },
+	"cpu": {
+        "interval": 1,
+        "format": "  {icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}{icon8}{icon9}{icon10}{icon11}",
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+    },
+	"memory": {
+	    "interval": 1,
+		"format": " {percentage}%",
+		"max-lenght": 25,
+        "min-length": 6
+	},
+	"disk": {
+	    "interval": 30,
+		"format": "󰋊 {percentage_used}%",
+        "path": "/",
+        "tooltip": true,
+        "tooltip-format": "HDD - {used} used out of {total} on {path} ({percentage_used}%)",
+		"max-lenght": 25,
+        "min-length": 6
+	},
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "network": {
+    	"format": "{ifname}",
+	    "format-ethernet": "  {ifname}",
+        "format-wifi": "  {essid}",
+        "format-linked": "  {ifname} (No IP)",
+       	"format-disconnected": "⚠  Disconnected",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "pulseaudio": {
+        "scroll-step": 0,
+        "format": "{icon}  {volume}% {format_source}",
+        "format-muted": " {format_source}%",
+        "format-source": " {volume}%",
+        "format-source-muted": " ",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "wireplumber": {
+     "format": "{icon} {volume}%",
+     "format-muted": " ",
+     "on-click": "helvum",
+     "format-icons": [" ", " ", " "]
+     }
+}

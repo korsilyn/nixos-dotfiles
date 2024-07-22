@@ -1,0 +1,234 @@
+Thu May 23 14:27:31 MSK 2024 INFO - initAID - Set AID from STEAM_COMPAT_APP_ID to '12120'
+Thu May 23 14:27:31 MSK 2024 INFO - initAID - Set OSCDP to STEAM_COMPAT_DATA_PATH '/mnt/nvme/SteamLibrary/steamapps/compatdata/12120'
+Thu May 23 14:27:32 MSK 2024 INFO - loadLangFile - Language from command line is 'english'
+Thu May 23 14:27:32 MSK 2024 INFO - loadLangFile - SYSTEMSTLCFGDIR is '/usr/share/steamtinkerlaunch'
+Thu May 23 14:27:32 MSK 2024 INFO - loadLangFile - Command line language 'english' is no file - trying to find its absolute path
+Thu May 23 14:27:32 MSK 2024 INFO - loadLangFile - Loading found system wide /usr/share/steamtinkerlaunch/lang//english.txt
+Thu May 23 14:27:32 MSK 2024 INFO - getCurrentCommandline - No Proton in command line arguments 'waitforexitandrun /mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas/gta-sa.exe'
+Thu May 23 14:27:32 MSK 2024 INFO - saveOrgVars - Storing some original variables to restore them later
+Thu May 23 02:27:33 PM MSK 2024 INFO - emptyVars - Emptied some original variables as they slowdown several system calls when started from steam
+Thu May 23 02:27:33 PM MSK 2024 INFO - emptyVars - Set $PATH to '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:'
+Thu May 23 02:27:33 PM MSK 2024 START - ######### Initializing Game Launch 12120 using SteamTinkerLaunch v12.12 #########
+Thu May 23 02:27:33 PM MSK 2024 INFO - main - Starting with a clean log
+Thu May 23 02:27:33 PM MSK 2024 INFO - main - Start creating default configs
+Thu May 23 02:27:33 PM MSK 2024 INFO - createDefaultCfgs - START
+Thu May 23 02:27:33 PM MSK 2024 INFO - loadLanguage - First load the default language 'english' to make sure all variables are filled
+Thu May 23 02:27:33 PM MSK 2024 INFO - loadLangFile - Language from command line is 'english'
+Thu May 23 02:27:33 PM MSK 2024 INFO - loadLangFile - GLOBALSTLLANGDIR is '/usr/share/steamtinkerlaunch/lang'
+Thu May 23 02:27:33 PM MSK 2024 INFO - loadLangFile - Command line language 'english' is no file - trying to find its absolute path
+Thu May 23 02:27:33 PM MSK 2024 INFO - loadLangFile - Loading found system wide /usr/share/steamtinkerlaunch/lang/english.txt
+Thu May 23 02:27:33 PM MSK 2024 INFO - loadLanguage - Loading STLLANG from '/home/korsilyn//.config/steamtinkerlaunch/global.conf'
+Thu May 23 02:27:33 PM MSK 2024 INFO - loadLanguage - STLLANG from '/home/korsilyn//.config/steamtinkerlaunch/global.conf' is 'english'
+Thu May 23 02:27:33 PM MSK 2024 INFO - createDefaultCfgs - setSteamPaths:
+Thu May 23 02:27:33 PM MSK 2024 INFO - setSteamPaths - Reading Steam Path variables from '/dev/shm/steamtinkerlaunch/steampaths.txt'
+Thu May 23 02:27:33 PM MSK 2024 INFO - getGameOS - Starting game OS detection
+Thu May 23 02:27:33 PM MSK 2024 INFO - getGameOS - Making some checks on '/mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas/gta-sa.exe' to determine the OS version of the game
+Thu May 23 02:27:33 PM MSK 2024 INFO - getGameOS - Looks like this is a Windows game!
+Thu May 23 02:27:33 PM MSK 2024 INFO - setWin - 'gta-sa' determined to be a Windows Game
+Thu May 23 02:27:33 PM MSK 2024 INFO - createDefaultCfgs - createProtonList:
+Thu May 23 02:27:33 PM MSK 2024 INFO - createDefaultCfgs - createProtonList end
+Thu May 23 02:27:33 PM MSK 2024 INFO - listAllSettingsEntries - '/dev/shm/steamtinkerlaunch/setentries.txt' already exists - nothing to do
+Thu May 23 02:27:33 PM MSK 2024 INFO - createDefaultCfgs - STOP
+Thu May 23 02:27:33 PM MSK 2024 SKIP - listSteamLibraries - not recreating already available '/dev/shm/steamtinkerlaunch/SteamLibraries.txt'
+Thu May 23 02:27:33 PM MSK 2024 INFO - setSteamLibraryPaths - STEAM_COMPAT_LIBRARY_PATHS set to '/mnt/nvme/SteamLibrary/steamapps:/home/korsilyn/.local/share/Steam/steamapps:/mnt/hdd/SteamLibrary/steamapps'
+Thu May 23 02:27:33 PM MSK 2024 INFO - setSteamLibraryPaths - STEAM_COMPAT_MOUNTS set to '/home/korsilyn/.local/share/Steam/steamapps/common/Steamworks Shared:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_soldier:/mnt/hdd/SteamLibrary/steamapps/common/SteamLinuxRuntime_sniper:/mnt/nvme/SteamLibrary/steamapps/common/SteamLinuxRuntime_soldier'
+Thu May 23 02:27:33 PM MSK 2024 INFO - setSteamLibraryPaths - STEAM_COMPAT_TOOL_PATHS set to '/home/korsilyn/.local/share/Steam/steamapps/common/Steamworks Shared:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_soldier:/mnt/hdd/SteamLibrary/steamapps/common/SteamLinuxRuntime_sniper:/mnt/nvme/SteamLibrary/steamapps/common/SteamLinuxRuntime_soldier'
+Thu May 23 02:27:33 PM MSK 2024 INFO - main - Checking internal dependencies:
+Thu May 23 02:27:33 PM MSK 2024 INFO - setAwkBin - Found 'gawk' as an 'awk' variant. It should work without any issues, because 'gawk' was tested completely
+Thu May 23 02:27:33 PM MSK 2024 INFO - checkIntDeps - Result of version check for yad binary '/usr/bin/yad' is '13.0'
+Thu May 23 02:27:33 PM MSK 2024 INFO - main - Initializing first Proton:
+Thu May 23 02:27:33 PM MSK 2024 INFO - initOldProtonArr - Creating an initial array with available Proton versions using the file '/dev/shm/steamtinkerlaunch/ProtonCSV.txt' which was created during a previous run
+Thu May 23 02:27:33 PM MSK 2024 INFO - initFirstProton - Initializing Proton
+Thu May 23 02:27:33 PM MSK 2024 INFO - initFirstProton - Initial Proton version 'FIRSTUSEPROTON' from '/home/korsilyn//.config/steamtinkerlaunch/default_template.conf' is 'Proton-GE'
+Thu May 23 02:27:33 PM MSK 2024 INFO - main - Initializing default window resolution
+Thu May 23 02:27:33 PM MSK 2024 INFO - setInitWinXY - Using '1920x1080' from config '/dev/shm/steamtinkerlaunch/defres.txt'
+Thu May 23 02:27:33 PM MSK 2024 INFO - main - Welcome to SteamTinkerLaunch
+Thu May 23 02:27:33 PM MSK 2024 INFO - removeEmptyFiles - Removing empty files from '/home/korsilyn//.config/steamtinkerlaunch/games/appinfo'
+Thu May 23 02:27:33 PM MSK 2024 INFO - removeEmptyFiles - Removing empty files from '/home/korsilyn//.config/steamtinkerlaunch/games/header'
+Thu May 23 02:27:33 PM MSK 2024 INFO - main - Checking command line: incoming arguments 'waitforexitandrun /mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas/gta-sa.exe'
+Thu May 23 02:27:33 PM MSK 2024 SKIP - getGameOS - ISGAME is already set to '2' - nothing to determine
+Thu May 23 02:27:33 PM MSK 2024 INFO - linkLog - Symlink '/home/korsilyn//.config/steamtinkerlaunch/logs/steamtinkerlaunch/title/Grand Theft Auto San Andreas.log' already exists
+Thu May 23 02:27:33 PM MSK 2024 START - ######### Game Launch: Grand Theft Auto: San Andreas (12120) #########
+Thu May 23 02:27:33 PM MSK 2024 INFO - prepareLaunch - Game launch args '/mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas/gta-sa.exe'
+Thu May 23 02:27:33 PM MSK 2024 INFO - prepareLaunch - Gamedir '/mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas'
+Thu May 23 02:27:33 PM MSK 2024 INFO - prepareLaunch - Proton wineprefix '/mnt/nvme/SteamLibrary/steamapps/compatdata/12120/pfx'
+Thu May 23 02:27:33 PM MSK 2024 INFO - prepareLaunch -------------------
+Thu May 23 02:27:33 PM MSK 2024 INFO - prepareLaunch - CreateGameCfg:
+Thu May 23 02:27:33 PM MSK 2024 SKIP - updateConfigFile - Config file '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/12120.conf' already at version 'v12.12'
+Thu May 23 02:27:33 PM MSK 2024 INFO - linkGameCfg - Symlink '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/title/Grand Theft Auto San Andreas.conf' already exists
+Thu May 23 02:27:33 PM MSK 2024 INFO - prepareLaunch - First LoadCfg: /home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/12120.conf
+Thu May 23 02:27:33 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/12120.conf' START
+Thu May 23 02:27:33 PM MSK 2024 INFO - loadCfg - Loading game config '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/12120.conf'
+Thu May 23 02:27:33 PM MSK 2024 INFO - migrateCfgOption - File '/home/korsilyn//.config/steamtinkerlaunch/dxvk/12120.conf' does not exist - nothing to do
+Thu May 23 02:27:33 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/12120.conf' STOP
+Thu May 23 02:27:35 PM MSK 2024 SKIP - autoBumpReShade - '5.4.2' is the latest version of 'ReShade' - not updating
+Thu May 23 02:27:35 PM MSK 2024 INFO - prepareLaunch - Initial Proton version from the game config: 'Proton-GE'
+Thu May 23 02:27:35 PM MSK 2024 INFO - prepareLaunch - Initializing internal Proton Vars for 'Proton-GE' using setNewProtVars
+Thu May 23 02:27:35 PM MSK 2024 INFO - setNewProtVars - Setting new Proton Variables based on '/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton'
+Thu May 23 02:27:35 PM MSK 2024 INFO - setNewProtVars - Continuing with RUNPROTON='/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton'
+Thu May 23 02:27:35 PM MSK 2024 INFO - setRunWineServer - Initiated from 'setNewProtVars'
+Thu May 23 02:27:35 PM MSK 2024 INFO - setRunWineServer - Set the wine binary for proton in path '/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton'
+Thu May 23 02:27:35 PM MSK 2024 INFO - setRunWineServer - to '/usr/share/steam/compatibilitytools.d/proton-ge-custom/files/bin/wine'
+Thu May 23 02:27:35 PM MSK 2024 INFO - setRunWineServer - and wineserver to '/usr/share/steam/compatibilitytools.d/proton-ge-custom/files/bin/wineserver'
+Thu May 23 02:27:35 PM MSK 2024 INFO - prepareLaunch - OpenTrayIcon:
+Thu May 23 02:27:35 PM MSK 2024 INFO - autoCollectionSettings - Searching collections for game '12120' in '/home/korsilyn/.local/share/Steam/userdata/1005184864/7/remote/sharedconfig.vdf'
+Thu May 23 02:27:35 PM MSK 2024 SKIP - autoCollectionSettings - Global Config '' not found - skipping
+Thu May 23 02:27:35 PM MSK 2024 SKIP - autoCollectionSettings - Collections Directory Config '' not found - skipping
+Thu May 23 02:27:35 PM MSK 2024 INFO - setFullGameExePath - User did not enable 'CUSTOMCMDRESHADE' - Using the game's exe directroy as the ReShade installation directory
+Thu May 23 02:27:35 PM MSK 2024 INFO - setShaderDest - Determining Shader destination directory SHADDESTDIR
+Thu May 23 02:27:35 PM MSK 2024 INFO - setShaderDest - Using variable ABSGAMEEXEPATH for Shader destination directory '/mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas'
+Thu May 23 02:27:35 PM MSK 2024 INFO - setShaderDest - Using Shader destination directory '/mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas'
+Thu May 23 02:27:35 PM MSK 2024 INFO - setShaderDest - Shader destination directory is '/mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas'
+Thu May 23 02:27:35 PM MSK 2024 INFO - setFullGameExePath - Using SHADDESTDIR '/mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas' for 'SHADDESTDIR'
+Thu May 23 02:27:35 PM MSK 2024 INFO - openTrayIcon - Opening trayIcon:
+Thu May 23 02:27:35 PM MSK 2024 INFO - prepareLaunch - sortGameArgs:
+Thu May 23 02:27:35 PM MSK 2024 SKIP - sortGameArgs - Sorting the game arguments is disabled
+Thu May 23 02:27:35 PM MSK 2024 INFO - prepareLaunch - AskSettings:
+Thu May 23 02:27:35 PM MSK 2024 INFO - askSettings - Using game specific requester timeout '2'
+Thu May 23 02:27:35 PM MSK 2024 INFO - askSettings - Opening Requester with timeout '2'
+Thu May 23 02:27:35 PM MSK 2024 INFO - getGameTextFiles - Searching for at least one editable textfile in '/mnt/nvme/SteamLibrary/steamapps/compatdata/12120/pfx/drive_c/users/steamuser'
+Thu May 23 02:27:35 PM MSK 2024 INFO - getRes - Detected screen resolution '2560x1440'
+Thu May 23 02:27:35 PM MSK 2024 INFO - pollWinRes - Using GEOM '--geometry=1920x1080+0+0' from '/home/korsilyn//.config/steamtinkerlaunch/guicfgs/2560x1440/12120/SteamTinkerLaunch-OpenSettings.conf'
+Thu May 23 02:27:35 PM MSK 2024 INFO - updateWinRes - Starting resolution-poll for '/home/korsilyn//.config/steamtinkerlaunch/guicfgs/2560x1440/12120/SteamTinkerLaunch-OpenSettings.conf' with incoming '1920x1080'
+Thu May 23 02:27:35 PM MSK 2024 INFO - setShowPic - Determining game picture
+Thu May 23 02:27:35 PM MSK 2024 INFO - setShowPic - Using '/home/korsilyn//.config/steamtinkerlaunch/games/header/12120.jpg' as game picture
+Thu May 23 02:27:35 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-OpenSettings'
+Thu May 23 02:27:35 PM MSK 2024 INFO - getSteamDeckCompatInfo - Steam Deck compatibility rating file '/home/korsilyn//.config/steamtinkerlaunch/games/deckinfo/12120-deckcompatrating.json' already exists - not redownloading
+Thu May 23 02:27:35 PM MSK 2024 INFO - getSteamDeckCompatInfo - Successfully retrieved Steam Deck compatility information - Stored to '/home/korsilyn//.config/steamtinkerlaunch/games/deckinfo/12120-deckcompatrating.json'
+Thu May 23 02:27:35 PM MSK 2024 INFO - getSteamDeckCompatInfo - Successfully retrieved Steam Deck compatibility rating of 'Playable' for '12120'
+Thu May 23 02:27:35 PM MSK 2024 INFO - getSteamDeckCompatInfo - Converting language tokens for Steam Deck compatibility criteria into SteamTinkerLaunch translated strings
+Thu May 23 02:27:35 PM MSK 2024 INFO - getSteamDeckCompatInfo - Seems like no developer comments were left for this game - This is fine as most games don't have this, so skipping
+Thu May 23 02:27:35 PM MSK 2024 INFO - getSteamDeckCompatInfo - Finished setting Steam Deck compatibility criteria strings
+Thu May 23 02:27:35 PM MSK 2024 INFO - askSettings - Steam Deck compatibility rating string is '<b>Steam Deck Compatibility:</b> Playable &#128712;'
+Thu May 23 02:27:35 PM MSK 2024 INFO - askSettings - Preparing to show Wait Requester
+Thu May 23 02:27:36 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-OpenSettings'
+Thu May 23 02:27:36 PM MSK 2024 INFO - askSettings - Selected CANCEL - Starting game without opening the Settings Menu
+Thu May 23 02:27:36 PM MSK 2024 INFO - updateConfigEntry - Option 'ASKCNT' is updated with the new value '2' in config '12120.conf'
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - Second LoadCfg after menus: /home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/12120.conf
+Thu May 23 02:27:36 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/12120.conf' START
+Thu May 23 02:27:36 PM MSK 2024 INFO - loadCfg - Loading game config '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/12120.conf'
+Thu May 23 02:27:36 PM MSK 2024 INFO - migrateCfgOption - File '/home/korsilyn//.config/steamtinkerlaunch/dxvk/12120.conf' does not exist - nothing to do
+Thu May 23 02:27:36 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/12120.conf' STOP
+Thu May 23 02:27:36 PM MSK 2024 INFO - setDxvkVars - Exporting variable 'DXVK_FRAME_RATE=none' to limit game framerate
+Thu May 23 02:27:36 PM MSK 2024 INFO - autoCollectionSettings - Searching collections for game '12120' in '/home/korsilyn/.local/share/Steam/userdata/1005184864/7/remote/sharedconfig.vdf'
+Thu May 23 02:27:36 PM MSK 2024 SKIP - autoCollectionSettings - Global Config '' not found - skipping
+Thu May 23 02:27:36 PM MSK 2024 SKIP - autoCollectionSettings - Collections Directory Config '' not found - skipping
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - sortGameArgs again, in case something changed above:
+Thu May 23 02:27:36 PM MSK 2024 SKIP - sortGameArgs - Sorting the game arguments is disabled
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - symlinkSteamUser:
+Thu May 23 02:27:36 PM MSK 2024 SKIP - symlinkSteamUser - Symlinking steamuser is disabled - Checking if a symlink needs to be reverted
+Thu May 23 02:27:36 PM MSK 2024 SKIP - symlinkSteamUser - '/mnt/nvme/SteamLibrary/steamapps/compatdata/12120/pfx/drive_c/users/steamuser' is no symlink - nothing to do
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - restoreSteamUser:
+Thu May 23 02:27:36 PM MSK 2024 INFO - restoreSteamUser - Using configured value 'none' for RESTORESTEAMUSER
+Thu May 23 02:27:36 PM MSK 2024 INFO - restoreSteamUser - Restoration of steamuser data is disabled with RESTORESTEAMUSER being 'none
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - prepareProton:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - setLinGameVals :
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - CheckTweakLaunch:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - checkXliveless:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - chooseWinetricks:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - checkExtDeps:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - checkExtDeps done
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - setWineVars:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - CheckWinetricksLaunch:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - CheckWineCfgLaunch:
+Thu May 23 02:27:36 PM MSK 2024 WARN - checkWineCfgLaunch - Function was called but RUN_WINECFG ('0') was not enabled - skipping
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - CustomRegs:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - TogWindows:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - StateSteamWebHelper:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - InstallReshade:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - installDepth3DReshade:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - checkReshade:
+Thu May 23 02:27:36 PM MSK 2024 INFO - autoCollectionSettings - Searching collections for game '12120' in '/home/korsilyn/.local/share/Steam/userdata/1005184864/7/remote/sharedconfig.vdf'
+Thu May 23 02:27:36 PM MSK 2024 SKIP - autoCollectionSettings - Global Config '' not found - skipping
+Thu May 23 02:27:36 PM MSK 2024 SKIP - autoCollectionSettings - Collections Directory Config '' not found - skipping
+Thu May 23 02:27:36 PM MSK 2024 INFO - setFullGameExePath - User did not enable 'CUSTOMCMDRESHADE' - Using the game's exe directroy as the ReShade installation directory
+Thu May 23 02:27:36 PM MSK 2024 INFO - setFullGameExePath - Using SHADDESTDIR '/mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas' for 'SHADDESTDIR'
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - useSpecialK:
+Thu May 23 02:27:36 PM MSK 2024 INFO - setFullGameExePath - User did not enable 'CUSTOMCMDRESHADE' - Using the game's exe directroy as the ReShade installation directory
+Thu May 23 02:27:36 PM MSK 2024 INFO - setFullGameExePath - Using SHADDESTDIR '/mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas' for 'SPEKDDIR'
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - configureGeoElf:
+Thu May 23 02:27:36 PM MSK 2024 INFO - setFullGameExePath - User did not enable 'CUSTOMCMDRESHADE' - Using the game's exe directroy as the ReShade installation directory
+Thu May 23 02:27:36 PM MSK 2024 INFO - setFullGameExePath - Using SHADDESTDIR '/mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas' for 'GEOELFDDIR'
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - ChooseShaders:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - UseNyrnaz:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - UseReplay:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - CheckSBSVRLaunch:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - checkMO2:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - setNewRes:
+Thu May 23 02:27:36 PM MSK 2024 INFO - getRes - Detected screen resolution '2560x1440'
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - customUserScriptStart:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - redirectSCDP:
+Thu May 23 02:27:36 PM MSK 2024 INFO - redirectSCDP - Using Proton version with minor version fix 'Proton-GE' for compatdata directory name
+Thu May 23 02:27:36 PM MSK 2024 INFO - redirectSCDP - Using regular compatdata '/mnt/nvme/SteamLibrary/steamapps/compatdata/12120'
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - checkIGCSInjector:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - checkOpenVRFSR:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - CheckFWS:
+Thu May 23 02:27:36 PM MSK 2024 INFO - loadCustomVars - Empty global config '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/customvars/global-custom-vars.conf' for user defined custom variables not loaded
+Thu May 23 02:27:36 PM MSK 2024 INFO - loadCustomVars - Empty game-specific config '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/customvars/12120.conf' for user defined custom variables not loaded
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - CheckCustomLaunch:
+Thu May 23 02:27:36 PM MSK 2024 SKIP - checkCustomLaunch - USECUSTOMCMD is '0' therefore skipping the custom program '/mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas/install.bat'
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - checkUUUPatchLaunch:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - CheckStraceLaunch:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - CheckNetMonLaunch:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - checkWDIB:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - checkPulse:
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - checkSteamAppIDFile:
+Thu May 23 02:27:36 PM MSK 2024 INFO - checkSteamAppIDFile - STEAMAPPIDFILE is disabled and there's no '/mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas/steam_appid.txt' - nothing to do
+Thu May 23 02:27:36 PM MSK 2024 INFO - prepareLaunch - setCompatDataTitle:
+Thu May 23 02:27:36 PM MSK 2024 INFO - setCompatDataTitle - Symlink /home/korsilyn//.config/steamtinkerlaunch/compatdata/Grand Theft Auto San Andreas already exists
+Thu May 23 02:27:36 PM MSK 2024 INFO - setCompatDataTitle - Symlink '/home/korsilyn//.config/steamtinkerlaunch/compatdata/Grand Theft Auto San Andreas' already points to the correct directory '/mnt/nvme/SteamLibrary/steamapps/compatdata/12120'
+Thu May 23 02:27:36 PM MSK 2024 SKIP - delayGameForCustomLaunch - Nothing to do
+Thu May 23 02:27:37 PM MSK 2024 INFO - prepareLaunch - launchSteamGame:
+Thu May 23 02:27:37 PM MSK 2024 INFO - launchSteamGame - Initial game command is 'waitforexitandrun /mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas/gta-sa.exe'
+Thu May 23 02:27:37 PM MSK 2024 INFO - setSLRReap - No SLR provided from command line, attempting to fetch required SLR from current compatibility tool's 'toolmanifest.vdf'
+Thu May 23 02:27:37 PM MSK 2024 INFO - getRequireToolAppidPath - Found tool manifest at '/usr/share/steam/compatibilitytools.d/proton-ge-custom/toolmanifest.vdf', attempting to get 'require_tool_appid' value...
+Thu May 23 02:27:37 PM MSK 2024 INFO - getRequireToolAppidPath - Got 'require_tool_appid' from '/usr/share/steam/compatibilitytools.d/proton-ge-custom/toolmanifest.vdf' ('1628350') - Returning path to tool
+Thu May 23 02:27:37 PM MSK 2024 INFO - getGameDir - Found matching App Manifest file for presumed entered AppID '1628350' - Manifest file is '/home/korsilyn/.local/share/Steam/steamapps/appmanifest_1628350.acf'
+Thu May 23 02:27:37 PM MSK 2024 INFO - setSLRReap - '/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper' exists - Path gotten from specified AppID looks valid
+Thu May 23 02:27:37 PM MSK 2024 INFO - setSLRReap - Building Steam Linux Runtime command for Proton game
+Thu May 23 02:27:37 PM MSK 2024 INFO - setSLRReap - Adding SLR '/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper/_v2-entry-point --verb=waitforexitandrun --' to the launch command
+Thu May 23 02:27:37 PM MSK 2024 INFO - gameArgs - Game doesn't use any command line arguments
+Thu May 23 02:27:37 PM MSK 2024 INFO - launchSteamGame - Preparing proton command
+Thu May 23 02:27:37 PM MSK 2024 INFO - setProtonCmd - Proton override enabled, so checking if it needs updated
+Thu May 23 02:27:37 PM MSK 2024 INFO - setRunProtonFromUseProton - Setting ORUNPROTON to '/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton'
+Thu May 23 02:27:37 PM MSK 2024 SKIP - setRunProtonFromUseProton - RUNPROTON '/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton' hasn't changed
+Thu May 23 02:27:37 PM MSK 2024 SKIP - fixSymlinks - Fixing Symlinks is not enabled
+Thu May 23 02:27:37 PM MSK 2024 SKIP - unSymlink - Unsymlinking is not enabled
+Thu May 23 02:27:37 PM MSK 2024 INFO - setProtonCmd - Prepending Proton 'Proton-GE' (='/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton') to the command line '/mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas/gta-sa.exe'
+Thu May 23 02:27:37 PM MSK 2024 INFO - setProtonCmd - UPDATED game start command is: /mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas/gta-sa.exe
+Thu May 23 02:27:37 PM MSK 2024 INFO - setProtonCmd - Starting 'Grand Theft Auto: San Andreas (12120)' with Proton: 'Proton-GE'
+Thu May 23 02:27:37 PM MSK 2024 INFO - launchSteamGame - Original incoming start command: 'waitforexitandrun /mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas/gta-sa.exe'
+Thu May 23 02:27:37 PM MSK 2024 INFO - launchSteamGame - Final outgoing start command: '/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper/_v2-entry-point --verb=waitforexitandrun -- /usr/share/steam/compatibilitytools.d/proton-ge-custom/proton waitforexitandrun /mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas/gta-sa.exe'
+Thu May 23 02:27:37 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/meta/id/general/12120.conf' START
+Thu May 23 02:27:37 PM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/meta/id/general/12120.conf' STOP
+Thu May 23 02:27:37 PM MSK 2024 INFO - startGame - Getting the Game Window name:
+Thu May 23 02:27:37 PM MSK 2024 SKIP - getGameWindowName - Already have the gamewindow name: 'GTA: San Andreas' - skipping
+Thu May 23 02:27:37 PM MSK 2024 INFO - startGame - Full start command is '/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper/_v2-entry-point --verb=waitforexitandrun -- /usr/share/steam/compatibilitytools.d/proton-ge-custom/proton waitforexitandrun /mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas/gta-sa.exe'
+Thu May 23 02:27:37 PM MSK 2024 INFO - startGame - Rebuilding STEAM_COMPAT_TOOL_PATHS variable:
+Thu May 23 02:27:37 PM MSK 2024 INFO - startGame - Adding RUNPROTON '/usr/share/steam/compatibilitytools.d/proton-ge-custom'
+Thu May 23 02:27:37 PM MSK 2024 INFO - startGame - Adding '' because USESLR is enabled
+Thu May 23 02:27:37 PM MSK 2024 INFO - startGame - Result: Set STEAM_COMPAT_TOOL_PATHS from '/home/korsilyn/.local/share/Steam/steamapps/common/Steamworks Shared:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_soldier:/mnt/hdd/SteamLibrary/steamapps/common/SteamLinuxRuntime_sniper:/mnt/nvme/SteamLibrary/steamapps/common/SteamLinuxRuntime_soldier' to '/usr/share/steam/compatibilitytools.d/proton-ge-custom:'
+Thu May 23 02:27:37 PM MSK 2024 INFO - startGame - ## ORIGINAL INCOMING LAUNCH COMMAND: 'waitforexitandrun /mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas/gta-sa.exe'
+Thu May 23 02:27:37 PM MSK 2024 INFO - startGame - ## STL LAUNCH COMMAND: '/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper/_v2-entry-point --verb=waitforexitandrun -- /usr/share/steam/compatibilitytools.d/proton-ge-custom/proton waitforexitandrun /mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas/gta-sa.exe'
+Thu May 23 02:27:37 PM MSK 2024 INFO - startGame - ## GAMESTART HERE ###
+Thu May 23 02:27:37 PM MSK 2024 INFO - restoreOrgVars - Restoring previously cleared Variables
+Thu May 23 02:27:37 PM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-OpenSettings'
+Thu May 23 02:27:38 PM MSK 2024 SKIP - updateWinRes - Timeout waiting for Window 'SteamTinkerLaunch-OpenSettings'
+Thu May 23 02:29:01 PM MSK 2024 INFO - startGame - Symlink '/home/korsilyn//.config/steamtinkerlaunch/logs/gamelaunch/title/Grand Theft Auto San Andreas.log' already exists
+Thu May 23 02:29:01 PM MSK 2024 ERROR - startGame - Could not determine pid of '/usr/share/steam/compatibilitytools.d/proton-ge-custom/files/bin/wineserver'
+Thu May 23 02:29:01 PM MSK 2024 INFO - startGame - ## GAMESTOP after '84' seconds playtime
+Thu May 23 02:29:01 PM MSK 2024 STOP - ######### SteamTinkerLaunch v12.12 #########
+Thu May 23 02:29:01 PM MSK 2024 STOP - ######### CLEANUP #########
+Thu May 23 02:29:01 PM MSK 2024 INFO - closeSTL - closing STL
+Thu May 23 02:29:01 PM MSK 2024 INFO - updateConfigEntry - Emptying 'CUSTOMCMD' for '/home/korsilyn//.config/steamtinkerlaunch/default_template.conf'
+Thu May 23 02:29:01 PM MSK 2024 INFO - updateConfigEntry - Option 'CUSTOMCMD' is updated with the new value 'echo' in config 'default_template.conf'
+Thu May 23 02:29:01 PM MSK 2024 INFO - closeSTL - Creating '/dev/shm/steamtinkerlaunch/steamtinkerlaunch-closing.tmp'
+Thu May 23 02:29:01 PM MSK 2024 INFO - checkPlayTime - Playtime '84' was longer than CRASHGUESS '0', not opening the requester
+Thu May 23 02:29:01 PM MSK 2024 INFO - closeSTL - Game 'Grand Theft Auto: San Andreas (12120)' exited - cleaning up custom processes if necessary
+Thu May 23 02:29:01 PM MSK 2024 INFO - closeTrayIcon - Closing TrayIcon '180854'
+Thu May 23 02:29:02 PM MSK 2024 INFO - closeSTL - Removing '/dev/shm/steamtinkerlaunch/steamtinkerlaunch-closing.tmp'
+Thu May 23 02:29:02 PM MSK 2024 STOP - ######### closeSTL SteamTinkerLaunch v12.12 #########
+Thu May 23 02:29:02 PM MSK 2024 INFO - writeLastRun - Recreating /home/korsilyn//.config/steamtinkerlaunch/logs/steamtinkerlaunch/lastrun.txt
+Thu May 23 02:29:02 PM MSK 2024 INFO - storeMetaData - Saving metadata for game 'Grand Theft Auto San Andreas (12120)'
+Thu May 23 02:29:02 PM MSK 2024 INFO - getArch - Architecture for '/mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto San Andreas/gta-sa.exe' is 32bit
+Thu May 23 02:29:02 PM MSK 2024 INFO - storeMetaData - Symlink '/home/korsilyn//.config/steamtinkerlaunch/meta/eval/title/evaluatorscript_Grand Theft Auto San Andreas.vdf' already exists

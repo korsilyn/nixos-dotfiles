@@ -3,9 +3,9 @@
   inputs,
   ...
 }: {
-  imports = [
-    inputs.homix.nixosModules.default
-  ];
+  #imports = [
+    #inputs.homix.nixosModules.default
+  #];
 
   programs.zsh.enable = true;
   users.users = {

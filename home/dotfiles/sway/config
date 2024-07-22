@@ -258,7 +258,7 @@ exec autotiling &
 exec waybar &
 exec swaybg -i ~/.config/backgrounds/finalizer.png &
 exec mako &
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+exec lxqt-policykit-agent &
 exec cliphist wipe &
 exec wl-paste --watch cliphist store &
 exec nekoray &

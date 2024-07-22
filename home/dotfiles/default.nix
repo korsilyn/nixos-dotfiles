@@ -13,7 +13,7 @@
   xdg.configFile."nekoray".source = ./nekoray; # + config file
   # xdg.configFile."neofetch".source = ./neofetch;
   xdg.configFile."nvim".source = ./nvim;
-  xdg.configFile."pipewire".source = ./pipewire;
+  # xdg.configFile."pipewire".source = ./pipewire;
   xdg.configFile."qt5ct".source = ./qt5ct;
   xdg.configFile."qt6ct".source = ./qt6ct;
   # xdg.configFile."river".source = ./river;

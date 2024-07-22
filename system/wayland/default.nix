@@ -28,7 +28,8 @@
       pamixer
       brightnessctl
       wl-clipboard
-      polkit_gnome
+      lxqt.lxqt-policykit
+      tela-circle-icon-theme
     ];
   };
 

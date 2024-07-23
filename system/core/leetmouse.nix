@@ -1,6 +1,6 @@
 { config, ... }:
 let
-  leetmouse = config.boot.kernelPackages.callPackage ./leetmouse-kernel.nix {};
+  leetmouse = config.boot.kernelPackages.callPackage ../../overlays/leetmouse-kernel.nix {};
 in {
   boot.extraModulePackages = [ leetmouse ];
   services.udev.extraRules = ''

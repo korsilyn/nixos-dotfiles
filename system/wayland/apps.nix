@@ -9,5 +9,16 @@
 
     zip
     unzip
+
+    bat
+    eza
+    dust
+    duf
+    fd
+    ripgrep
+    sd
+    cht-sh
+    glances
+    curlie
   ];
 }

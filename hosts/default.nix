@@ -10,8 +10,9 @@
   vmware = ../system/apps/vmware.nix;
   wayland = ../system/wayland;
   hmModule = inputs.home-manager.nixosModules.home-manager;
+  nixvimModule = inputs.nixvim.homeManagerModule.nixvim;
 
-  shared = [boot core];
+  shared = [boot core hmModule nixvimModule];
 
   home-manager = {
     useUserPackages = true;
@@ -33,7 +34,6 @@ in {
     modules = [
       {networking.hostName = "castor";}
       ./castor
-      hmModule
       wayland
       docker
       { inherit home-manager; }
@@ -48,7 +48,6 @@ in {
     modules = [
       {networking.hostName = "pollux";}
       ./pollux
-      hmModule
       wayland
       docker
       { inherit home-manager; }
@@ -63,7 +62,6 @@ in {
     modules = [
       {networking.hostName = "alhena";}
       ./alhena
-      hmModule
       wayland
       docker
       vmware

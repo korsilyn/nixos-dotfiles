@@ -7,8 +7,8 @@ stdenv.mkDerivation rec {
   src = fetchFromGitHub {
     owner = "korsilyn";
     repo = "leetmouse";
-    rev = "a5b202765d18a28ec02eb9379d8f2ec983516937";
-    sha256 = "";
+    rev = "2163cd3bdb68d7b3a5ccede45337ceef499731be";
+    sha256 = "sha256-iITiTVe6RP2NN/FQj7WG1/iSG0jI+kS6c4H4zYEoj+w=";
   };
 
   sourceRoot = "source/driver";

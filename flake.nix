@@ -16,19 +16,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Homemanager alternative (symlinks file to .config) (not working)
-    #homix = {
-    #  url = "github:homix-community/homix";
-    #  inputs.nixpkgs.follows = "nixpkgs";
-    #};
-
     home-manager = {
       url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    disko = {
-      url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

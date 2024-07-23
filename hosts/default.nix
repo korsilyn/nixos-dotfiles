@@ -9,10 +9,9 @@
   docker = ../system/apps/docker.nix;
   vmware = ../system/apps/vmware.nix;
   wayland = ../system/wayland;
-  disko = inputs.disko.nixosModules.default;
   hmModule = inputs.home-manager.nixosModules.home-manager;
 
-  shared = [boot core disko];
+  shared = [boot core];
 
   home-manager = {
     useUserPackages = true;
@@ -68,7 +67,6 @@ in {
       wayland
       docker
       vmware
-      disko
       { inherit home-manager; }
     ]
     ++ shared;

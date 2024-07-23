@@ -10,9 +10,9 @@
   vmware = ../system/apps/vmware.nix;
   wayland = ../system/wayland;
   hmModule = inputs.home-manager.nixosModules.home-manager;
-  nixvimModule = inputs.nixvim.homeManagerModule.nixvim;
+  nixvimModule = inputs.nixvim.homeManagerModules.nixvim;
 
-  shared = [boot core hmModule nixvimModule];
+  shared = [boot core];
 
   home-manager = {
     useUserPackages = true;
@@ -22,7 +22,7 @@
       inherit self;
     };
     users.korsilyn = {
-      imports = [../home];
+      imports = [ nixvimModule ../home ];
       _module.args.theme = import ../home/theme;
     };
   };
@@ -36,6 +36,7 @@ in {
       ./castor
       wayland
       docker
+      hmModule
       { inherit home-manager; }
     ]
     ++ shared;
@@ -50,6 +51,7 @@ in {
       ./pollux
       wayland
       docker
+      hmModule
       { inherit home-manager; }
     ]
     ++ shared;
@@ -65,6 +67,7 @@ in {
       wayland
       docker
       vmware
+      hmModule
       { inherit home-manager; }
     ]
     ++ shared;

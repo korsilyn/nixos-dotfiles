@@ -12,7 +12,7 @@ in {
   boot = {
     tmp = {
       cleanOnBoot = true;
-      useTmpfs = false;
+      useTmpfs = true;
     };
     kernelPackages = mkDefault pkgs.linuxPackages_latest;
     extraModulePackages = with config.boot.kernelPackages; [

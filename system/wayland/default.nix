@@ -10,6 +10,7 @@
     ./pipewire.nix
     ./bluetooth.nix
     ./apps.nix
+    ./development.nix
   ];
   environment = {
     variables = {

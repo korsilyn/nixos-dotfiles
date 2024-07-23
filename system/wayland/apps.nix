@@ -2,9 +2,12 @@
   environment.systemPackages = with pkgs; [
     firefox
 
-    tdesktop
+    _64gram
     vesktop
 
     keepassxc
+
+    zip
+    unzip
   ];
 }

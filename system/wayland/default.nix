@@ -6,6 +6,7 @@
   imports = [
     ./wm.nix
     ./fonts.nix
+    ./theme.nix
     ./services.nix
     ./pipewire.nix
     ./bluetooth.nix

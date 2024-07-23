@@ -6,5 +6,6 @@
     ./nix.nix
     ./users.nix
     ./git.nix
+    ./leetmouse.nix
   ];
 }

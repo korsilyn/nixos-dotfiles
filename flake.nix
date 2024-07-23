@@ -32,6 +32,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # Wallpapers to catppuchin theme
     catppuccinifier = {
       url = "github:lighttigerXIV/catppuccinifier";

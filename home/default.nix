@@ -3,7 +3,7 @@
   home.homeDirectory = "/home/korsilyn";
   programs.home-manager.enable = true;
   imports = [
-    #./apps
+    ./apps
     ./dotfiles
   ];
 

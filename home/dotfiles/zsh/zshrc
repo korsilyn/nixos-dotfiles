@@ -74,7 +74,6 @@ setopt HIST_SAVE_NO_DUPS      # do not save dups
 # setopt INC_APPEND_HISTORY     # save to history file every time, not only on exit
 setopt SHARE_HISTORY          # share history between terminals
 # IO
-setopt PRINT_EXIT_VALUE       # print non-zero exit status
 setopt RM_STAR_SILENT         # do not query user before deleting with rm *
 # REMOVE BEEPS FOR GOD SAKE
 unsetopt LIST_BEEP

@@ -36,5 +36,13 @@
     };
   };
 
+  home.pointerCursor = {
+    name = "catppuccin-mocha-mauve-cursors";
+    package = pkgs.catppuccin-cursors.mochaMauve;
+    size = 24;
+    x11.enable = true;
+    gtk.enable = true;
+  };
+
   home.stateVersion = "24.05";
 }

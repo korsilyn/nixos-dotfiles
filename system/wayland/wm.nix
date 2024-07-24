@@ -8,7 +8,6 @@
       autotiling
       fuzzel
       kitty
-      dunst
       waybar
       mako
     ];

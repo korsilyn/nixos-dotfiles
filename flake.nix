@@ -4,12 +4,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    # Project shells
-    devshell = {
-      url = "github:numtide/devshell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     # Formatters
     treefmt-nix = {
       url = "github:numtide/treefmt-nix";
@@ -78,23 +72,6 @@
             prettier.enable = true;
           };
         };
-        devShells.default = let
-          extra = import ./devShell;
-        in
-          inputs'.devshell.legacyPackages.mkShell {
-            name = "dotfiles";
-            commands = extra.shellCommands;
-            env = extra.shellEnv;
-            packages = with pkgs; [
-              config.treefmt.build.wrapper
-              nil # nix ls
-              alejandra # nix formatter
-              git
-              glow # .md viewer
-              statix # lints and suggestions
-              deadnix # clean unused nix code
-            ];
-          };
 
         treefmt = {
           projectRootFile = "flake.nix";

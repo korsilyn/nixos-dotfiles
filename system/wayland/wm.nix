@@ -10,6 +10,7 @@
       kitty
       dunst
       waybar
+      mako
     ];
   };
   #programs.waybar.enable = true;

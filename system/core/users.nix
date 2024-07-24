@@ -8,6 +8,7 @@
   #];
 
   programs.zsh.enable = true;
+  programs.direnv.enable = true;
   users.users = {
     korsilyn = {
       isNormalUser = true;

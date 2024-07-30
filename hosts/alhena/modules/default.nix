@@ -1,7 +1,7 @@
 {
   imports = [
     ./device.nix
-    ./profile.nix
+    ./profiles.nix
     ./style.nix
     ./system.nix
     ./usrEnv.nix

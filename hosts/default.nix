@@ -1,10 +1,15 @@
 {
+  self,
   withSystem,
   inputs,
+  lib,
+  nixpkgs,
   ...
 }: {
   flake.nixosConfigurations = let
     inherit (lib.lists) concatLists flatten singleton;
+    inherit (lib) mkDefault recursiveUpdate filter hasSuffix elem;
+    inherit (lib.filesystem) listFilesRecursive;
 
     ## flake inputs ##
     hw = inputs.nixos-hardware.nixosModules; # hardware compat for pi4 and other quirky devices
@@ -70,7 +75,7 @@
           # specialArgs
           specialArgs = recursiveUpdate {
             inherit (self) keys;
-            inherit lib modulesPath;
+            inherit lib;
             inherit inputs self inputs' self';
           } (args.specialArgs or {});
 

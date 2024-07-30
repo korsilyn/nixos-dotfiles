@@ -1,4 +1,4 @@
-{
+{ pkgs, ...}: {
   config.modules.system = {
     mainUser = "korsilyn";
     fs.enabledFilesystems = ["btrfs" "vfat" "exfat"];

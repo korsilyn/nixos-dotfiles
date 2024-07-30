@@ -3,7 +3,7 @@
   lib,
   ...
 }: let
-  inherit (lib.modules) mkDefault mkIf optionalAttrs;
+  inherit (lib) mkDefault mkIf optionalAttrs;
 
   cfg = config.modules.system;
 in {

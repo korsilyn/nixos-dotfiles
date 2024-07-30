@@ -1,8 +1,7 @@
 {
   imports = [
-    ./programs
-
-    ./brightness.nix
+    ./shared.nix
     ./desktop.nix
+    ./wayland.nix
   ];
 }

@@ -118,6 +118,12 @@
       };
     };
 
+    # tmp before moving to nvf
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # Schizophrenic Firefox configuration
     schizofox = {
       url = "github:schizofox/schizofox";

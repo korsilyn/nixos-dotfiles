@@ -28,7 +28,7 @@
       enable = true;
       docker.enable = true;
       qemu.enable = false;
-      vmware.host.enable = true;
+      vmware.enable = true;
     };
 
     programs = {

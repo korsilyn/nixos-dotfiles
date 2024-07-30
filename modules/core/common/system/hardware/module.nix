@@ -5,6 +5,6 @@
     ./multimedia # enable multimedia: e.g. sound and video
 
     ./bluetooth.nix # bluetooth and device management
-    ./redistributable.nix # Non-free redstributable software
+    ./redist.nix # Non-free redstributable software
   ];
 }

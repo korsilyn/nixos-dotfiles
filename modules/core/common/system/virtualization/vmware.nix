@@ -6,9 +6,9 @@
 }: let
   inherit (lib) mkIf;
 
-  sys = config.modules.system;
+  sys = config.modules.system.virtualization;
 in {
-  config = mkIf sys.virtualization.vmware.host.enable {
-    virtualization.vmware.host.enable = true;
+  config = mkIf sys.vmware.enable {
+    virtualisation.vmware.host.enable = true;
   };
 }

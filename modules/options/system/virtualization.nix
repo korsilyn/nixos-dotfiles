@@ -7,6 +7,6 @@ in {
     docker = {enable = mkEnableOption "docker";};
     qemu = {enable = mkEnableOption "qemu";};
     waydroid = {enable = mkEnableOption "waydroid";};
-    vmware.host = {enable = mkEnableOption "vmware.host";};
+    vmware = {enable = mkEnableOption "vmware.host";};
   };
 }

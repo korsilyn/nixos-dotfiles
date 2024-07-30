@@ -23,10 +23,8 @@ in {
         # IOMMU overhead
         kernelModules = ["kvm-amd" "amd-pstate" "zenpower" "msr"];
         kernelParams = ["amd_iommu=on"];
-      }
-
         extraModulePackages = [config.boot.kernelPackages.zenpower];
-      })
+      }
 
       (mkIf (pstate.enable && (versionAtLeast kver "5.17") && (versionOlder kver "6.1")) {
         kernelParams = ["initcall_blacklist=acpi_cpufreq_init"];

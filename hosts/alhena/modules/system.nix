@@ -6,7 +6,7 @@
 
     boot = {
       loader = "systemd-boot";
-      kernel = pkgs.linuxPackages_xanmod_latest;
+      kernel = pkgs.linuxPackages_latest;
       plymouth.enable = true;
       enableKernelTweaks = true;
       initrd.enableTweaks = true;
@@ -25,7 +25,7 @@
     };
 
     virtualization = {
-      enable = true;
+      enable = false;
       docker.enable = true;
       qemu.enable = false;
       vmware.enable = true;

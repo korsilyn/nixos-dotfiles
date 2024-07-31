@@ -9,7 +9,8 @@
 
   env = modules.usrEnv;
 in {
-  config = mkIf (meta.isWayland && (env.desktop != "Hyprland")) {
+  # Temp fix
+  config = mkIf (false && meta.isWayland && (env.desktop != "Hyprland")) {
     systemd.user.services = {
       swaybg = {
         Unit.Description = "Wallpaper chooser service";
@@ -19,7 +20,7 @@ in {
         Service = let
           wall = builtins.fetchurl {
             url = "https://github.com/zhichaoh/catppuccin-wallpapers/blob/1023077979591cdeca76aae94e0359da1707a60e/minimalistic/darker_unicat.png";
-            sha256 = "sha256-8+G/KY84WOfPhALqB+yzsc+yJ69IItdLaWro07jx0ls=";
+            sha256 = "sha256-19y89f97jid9yw4kzvxIrria171npcqbph9i8azyvm8x3xy9s4fd";
           };
         in {
           ExecStart = "${getExe pkgs.swaybg} -i ${wall}";

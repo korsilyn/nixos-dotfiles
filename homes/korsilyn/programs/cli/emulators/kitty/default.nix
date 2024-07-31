@@ -14,6 +14,6 @@ in {
     programs.kitty = {
       enable = true;
     };
+    xdg.configFile."kitty".source = ./kitty;
   };
-  xdg.configFile."kitty".source = ./kitty;
 }

@@ -14,7 +14,7 @@
   inherit (sys.networking) wireless;
 in {
   config = {
-    environment.systemPackages = optionals (wireless.backend == "iwd") pkgs.iwgtk;
+    environment.systemPackages = optionals (wireless.backend == "iwd") [pkgs.iwgtk];
     networking.wireless =
       {
         enable = wireless.backend == "wpa_supplicant";
@@ -25,7 +25,6 @@ in {
           settings = {
             #Rank.BandModifier5Ghz = 2.0;
             Scan.DisablePeriodicScan = false;
-            AutoConnect = true;
             Settings.AutoConnect = true;
             IPv6.Enabled = false;
 

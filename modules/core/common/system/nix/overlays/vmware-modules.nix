@@ -1,8 +1,8 @@
 { config, pkgs, lib, ...}: {
   nixpkgs.overlays = [
     (self: super: {
-      linuxPackages_latest = super.linuxPackages_latest.extend (lpself: lpsuper: {
-        vmware = super.linuxPackages_latest.vmware.overrideAttrs (oldAttrs: {
+      linuxPackages_xanmod_latest = super.linuxPackages_xanmod_latest.extend (lpself: lpsuper: {
+        vmware = super.linuxPackages_xanmod_latest.vmware.overrideAttrs (oldAttrs: {
           src = pkgs.fetchFromGitHub {
             owner = "nan0desu";
             repo = "vmware-host-modules";

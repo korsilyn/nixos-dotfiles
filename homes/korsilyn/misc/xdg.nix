@@ -37,21 +37,13 @@
     "x-scheme-handler/discord" = ["WebCord.desktop"];
     "x-scheme-handler/mailto" = mailer;
   };
-
-  template = import lib.xdgTemplate "home-manager";
 in {
-  #home.sessionVariables = template.sysEnv;
   xdg = {
     enable = true;
     cacheHome = "${config.home.homeDirectory}/.cache";
     configHome = "${config.home.homeDirectory}/.config";
     dataHome = "${config.home.homeDirectory}/.local/share";
     stateHome = "${config.home.homeDirectory}/.local/state";
-
-    configFile = {
-      "npm/npmrc" = template.npmrc;
-      "python/pythonrc" = template.pythonrc;
-    };
 
     userDirs = {
       enable = pkgs.stdenv.isLinux;

@@ -4,10 +4,10 @@
   lib,
   ...
 }: let
-  inherit (lib.modules) attrValues mkDefault;
+  inherit (lib) attrValues mkDefault;
 in {
   console = let
-    variant = "u18n";
+    variant = "v18n";
   in {
     enable = mkDefault true;
     earlySetup = true;

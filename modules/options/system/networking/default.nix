@@ -18,7 +18,7 @@ in {
 
       backend = mkOption {
         type = types.enum ["iwd" "wpa_supplicant"];
-        default = "iwd";
+        default = "wpa_supplicant";
         description = ''
           Backend that will be used for wireless connections using either
           `networking.wireless` or `networking.networkmanager.wifi.backend`

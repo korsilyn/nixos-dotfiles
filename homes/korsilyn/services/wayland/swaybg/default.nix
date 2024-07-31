@@ -4,15 +4,18 @@
   osConfig,
   ...
 }: let
-  inherit (lib) mkIf getExe mkGraphicalService;
+  inherit (lib) mkIf getExe;
   inherit (osConfig) modules meta;
 
   env = modules.usrEnv;
 in {
   config = mkIf (meta.isWayland && (env.desktop != "Hyprland")) {
     systemd.user.services = {
-      swaybg = mkGraphicalService {
+      swaybg = {
         Unit.Description = "Wallpaper chooser service";
+        Unit.PartOf = ["graphical-session.target"];
+        Unit.After = ["graphical-session.target"];
+        Install.WantedBy = ["graphical-session.target"];
         Service = let
           wall = builtins.fetchurl {
             url = "https://github.com/zhichaoh/catppuccin-wallpapers/blob/1023077979591cdeca76aae94e0359da1707a60e/minimalistic/darker_unicat.png";

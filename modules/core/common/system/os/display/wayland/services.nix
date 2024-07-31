@@ -4,12 +4,13 @@
   pkgs,
   ...
 }: let
-  inherit (lib.modules) mkIf getExe;
+  inherit (lib) mkIf getExe;
 
   cfg = config.modules.system.video;
   env = config.modules.usrEnv;
+  meta = config.meta;
 in {
-  config = mkIf (cfg.enable && env.isWayland) {
+  config = mkIf (cfg.enable && meta.isWayland) {
     systemd.services = {
       seatd = {
         enable = true;

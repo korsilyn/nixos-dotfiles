@@ -8,9 +8,10 @@
 
   dev = osConfig.modules.device;
   env = osConfig.modules.usrEnv;
+  meta = osConfig.meta;
   acceptedTypes = ["laptop" "desktop"];
 in {
-  config = mkIf ((builtins.elem dev.type acceptedTypes) && env.isWayland) {
+  config = mkIf ((builtins.elem dev.type acceptedTypes) && meta.isWayland) {
     home.packages = with pkgs; [
       # CLI
       grim

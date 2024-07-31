@@ -12,6 +12,6 @@
   prg = sys.programs;
 in {
   config = mkIf prg.vesktop.enable {
-    home.packages = [vesktop];
+    home.packages = with pkgs; [vesktop];
   };
 }

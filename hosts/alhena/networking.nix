@@ -30,7 +30,7 @@
         networkConfig = {
           DHCP = "yes";
           IPv6AcceptRA = true;
-          IPForward = "yes";
+          IPv4Forwarding = "yes";
           IPMasquerade = "no";
         };
 
@@ -56,7 +56,7 @@
         networkConfig = {
           DHCP = "yes";
           IPv6AcceptRA = true;
-          IPForward = "yes";
+          IPv4Forwarding = "yes";
           IPMasquerade = "no";
         };
 

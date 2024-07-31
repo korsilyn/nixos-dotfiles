@@ -18,7 +18,7 @@ in {
         The desktop environment to be used.
       '';
     };
-
+    desktops = {
       sway = {
         enable = mkOption {
           type = bool;
@@ -60,6 +60,7 @@ in {
           '';
         };
       };
+    };
 
     useHomeManager = mkOption {
       type = bool;

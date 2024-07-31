@@ -7,8 +7,9 @@
 
   sys = config.modules.system;
   env = config.modules.usrEnv;
+  meta = config.meta;
 in {
-  config = mkIf (sys.video.enable && env.isWayland) {
+  config = mkIf (sys.video.enable && meta.isWayland) {
     environment.etc."greetd/environments".text = ''
       ${lib.optionalString (env.desktop == "Hyprland") "Hyprland"}
       ${lib.optionalString (env.desktop == "sway") "SwayWM"}

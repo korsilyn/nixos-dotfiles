@@ -3,7 +3,7 @@
   pkgs,
   ...
 }: {
-  users.users.notashelf = {
+  users.users.korsilyn = {
     isNormalUser = true;
 
     # Home directory

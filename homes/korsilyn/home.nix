@@ -1,4 +1,4 @@
-{
+{lib, ...}: {
   imports = [
     # home package sets
     ./packages
@@ -17,7 +17,7 @@
   config = {
     home = {
       username = "korsilyn";
-      homeDirectory = "/home/korsilyn";
+      homeDirectory = lib.mkForce "/home/korsilyn";
       extraOutputsToInstall = ["doc" "devdoc"];
 
       # This is, and should remain, the version on which you have initiated

@@ -1,4 +1,7 @@
-{...}: {
+{inputs, ...}: let
+  inherit (inputs.nixvim.homeManagerModules) nixvim;
+in {
+  imports = [nixvim];
   programs.nixvim = {
     enable = true;
     defaultEditor = true;

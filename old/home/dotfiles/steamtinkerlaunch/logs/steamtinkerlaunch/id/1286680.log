@@ -1,0 +1,175 @@
+Sun Jul 14 01:06:37 MSK 2024 INFO - initAID - Set AID from STEAM_COMPAT_APP_ID to '1286680'
+Sun Jul 14 01:06:37 MSK 2024 INFO - initAID - Set OSCDP to STEAM_COMPAT_DATA_PATH '/mnt/nvme/SteamLibrary/steamapps/compatdata/1286680'
+Sun Jul 14 01:06:37 MSK 2024 INFO - loadLangFile - Language from command line is 'english'
+Sun Jul 14 01:06:37 MSK 2024 INFO - loadLangFile - SYSTEMSTLCFGDIR is '/usr/share/steamtinkerlaunch'
+Sun Jul 14 01:06:37 MSK 2024 INFO - loadLangFile - Command line language 'english' is no file - trying to find its absolute path
+Sun Jul 14 01:06:37 MSK 2024 INFO - loadLangFile - Loading found system wide /usr/share/steamtinkerlaunch/lang//english.txt
+Sun Jul 14 01:06:37 MSK 2024 INFO - getCurrentCommandline - No Proton in command line arguments 'waitforexitandrun /mnt/nvme/SteamLibrary/steamapps/common/Tiny Tina's Wonderlands/OakGame/Binaries/Win64/Wonderlands.exe'
+Sun Jul 14 01:06:38 MSK 2024 INFO - saveOrgVars - Storing some original variables to restore them later
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - emptyVars - Emptied some original variables as they slowdown several system calls when started from steam
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - emptyVars - Set $PATH to '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:'
+Sun Jul 14 01:06:38 AM MSK 2024 START - ######### Initializing Game Launch 1286680 using SteamTinkerLaunch v12.12 #########
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - main - Starting with a clean log
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - main - Start creating default configs
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - createDefaultCfgs - START
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - loadLanguage - First load the default language 'english' to make sure all variables are filled
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - loadLangFile - Language from command line is 'english'
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - loadLangFile - GLOBALSTLLANGDIR is '/usr/share/steamtinkerlaunch/lang'
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - loadLangFile - Command line language 'english' is no file - trying to find its absolute path
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - loadLangFile - Loading found system wide /usr/share/steamtinkerlaunch/lang/english.txt
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - loadLanguage - Loading STLLANG from '/home/korsilyn//.config/steamtinkerlaunch/global.conf'
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - loadLanguage - STLLANG from '/home/korsilyn//.config/steamtinkerlaunch/global.conf' is 'english'
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - createDefaultCfgs - setSteamPaths:
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - setSteamPaths - Reading Steam Path variables from '/dev/shm/steamtinkerlaunch/steampaths.txt'
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - getGameOS - Starting game OS detection
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - getGameOS - Making some checks on '/mnt/nvme/SteamLibrary/steamapps/common/Tiny Tina's Wonderlands/OakGame/Binaries/Win64/Wonderlands.exe' to determine the OS version of the game
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - getGameOS - Looks like this is a Windows game!
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - setWin - 'Wonderlands' determined to be a Windows Game
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - createDefaultCfgs - createProtonList:
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - createDefaultCfgs - createProtonList end
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - listAllSettingsEntries - '/dev/shm/steamtinkerlaunch/setentries.txt' already exists - nothing to do
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - createDefaultCfgs - STOP
+Sun Jul 14 01:06:38 AM MSK 2024 SKIP - listSteamLibraries - not recreating already available '/dev/shm/steamtinkerlaunch/SteamLibraries.txt'
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - setSteamLibraryPaths - STEAM_COMPAT_LIBRARY_PATHS set to '/mnt/nvme/SteamLibrary/steamapps:/home/korsilyn/.local/share/Steam/steamapps:/mnt/hdd/SteamLibrary/steamapps'
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - setSteamLibraryPaths - STEAM_COMPAT_MOUNTS set to '/home/korsilyn/.local/share/Steam/steamapps/common/Steamworks Shared:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_soldier:/mnt/hdd/SteamLibrary/steamapps/common/SteamLinuxRuntime_sniper:/mnt/nvme/SteamLibrary/steamapps/common/SteamLinuxRuntime_soldier'
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - setSteamLibraryPaths - STEAM_COMPAT_TOOL_PATHS set to '/home/korsilyn/.local/share/Steam/steamapps/common/Steamworks Shared:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_soldier:/mnt/hdd/SteamLibrary/steamapps/common/SteamLinuxRuntime_sniper:/mnt/nvme/SteamLibrary/steamapps/common/SteamLinuxRuntime_soldier'
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - main - Checking internal dependencies:
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - setAwkBin - Found 'gawk' as an 'awk' variant. It should work without any issues, because 'gawk' was tested completely
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - checkIntDeps - Result of version check for yad binary '/usr/bin/yad' is '14.1'
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - main - Initializing first Proton:
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - initOldProtonArr - Creating an initial array with available Proton versions using the file '/dev/shm/steamtinkerlaunch/ProtonCSV.txt' which was created during a previous run
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - initFirstProton - Initializing Proton
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - initFirstProton - Initial Proton version 'FIRSTUSEPROTON' from '/home/korsilyn//.config/steamtinkerlaunch/default_template.conf' is 'Proton-GE'
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - main - Initializing default window resolution
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - setInitWinXY - Using '1920x1080' from config '/dev/shm/steamtinkerlaunch/defres.txt'
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - main - Welcome to SteamTinkerLaunch
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - removeEmptyFiles - Removing empty files from '/home/korsilyn//.config/steamtinkerlaunch/games/appinfo'
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - removeEmptyFiles - Removing empty files from '/home/korsilyn//.config/steamtinkerlaunch/games/header'
+Sun Jul 14 01:06:38 AM MSK 2024 INFO - main - Checking command line: incoming arguments 'waitforexitandrun /mnt/nvme/SteamLibrary/steamapps/common/Tiny Tina's Wonderlands/OakGame/Binaries/Win64/Wonderlands.exe'
+Sun Jul 14 01:06:38 AM MSK 2024 SKIP - getGameOS - ISGAME is already set to '2' - nothing to determine
+Sun Jul 14 01:06:39 AM MSK 2024 INFO - linkLog - Symlink '/home/korsilyn//.config/steamtinkerlaunch/logs/steamtinkerlaunch/title/Tiny Tina's Wonderlands.log' already exists
+Sun Jul 14 01:06:39 AM MSK 2024 INFO - getAppInfoData - Retrieving data for 'name' from '/home/korsilyn//.config/steamtinkerlaunch/games/appinfo/1286680.bin'
+Sun Jul 14 01:06:39 AM MSK 2024 START - ######### Game Launch: Tiny Tina's Wonderlands (1286680) #########
+Sun Jul 14 01:06:39 AM MSK 2024 INFO - prepareLaunch - Game launch args '/mnt/nvme/SteamLibrary/steamapps/common/Tiny Tina's Wonderlands/OakGame/Binaries/Win64/Wonderlands.exe'
+Sun Jul 14 01:06:39 AM MSK 2024 INFO - prepareLaunch - Gamedir '/mnt/nvme/SteamLibrary/steamapps/common/Tiny Tina's Wonderlands'
+Sun Jul 14 01:06:39 AM MSK 2024 INFO - prepareLaunch - Proton wineprefix '/mnt/nvme/SteamLibrary/steamapps/compatdata/1286680/pfx'
+Sun Jul 14 01:06:39 AM MSK 2024 INFO - prepareLaunch -------------------
+Sun Jul 14 01:06:39 AM MSK 2024 INFO - prepareLaunch - CreateGameCfg:
+Sun Jul 14 01:06:39 AM MSK 2024 SKIP - updateConfigFile - Config file '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/1286680.conf' already at version 'v12.12'
+Sun Jul 14 01:06:39 AM MSK 2024 INFO - linkGameCfg - Symlink '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/title/Tiny Tina's Wonderlands.conf' already exists
+Sun Jul 14 01:06:39 AM MSK 2024 INFO - prepareLaunch - First LoadCfg: /home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/1286680.conf
+Sun Jul 14 01:06:39 AM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/1286680.conf' START
+Sun Jul 14 01:06:39 AM MSK 2024 INFO - loadCfg - Loading game config '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/1286680.conf'
+Sun Jul 14 01:06:39 AM MSK 2024 INFO - migrateCfgOption - File '/home/korsilyn//.config/steamtinkerlaunch/dxvk/1286680.conf' does not exist - nothing to do
+Sun Jul 14 01:06:39 AM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/1286680.conf' STOP
+Sun Jul 14 01:06:40 AM MSK 2024 SKIP - autoBumpReShade - '5.4.2' is the latest version of 'ReShade' - not updating
+Sun Jul 14 01:06:40 AM MSK 2024 INFO - prepareLaunch - Initial Proton version from the game config: 'Proton-GE'
+Sun Jul 14 01:06:40 AM MSK 2024 INFO - prepareLaunch - Initializing internal Proton Vars for 'Proton-GE' using setNewProtVars
+Sun Jul 14 01:06:40 AM MSK 2024 INFO - setNewProtVars - Setting new Proton Variables based on '/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton'
+Sun Jul 14 01:06:40 AM MSK 2024 INFO - setNewProtVars - Continuing with RUNPROTON='/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton'
+Sun Jul 14 01:06:40 AM MSK 2024 INFO - setRunWineServer - Initiated from 'setNewProtVars'
+Sun Jul 14 01:06:40 AM MSK 2024 INFO - setRunWineServer - Set the wine binary for proton in path '/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton'
+Sun Jul 14 01:06:40 AM MSK 2024 INFO - setRunWineServer - to '/usr/share/steam/compatibilitytools.d/proton-ge-custom/files/bin/wine'
+Sun Jul 14 01:06:40 AM MSK 2024 INFO - setRunWineServer - and wineserver to '/usr/share/steam/compatibilitytools.d/proton-ge-custom/files/bin/wineserver'
+Sun Jul 14 01:06:40 AM MSK 2024 INFO - prepareLaunch - OpenTrayIcon:
+Sun Jul 14 01:06:40 AM MSK 2024 INFO - autoCollectionSettings - Searching collections for game '1286680' in '/home/korsilyn/.local/share/Steam/userdata/1005184864/7/remote/sharedconfig.vdf'
+Sun Jul 14 01:06:40 AM MSK 2024 SKIP - autoCollectionSettings - Global Config '' not found - skipping
+Sun Jul 14 01:06:40 AM MSK 2024 SKIP - autoCollectionSettings - Collections Directory Config '' not found - skipping
+Sun Jul 14 01:06:40 AM MSK 2024 INFO - setFullGameExePath - Using the directory '/home/korsilyn/Downloads/creamapi' of the used custom command as absolute game exe path
+Sun Jul 14 01:06:40 AM MSK 2024 INFO - openTrayIcon - Opening trayIcon:
+Sun Jul 14 01:06:40 AM MSK 2024 INFO - prepareLaunch - sortGameArgs:
+Sun Jul 14 01:06:40 AM MSK 2024 SKIP - sortGameArgs - Sorting the game arguments is disabled
+Sun Jul 14 01:06:40 AM MSK 2024 INFO - prepareLaunch - AskSettings:
+Sun Jul 14 01:06:40 AM MSK 2024 INFO - askSettings - Using game specific requester timeout '2'
+Sun Jul 14 01:06:40 AM MSK 2024 INFO - askSettings - Opening Requester with timeout '2'
+Sun Jul 14 01:06:40 AM MSK 2024 INFO - getGameTextFiles - Searching for at least one editable textfile in '/mnt/nvme/SteamLibrary/steamapps/compatdata/1286680/pfx/drive_c/users/steamuser'
+Sun Jul 14 01:06:41 AM MSK 2024 INFO - getAppInfoData - Retrieving data for 'name' from '/home/korsilyn//.config/steamtinkerlaunch/games/appinfo/1286680.bin'
+Sun Jul 14 01:06:41 AM MSK 2024 INFO - getRes - Detected screen resolution '2560x1440'
+Sun Jul 14 01:06:41 AM MSK 2024 INFO - pollWinRes - Using GEOM '--geometry=1920x1080+0+0' from '/home/korsilyn//.config/steamtinkerlaunch/guicfgs/2560x1440/1286680/SteamTinkerLaunch-OpenSettings.conf'
+Sun Jul 14 01:06:41 AM MSK 2024 INFO - updateWinRes - Starting resolution-poll for '/home/korsilyn//.config/steamtinkerlaunch/guicfgs/2560x1440/1286680/SteamTinkerLaunch-OpenSettings.conf' with incoming '1920x1080'
+Sun Jul 14 01:06:41 AM MSK 2024 INFO - setShowPic - Determining game picture
+Sun Jul 14 01:06:41 AM MSK 2024 INFO - setShowPic - Using '/home/korsilyn//.config/steamtinkerlaunch/games/header/1286680.jpg' as game picture
+Sun Jul 14 01:06:41 AM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-OpenSettings'
+Sun Jul 14 01:06:41 AM MSK 2024 INFO - getSteamDeckCompatInfo - Fetching Steam Deck compatibility information for '1286680' from Steam store endpoint with 'https://store.steampowered.com/saleaction/ajaxgetdeckappcompatibilityreport?nAppID=1286680'
+Sun Jul 14 01:06:42 AM MSK 2024 WARN - getSteamDeckCompatInfo - No compatibility information available for '1286680' - Maybe the AppID is invalid?
+Sun Jul 14 01:06:42 AM MSK 2024 INFO - prepareSteamDeckCompatInfo - No compatibility information available for '1286680' - Is this AppID definitely correct?
+Sun Jul 14 01:06:42 AM MSK 2024 INFO - askSettings - Could not retrieve Steam Deck compatibility rating, defaulting to Unknown - Maybe 'jq' is missing or we are offline?
+Sun Jul 14 01:06:42 AM MSK 2024 INFO - askSettings - Steam Deck compatibility rating string is '<b>Steam Deck Compatibility:</b> '
+Sun Jul 14 01:06:42 AM MSK 2024 INFO - askSettings - Preparing to show Wait Requester
+Sun Jul 14 01:06:42 AM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-OpenSettings'
+Sun Jul 14 01:06:43 AM MSK 2024 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-OpenSettings'
+Sun Jul 14 01:06:44 AM MSK 2024 SKIP - updateWinRes - Timeout waiting for Window 'SteamTinkerLaunch-OpenSettings'
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - Second LoadCfg after menus: /home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/1286680.conf
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/1286680.conf' START
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - loadCfg - Loading game config '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/1286680.conf'
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - migrateCfgOption - File '/home/korsilyn//.config/steamtinkerlaunch/dxvk/1286680.conf' does not exist - nothing to do
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - loadCfg - '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/id/1286680.conf' STOP
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - setDxvkVars - Exporting variable 'DXVK_FRAME_RATE=none' to limit game framerate
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - autoCollectionSettings - Searching collections for game '1286680' in '/home/korsilyn/.local/share/Steam/userdata/1005184864/7/remote/sharedconfig.vdf'
+Sun Jul 14 01:06:45 AM MSK 2024 SKIP - autoCollectionSettings - Global Config '' not found - skipping
+Sun Jul 14 01:06:45 AM MSK 2024 SKIP - autoCollectionSettings - Collections Directory Config '' not found - skipping
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - sortGameArgs again, in case something changed above:
+Sun Jul 14 01:06:45 AM MSK 2024 SKIP - sortGameArgs - Sorting the game arguments is disabled
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - symlinkSteamUser:
+Sun Jul 14 01:06:45 AM MSK 2024 SKIP - symlinkSteamUser - Symlinking steamuser is disabled - Checking if a symlink needs to be reverted
+Sun Jul 14 01:06:45 AM MSK 2024 SKIP - symlinkSteamUser - '/mnt/nvme/SteamLibrary/steamapps/compatdata/1286680/pfx/drive_c/users/steamuser' is no symlink - nothing to do
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - restoreSteamUser:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - restoreSteamUser - Using configured value 'none' for RESTORESTEAMUSER
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - restoreSteamUser - Restoration of steamuser data is disabled with RESTORESTEAMUSER being 'none
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - prepareProton:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - setLinGameVals :
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - CheckTweakLaunch:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - checkXliveless:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - chooseWinetricks:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - chooseWinetricks - Using systemwide winetricks with version '20240105'
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - checkExtDeps:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - checkExtDeps done
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - setWineVars:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - CheckWinetricksLaunch:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - CheckWineCfgLaunch:
+Sun Jul 14 01:06:45 AM MSK 2024 WARN - checkWineCfgLaunch - Function was called but RUN_WINECFG ('0') was not enabled - skipping
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - CustomRegs:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - TogWindows:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - StateSteamWebHelper:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - InstallReshade:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - installDepth3DReshade:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - checkReshade:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - autoCollectionSettings - Searching collections for game '1286680' in '/home/korsilyn/.local/share/Steam/userdata/1005184864/7/remote/sharedconfig.vdf'
+Sun Jul 14 01:06:45 AM MSK 2024 SKIP - autoCollectionSettings - Global Config '' not found - skipping
+Sun Jul 14 01:06:45 AM MSK 2024 SKIP - autoCollectionSettings - Collections Directory Config '' not found - skipping
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - setFullGameExePath - Using the directory '/home/korsilyn/Downloads/creamapi' of the used custom command as absolute game exe path
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - useSpecialK:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - setFullGameExePath - Using the directory '/home/korsilyn/Downloads/creamapi' of the used custom command as absolute game exe path
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - configureGeoElf:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - setFullGameExePath - Using the directory '/home/korsilyn/Downloads/creamapi' of the used custom command as absolute game exe path
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - ChooseShaders:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - UseNyrnaz:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - UseReplay:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - CheckSBSVRLaunch:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - checkMO2:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - setNewRes:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - getRes - Detected screen resolution '2560x1440'
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - customUserScriptStart:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - redirectSCDP:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - redirectSCDP - Using Proton version with minor version fix 'Proton-GE' for compatdata directory name
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - redirectSCDP - Using regular compatdata '/mnt/nvme/SteamLibrary/steamapps/compatdata/1286680'
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - checkIGCSInjector:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - checkOpenVRFSR:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - CheckFWS:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - loadCustomVars - Empty global config '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/customvars/global-custom-vars.conf' for user defined custom variables not loaded
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - loadCustomVars - Empty game-specific config '/home/korsilyn//.config/steamtinkerlaunch/gamecfgs/customvars/1286680.conf' for user defined custom variables not loaded
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - prepareLaunch - CheckCustomLaunch:
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - checkCustomLaunch - USECUSTOMCMD is set to '1' - trying to start custom program '/home/korsilyn/Downloads/creamapi/auto-creamapi.exe'
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - checkCustomLaunch - FORK_CUSTOMCMD is set to 0 - starting the custom program regularly
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - launchCustomProg - '/home/korsilyn/Downloads/creamapi/auto-creamapi.exe' not found - searching in gamedir
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - launchCustomProg - '/home/korsilyn/Downloads/creamapi/auto-creamapi.exe' also not in '/mnt/nvme/SteamLibrary/steamapps/common/Tiny Tina's Wonderlands//home/korsilyn/Downloads/creamapi/auto-creamapi.exe' - checking if absolute path was provided
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - launchCustomProg - '/home/korsilyn/Downloads/creamapi/auto-creamapi.exe' is absolute path
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - launchCustomProg - Changed pwd into the custom directory '/home/korsilyn/Downloads/creamapi'
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - launchCustomProg - '/home/korsilyn/Downloads/creamapi/auto-creamapi.exe' seems to be a MS Windows program - starting through proton
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - launchCustomProg - '/home/korsilyn/Downloads/creamapi/auto-creamapi.exe' seems to be a MS gui program - starting regularly
+Sun Jul 14 01:06:45 AM MSK 2024 INFO - setRunProtonFromUseProton - Setting ORUNPROTON to '/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton'
+Sun Jul 14 01:06:45 AM MSK 2024 SKIP - setRunProtonFromUseProton - RUNPROTON '/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton' hasn't changed
+Sun Jul 14 01:06:46 AM MSK 2024 INFO - extProtonRun - Continuing with RUNPROTON='/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton'
+Sun Jul 14 01:06:46 AM MSK 2024 INFO - extProtonRun - No external program args here it seems
+Sun Jul 14 01:06:46 AM MSK 2024 INFO - extProtonRun - Starting '/home/korsilyn/Downloads/creamapi/auto-creamapi.exe' regularly
+Sun Jul 14 01:06:46 AM MSK 2024 INFO - restoreOrgVars - Restoring previously cleared Variables

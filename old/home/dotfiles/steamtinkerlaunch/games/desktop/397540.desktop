@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Borderlands 3
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/397540
-Icon=/home/korsilyn/.config/steamtinkerlaunch/games/header/397540.jpg
-Terminal=false
-Type=Application
-Categories=Game;

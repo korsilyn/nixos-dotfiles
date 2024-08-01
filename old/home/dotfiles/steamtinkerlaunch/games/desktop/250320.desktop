@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=The Wolf Among Us
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/250320
-Icon=/home/korsilyn//.config/steamtinkerlaunch/games/header/250320.jpg
-Terminal=false
-Type=Application
-Categories=Game;

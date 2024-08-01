@@ -1,2 +1,0 @@
-timeout 300 'swaylock -fFe'
-timeout 450 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"'

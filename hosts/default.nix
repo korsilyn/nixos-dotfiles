@@ -6,7 +6,7 @@
 }: { flake.nixosConfigurations = let
   inherit (inputs) self nixpkgs;
 
-  modulePath = "../modules";
+  modulePath = ../modules;
   core = modulePath + /core;
   boot = modulePath + /core/boot;
   docker = modulePath + /apps/docker.nix;
@@ -37,7 +37,7 @@ in {
   # Stars in Gemini
   # Main PC (alpha gem)
   castor = nixpkgs.lib.nixosSystem {
-    inherit withSystem;
+    system = "x86_64-linux";
     modules = [
       {networking.hostName = "castor";}
       ./castor
@@ -52,7 +52,7 @@ in {
 
   # Main laptop (beta gem)
   pollux = nixpkgs.lib.nixosSystem {
-    inherit withSystem;
+    system = "x86_64-linux";
     modules = [
       {networking.hostName = "pollux";}
       ./pollux
@@ -67,7 +67,7 @@ in {
 
   # Work laptop (gamma gem)
   alhena = nixpkgs.lib.nixosSystem {
-    inherit withSystem;
+    system = "x86_64-linux";
     modules = [
       {networking.hostName = "alhena";}
       ./alhena

@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=BioShock 2 Remastered
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/409720
-Icon=/home/korsilyn/.config/steamtinkerlaunch/games/header/409720.jpg
-Terminal=false
-Type=Application
-Categories=Game;

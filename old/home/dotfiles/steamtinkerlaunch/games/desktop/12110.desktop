@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Grand Theft Auto Vice City
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/12110
-Icon=/home/korsilyn//.config/steamtinkerlaunch/games/header/12110.jpg
-Terminal=false
-Type=Application
-Categories=Game;

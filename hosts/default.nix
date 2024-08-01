@@ -5,13 +5,19 @@
   ...
 }: { flake.nixosConfigurations = let
   inherit (inputs) self nixpkgs;
-  core = ../system/core;
-  boot = ../system/core/boot;
-  docker = ../system/apps/docker.nix;
-  vmware = ../system/apps/vmware.nix;
-  wayland = ../system/wayland;
-  hmModule = inputs.home-manager.nixosModules.home-manager;
-  nixvimModule = inputs.nixvim.homeManagerModules.nixvim;
+
+  modulePath = "../modules";
+  core = modulePath + /core;
+  boot = modulePath + /core/boot;
+  docker = modulePath + /apps/docker.nix;
+  vmware = modulePath + /apps/vmware.nix;
+  wayland = modulePath + /wayland;
+
+  ## flake inputs ##
+  hw = inputs.nixos-hardware.nixosModules;
+  agenix = inputs.agenix.nixosModules.default;
+  hm = inputs.home-manager.nixosModules.home-manager;
+  nixvim = inputs.nixvim.homeManagerModules.nixvim;
 
   shared = [boot core];
 
@@ -23,21 +29,21 @@
       inherit self;
     };
     users.korsilyn = {
-      imports = [ nixvimModule ../home ];
-      _module.args.theme = import ../home/theme;
+      imports = [ nixvim ../homes ];
+      _module.args.theme = import ../homes/theme;
     };
   };
 in {
   # Stars in Gemini
   # Main PC (alpha gem)
   castor = nixpkgs.lib.nixosSystem {
-    system = "x86_64-linux";
+    inherit withSystem;
     modules = [
       {networking.hostName = "castor";}
       ./castor
       wayland
       docker
-      hmModule
+      hm
       { inherit home-manager; }
     ]
     ++ shared;
@@ -46,13 +52,13 @@ in {
 
   # Main laptop (beta gem)
   pollux = nixpkgs.lib.nixosSystem {
-    system = "x86_64-linux";
+    inherit withSystem;
     modules = [
       {networking.hostName = "pollux";}
       ./pollux
       wayland
       docker
-      hmModule
+      hm
       { inherit home-manager; }
     ]
     ++ shared;
@@ -61,29 +67,14 @@ in {
 
   # Work laptop (gamma gem)
   alhena = nixpkgs.lib.nixosSystem {
-    system = "x86_64-linux";
+    inherit withSystem;
     modules = [
       {networking.hostName = "alhena";}
       ./alhena
       wayland
       docker
       vmware
-      hmModule
-      { inherit home-manager; }
-    ]
-    ++ shared;
-    specialArgs = {inherit inputs;};
-  };
-
-  # VM (delta gem)
-  wasat = nixpkgs.lib.nixosSystem {
-    system = "x86_64-linux";
-    modules = [
-      {networking.hostName = "wasat";}
-      ./wasat
-      vmware
-      wayland
-      hmModule
+      hm
       { inherit home-manager; }
     ]
     ++ shared;

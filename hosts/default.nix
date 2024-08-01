@@ -1,9 +1,10 @@
 {
-  self,
-  nixpkgs,
+  withSystem,
+  inputs,
+  lib,
   ...
-}: let
-  inherit (self) inputs;
+}: { flake.nixosConfigurations = let
+  inherit (inputs) self nixpkgs;
   core = ../system/core;
   boot = ../system/core/boot;
   docker = ../system/apps/docker.nix;
@@ -88,4 +89,5 @@ in {
     ++ shared;
     specialArgs = {inherit inputs;};
   };
+};
 }

@@ -19,8 +19,6 @@ in {
       config = {
         allowUnfree = true;
       };
-
-      overlays = [inputs.self.overlays.default];
     };
 
     _module.args = {

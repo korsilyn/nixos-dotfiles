@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Call of Duty Black Ops III
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/311210
-Icon=/home/korsilyn//.config/steamtinkerlaunch/games/header/311210.jpg
-Terminal=false
-Type=Application
-Categories=Game;

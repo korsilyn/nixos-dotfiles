@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Grand Theft Auto San Andreas
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/12120
-Icon=/home/korsilyn//.config/steamtinkerlaunch/games/header/12120.jpg
-Terminal=false
-Type=Application
-Categories=Game;

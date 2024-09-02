@@ -52,7 +52,7 @@
           tooltip-format = "{ifname}: {ipaddr}/{cidr}";
         };
         "bluetooth" = {
-          format-connected-battery = " {status} {device_battery_percentage}";
+          format-connected-battery = " {status} {device_battery_percentage}%";
           tooltip-format-connected = "{device_alias} {device_address}";
         };
         "backlight" = {
@@ -180,6 +180,24 @@
       }
 
       #cpu {
+        margin: 0;
+        padding: 0 0.1em 0 0.1em;
+        color: #a9b665;
+      }
+
+      #backlight {
+        margin: 0;
+        padding: 0 0.1em 0 0.1em;
+        color: #a9b665;
+      }
+
+      #battery {
+        margin: 0;
+        padding: 0 0.1em 0 0.1em;
+        color: #a9b665;
+      }
+
+      #bluetooth {
         margin: 0;
         padding: 0 0.1em 0 0.1em;
         color: #a9b665;

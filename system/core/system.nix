@@ -6,12 +6,20 @@
   services = {
     dbus = {
       enable = true;
+      implementation = "broker";
       packages = with pkgs; [dconf udisks2];
     };
+    irqbalance.enable = true;
+    fstrim.enable = true;
     journald.extraConfig = ''
       SystemMaxUse=50M
       RuntimeMaxUse=10M
     '';
+    udisks2.enable = true;
+    psd = {
+      enable = true;
+      resyncTimer = "10m";
+    };
   };
 
   zramSwap.enable = lib.mkDefault false;
@@ -22,7 +30,9 @@
   };
 
   environment.systemPackages = with pkgs; [
+    git
     btrfs-progs
+    cifs-utils
     appimage-run
   ];
 
@@ -54,9 +64,15 @@
   });
 
   programs = {
+    nano.enable = false;
     nix-ld.enable = true;
     fuse.userAllowOther = true;
   };
 
-  systemd.oomd.enableRootSlice = true;
+  systemd = {
+    oomd.enableRootSlice = true;
+    tmpfiles.rules = [
+      "D /nix/var/nix/profiles/per-user/root 755 root root - -"
+    ];
+  };
 }

@@ -11,12 +11,17 @@
     systemPackages = 
       (with pkgs; [
         git
-        deadnix
-        alejandra
-        statix
-        nix-output-monitor
       ]);
     defaultPackages = [];
+  };
+
+  systemd.services.nix-daemon = {
+    environment.TMPDIR = "/var/tmp";
+  };
+
+  system.switch = {
+    enable = false;
+    enableNg = true;
   };
 
   nixpkgs.config.allowUnfree = true;
@@ -26,11 +31,6 @@
     doc.enable = false;
     man.enable = true;
     dev.enable = false;
-  };
-
-  programs.nh = {
-    enable = true;
-    flake = "/home/korsilyn/repos/nixos-dotfiles";
   };
 
   nix = {
@@ -52,7 +52,6 @@
 
     # Free up to 10GiB wherever there is less than 2GiB left
     extraOptions = ''
-      experimental-features = nix-command flakes recursive-nix
       keep-outputs = true
       warn-dirty = false
       keep-derivations = true

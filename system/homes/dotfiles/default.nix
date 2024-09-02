@@ -23,7 +23,7 @@
   xdg.configFile."sway".source = ./sway;
   xdg.configFile."swayidle".source = ./swayidle;
   xdg.configFile."swaylock".source = ./swaylock;
-  xdg.configFile."waybar".source = ./waybar;
+  # xdg.configFile."waybar".source = ./waybar;
   xdg.configFile."wireplumber".source = ./wireplumber;
 
   # files in ~/

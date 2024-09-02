@@ -11,13 +11,16 @@ in {
       cleanOnBoot = true;
       useTmpfs = true;
     };
+    initrd = {
+      verbose = false;
+      systemd.enable = true;
+    };
     kernelPackages = mkDefault pkgs.linuxPackages_latest;
     extraModulePackages = with config.boot.kernelPackages; [
       xpadneo
       zenpower
     ];
 
-    bootspec.enable = mkDefault true;
     loader = {
       systemd-boot = {
         enable = mkDefault true;

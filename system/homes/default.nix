@@ -1,13 +1,15 @@
-{ config, pkgs, ...}: {
-  home.username = "korsilyn";
-  home.homeDirectory = "/home/korsilyn";
-  programs.home-manager.enable = true;
+{ inputs, pkgs, ...}: {
+  config.home.username = "korsilyn";
+  config.home.homeDirectory = "/home/korsilyn";
+  config.programs.home-manager.enable = true;
   imports = [
+    inputs.nixvim.homeManagerModules.nixvim
+    inputs.schizofox.homeManagerModule
     ./apps
     ./dotfiles
   ];
 
-  xdg = {
+  config.xdg = {
     enable = true;
     mime.enable = true;
     mimeApps.enable = true;
@@ -36,7 +38,7 @@
     };
   };
 
-  home.pointerCursor = {
+  config.home.pointerCursor = {
     name = "catppuccin-mocha-mauve-cursors";
     package = pkgs.catppuccin-cursors.mochaMauve;
     size = 24;
@@ -44,5 +46,5 @@
     gtk.enable = true;
   };
 
-  home.stateVersion = "24.05";
+  config.home.stateVersion = "24.05";
 }

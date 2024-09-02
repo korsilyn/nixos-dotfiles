@@ -8,8 +8,7 @@
   gaming = ../system/core/gaming; # Steam, lutris, mangohud, etc.
   # Home manager
   hm = inputs.home-manager.nixosModules.home-manager;
-  nixvim = inputs.nixvim.homeManagerModules.nixvim;
-  home_manager = {
+  home-manager = {
     useUserPackages = true;
     useGlobalPkgs = true;
     extraSpecialArgs = {
@@ -17,7 +16,7 @@
       inherit self;
     };
     users.korsilyn = {
-      imports = [ nixvim ../system/homes ];
+      imports = [ ../system/homes ];
     };
   };
   # DE
@@ -39,7 +38,7 @@ in {
       gaming
       sway
       amd_gpu
-      { inherit home_manager; }
+      { inherit home-manager; }
     ]
     ++ shared;
     specialArgs = {inherit inputs;};
@@ -54,7 +53,7 @@ in {
       gaming
       sway
       amd_gpu
-      { inherit home_manager; }
+      { inherit home-manager; }
     ]
     ++ shared;
     specialArgs = {inherit inputs;};
@@ -68,7 +67,7 @@ in {
       ./alhena
       sway
       intel_igpu
-      { inherit home_manager; }
+      { inherit home-manager; }
     ]
     ++ shared;
     specialArgs = {inherit inputs;};

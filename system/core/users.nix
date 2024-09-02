@@ -5,6 +5,7 @@
 }: {
   #imports = [
     #inputs.homix.nixosModules.default
+    #inputs.nixvim.homeManagerModules.nixvim
   #];
 
   programs.zsh.enable = true;

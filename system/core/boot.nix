@@ -6,9 +6,6 @@
 }: let
   inherit (lib) mkDefault;
 in {
-  environment.systemPackages = with pkgs; [
-    sbctl # Secure Boot debugging
-  ];
   boot = {
     tmp = {
       cleanOnBoot = true;
@@ -22,7 +19,12 @@ in {
 
     bootspec.enable = mkDefault true;
     loader = {
-      systemd-boot.enable = mkDefault true;
+      systemd-boot = {
+        enable = mkDefault true;
+        memtest86.enable = true;
+        configurationLimit = 10;
+        editor = false;
+      };
       timeout = 0;
       efi.canTouchEfiVariables = true;
     };

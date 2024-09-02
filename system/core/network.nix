@@ -14,11 +14,6 @@
         powersave = true;
       };
     };
-    firewall = {
-      enable = true;
-      allowPing = false;
-      logReversePathDrops = true;
-    };
   };
 
   systemd.services.NetworkManager-wait-online.enable = false;

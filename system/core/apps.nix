@@ -9,6 +9,7 @@
 
     zip
     unzip
+    p7zip
 
     bat
     eza

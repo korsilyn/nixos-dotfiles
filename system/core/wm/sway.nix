@@ -1,16 +1,4 @@
-{
-  pkgs,
-  inputs,
-  ...
-}: {
-  imports = [
-    ./wm.nix
-    ./fonts.nix
-    ./services.nix
-    ./pipewire.nix
-    ./bluetooth.nix
-    ./apps.nix
-  ];
+{ pkgs, ... }: {
   environment = {
     variables = {
       NIXOS_OZONE_WL = "1";
@@ -32,14 +20,18 @@
       tela-circle-icon-theme
     ];
   };
-
-  hardware = {
-    graphics.enable = true;
-    pulseaudio.support32Bit = true;
+  programs.sway = {
+    enable = true;
+    extraPackages = with pkgs; [
+      swaylock
+      swayidle
+      swaybg
+      autotiling
+      fuzzel
+      kitty
+      waybar
+      mako
+    ];
   };
-
-  #sound = {
-  #  enable = true;
-  #  mediaKeys.enable = true;
-  #};
+  #programs.waybar.enable = true;
 }

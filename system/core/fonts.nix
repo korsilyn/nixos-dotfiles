@@ -1,11 +1,12 @@
 {pkgs, ...}: {
   fonts = {
     packages = with pkgs; [
-      iosevka-bin
-      lexend
+      iosevka
+      ibm-plex
       noto-fonts
-      noto-fonts-cjk
-      noto-fonts-emoji
+      noto-fonts-cjk-sans
+      noto-fonts-cjk-serif
+      noto-fonts-color-emoji
       (nerdfonts.override {fonts = ["Iosevka"];})
     ];
 
@@ -19,8 +20,8 @@
           "Iosevka Nerd Font"
           "Noto Color Emoji"
         ];
-        sansSerif = ["Lexend" "Noto Color Emoji"];
-        serif = ["Noto Serif" "Noto Color Emoji"];
+        sansSerif = ["IBM Plex Sans" "Noto Color Emoji"];
+        serif = ["IBM Plex Serif" "Noto Color Emoji"];
         emoji = ["Noto Color Emoji"];
       };
     };

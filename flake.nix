@@ -1,35 +1,24 @@
 {
+  # Inspired by:
+  # https://github.com/sioodmy/dotfiles
+  # https://github.com/NotAShelf/nyx
   description = "NixOS configuration by korsilyn";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs-small.url = "github:NixOS/nixpkgs/nixos-unstable-small"; # moves faster, has less packages 
-    nixos-hardware.url = "github:nixos/nixos-hardware";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable"; # Main repo
+    nixos-hardware.url = "github:nixos/nixos-hardware"; # Hardware gimmicks
+    nix-colors.url = "github:Misterio77/nix-colors"; # Theming
 
+    # Core of flake
     flake-parts = {
       url = "github:hercules-ci/flake-parts";
       inputs.nixpkgs-lib.follows = "nixpkgs";
     };
 
+    # Manage dotfiles
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    nix-index-db = {
-      url = "github:nix-community/nix-index-database";
-      inputs.nixpkgs.follows = "nixpkgs-small";
-    };
-
-    # Secrets management
-    agenix = {
-      url = "github:ryantm/agenix";
-      inputs = {
-        nixpkgs.follows = "nixpkgs-small";
-        home-manager.follows = "home-manager";
-        darwin.follows = "";
-        systems.follows = "systems";
-      };
     };
 
     # Neovim via Nix
@@ -37,32 +26,34 @@
       url = "github:nix-community/nixvim";
       inputs = {
         nixpkgs.follows = "nixpkgs";
+        home-manager.follows = "home-manager";
+        treefmt-nix.follows = "treefmt-nix";
         devshell.follows = "devshell";
         nix-darwin.follows = "";
-        treefmt-nix.follows = "treefmt-nix";
       };
+    };
+
+    # Tree formatter
+    treefmt-nix = {
+      url = "github:numtide/treefmt-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     # Schizophrenic Firefox configuration
     schizofox = {
       url = "github:schizofox/schizofox";
       inputs = {
-        nixpkgs.follows = "nixpkgs-small";
+        nixpkgs.follows = "nixpkgs";
         flake-parts.follows = "flake-parts";
-        flake-compat.follows = "flake-compat";
         home-manager.follows = "home-manager";
-        nixpak.follows = "nixpak";
         systems.follows = "systems";
+        flake-compat.follows = "flake-compat";
+        nixpak.follows = "nixpak";
       };
     };
 
     # Some inputs just to follow them
     systems.url = "github:nix-systems/default-linux";
-
-    flake-utils = {
-      url = "github:numtide/flake-utils";
-      inputs.systems.follows = "systems";
-    };
 
     flake-compat = {
       url = "github:edolstra/flake-compat";
@@ -72,28 +63,27 @@
     nixpak = {
       url = "github:nixpak/nixpak";
       inputs = {
-        nixpkgs.follows = "nixpkgs-small";
+        nixpkgs.follows = "nixpkgs";
         flake-parts.follows = "flake-parts";
       };
     };
 
-    treefmt-nix = {
-      url = "github:numtide/treefmt-nix";
-      inputs.nixpkgs.follows = "nixpkgs-small";
-    };
-
     devshell = {
       url = "github:numtide/devshell";
-      inputs.nixpkgs.follows = "nixpkgs-small";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = inputs:
-    inputs.flake-parts.lib.mkFlake {inherit inputs;} {
+  outputs = {flake-parts, ...} @ inputs:
+    flake-parts.lib.mkFlake {inherit inputs;} ({...}: {
       systems = [ "x86_64-linux" ];
+
       imports = [
-        ./parts
-        ./hosts
+        inputs.treefmt-nix.flakeModule
       ];
-    };
+
+      flake = {
+        nixosConfigurations = import ./hosts inputs;
+      };
+    });
 }

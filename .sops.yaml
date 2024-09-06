@@ -1,0 +1,19 @@
+keys:
+  # Users
+  - &users:
+    - &korsilyn GPGKey
+  # Hosts
+  - &hosts:
+    - &alhena AGEKey (from ssh)
+    #- &castor
+    #- &pollux
+
+creation_rules:
+  - path_regex: hosts/common/secrets.ya?ml$
+    key_groups:
+    - age:
+      - *alhena
+      - *castor
+      - *pollux
+      pgp:
+      - *korsilyn

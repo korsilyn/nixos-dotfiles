@@ -1,49 +1,51 @@
-{...}: {
+{pkgs, inputs, ...}: {
   imports = [
+    inputs.hardware.nixosModules.common-cpu-intel
+    inputs.hardware.nixosModules.common-gpu-intel
+    inputs.hardware.nixosModules.common-pc-ssd
+    inputs.hardware.nixosModules.commom-pc-laptop
+
     ./hardware-configuration.nix
+
+    ../common/global
+    ../common/users/korsilyn
+
+    ../common/optional/docker.nix
+    ../common/optional/peripherals.nix
+    ../common/optional/pipewire.nix
+    ../common/optional/quietboot.nix
+    ../common/optional/tlp.nix
+    ../common/optional/vmware.nix
+    ../common/optional/wireless.nix
   ];
 
-  services = {
-    upower = {
-      enable = true;
-      percentageLow = 15;
-      percentageCritical = 5;
-      percentageAction = 3;
-      criticalPowerAction = "PowerOff";
-    };
-    tlp = {
-      enable = true;
-      settings = {
-        CPU_BOOST_ON_AC = 1;
-        CPU_BOOST_ON_BAT = 0;
-        CPU_SCALING_GOVERNOR_ON_AC = "performance";
-        CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
-      };
-    };
-    thermald.enable = true;
+  networking = {
+    hostName = "alhena";
+    useDHCP = true;
   };
 
-  # https://github.com/NixOS/nixpkgs/issues/211345#issuecomment-1397825573
-  systemd.tmpfiles.rules =
-    map
-    (
-      e: "w /sys/bus/${e}/power/control - - - - auto"
-    ) [
-      "pci/devices/0000:00:01.0" # Renoir PCIe Dummy Host Bridge
-      "pci/devices/0000:00:02.0" # Renoir PCIe Dummy Host Bridge
-      "pci/devices/0000:00:14.0" # FCH SMBus Controller
-      "pci/devices/0000:00:14.3" # FCH LPC bridge
-      "pci/devices/0000:04:00.0" # FCH SATA Controller [AHCI mode]
-      "pci/devices/0000:04:00.1/ata1" # FCH SATA Controller, port 1
-      "pci/devices/0000:04:00.1/ata2" # FCH SATA Controller, port 2
-      "usb/devices/1-3" # USB camera
+  boot = {
+    kernelPackages = pkgs.linuxKernel.packages.linux_latest;
+    binfmt.emulatedSystems = [
+      "aarch64-linux"
+      "i686-linux"
     ];
+  };
 
-  boot.kernelParams = [
-    "i915.enable_fbc=1"
-    "i915.enable_psr=2"
-    "ahci.mobile_lpm_policy=3"
-  ];
+  powerManagement.powertop.enable = true;
+  programs = {
+    light.enable = true;
+    adb.enable = true;
+    dconf.enable = true;
+  };
+
+  # Lid settings
+  services.logind = {
+    lidSwitch = "suspend";
+    lidSwitchExternalPower = "lock";
+  };
+
+  hardware.graphics.enable = true;
 
   system.stateVersion = "24.05";
 }

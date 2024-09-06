@@ -2,18 +2,16 @@
   # Inspired by:
   # https://github.com/sioodmy/dotfiles
   # https://github.com/NotAShelf/nyx
+  # https://github.com/Misterio77/nix-config
   description = "NixOS configuration by korsilyn";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable"; # Main repo
-    nixos-hardware.url = "github:nixos/nixos-hardware"; # Hardware gimmicks
-    nix-colors.url = "github:Misterio77/nix-colors"; # Theming
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.05"; # Backup stable repo
+    systems.url = "github:nix-systems/default-linux";
+    hardware.url = "github:nixos/nixos-hardware"; # Hardware gimmicks
 
-    # Core of flake
-    flake-parts = {
-      url = "github:hercules-ci/flake-parts";
-      inputs.nixpkgs-lib.follows = "nixpkgs";
-    };
+    nix-colors.url = "github:Misterio77/nix-colors"; # Theming
 
     # Manage dotfiles
     home-manager = {
@@ -21,69 +19,95 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Neovim via Nix
-    nixvim = {
-      url = "github:nix-community/nixvim";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        home-manager.follows = "home-manager";
-        treefmt-nix.follows = "treefmt-nix";
-        devshell.follows = "devshell";
-        nix-darwin.follows = "";
-      };
-    };
-
-    # Tree formatter
-    treefmt-nix = {
-      url = "github:numtide/treefmt-nix";
+    # Manage secrets
+    sops-nix = {
+      url = "github:mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs-stable.follows = "nixpkgs";
     };
 
-    # Schizophrenic Firefox configuration
-    schizofox = {
-      url = "github:schizofox/schizofox";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        flake-parts.follows = "flake-parts";
-        home-manager.follows = "home-manager";
-        systems.follows = "systems";
-        flake-compat.follows = "flake-compat";
-        nixpak.follows = "nixpak";
-      };
-    };
-
-    # Some inputs just to follow them
-    systems.url = "github:nix-systems/default-linux";
-
-    flake-compat = {
-      url = "github:edolstra/flake-compat";
-      flake = false;
-    };
-
-    nixpak = {
-      url = "github:nixpak/nixpak";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        flake-parts.follows = "flake-parts";
-      };
-    };
-
-    devshell = {
-      url = "github:numtide/devshell";
+    # Declaratively install FF addons
+    firefox-addons = {
+      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = {flake-parts, ...} @ inputs:
-    flake-parts.lib.mkFlake {inherit inputs;} ({...}: {
-      systems = [ "x86_64-linux" ];
+  outputs = {self, nixpkgs, home-manager, systems, ...} @ inputs:
+  let
+    inherit (self) outputs;
+    lib = nixpkgs.lib // home-manager.lib;
+    forEachSystem = f: lib.genAttrs (import systems) (system: f pkgsFor.${system});
+    pkgsFor = lib.genAttrs (import systems) (
+      system:
+        import nixpkgs {
+          inherit system;
+          config.allowUnfree = true;
+        }
+    );
+  in {
+    inherit lib;
+    nixosModules = import ./modules/nixos;
+    hmModules = import ./modules/home-manager;
 
-      imports = [
-        inputs.treefmt-nix.flakeModule
-      ];
+    devShells = forEachSystem (pkgs: import ./shell.nix {inherit pkgs;});
+    formatter = forEachSystem (pkgs: pkgs.alejandra);
 
-      flake = {
-        nixosConfigurations = import ./hosts inputs;
+    # Gemini stars
+    nixosConfigurations = {
+      # Main desktop (alpha gem), Ryzen 5600G + RX6700XT
+      castor = lib.nixosSystem {
+        modules = [./hosts/castor];
+        specialArgs = {
+          inherit inputs outputs;
+        };
       };
-    });
+
+      # Home laptop (beta gem), Ryzen 5500U
+      pollux = lib.nixosSystem {
+        modules = [./hosts/pollux];
+        specialArgs = {
+          inherit inputs outputs;
+        };
+      };
+
+      # Work laptop (gamma gem), Intel i5-1155G7
+      alhena = lib.nixosSystem {
+        modules = [./hosts/alhena];
+        specialArgs = {
+          inherit inputs outputs;
+        };
+      };
+    };
+
+    # Standalone HM
+    homeConfiguration = {
+      # Main desktop (alpha gem), Ryzen 5600G + RX6700XT
+      "korsilyn@castor" = lib.homeManagerConfiguration {
+        modules = [./homes/korsilyn/castor.nix ./homes/korsilyn/nixpkgs.nix];
+        pkgs = pkgsFor.x86_64-linux;
+        extraSpecialArgs = {
+          inherit inputs outputs;
+        };
+      };
+
+      # Home laptop (beta gem), Ryzen 5500U
+      "korsilyn@pollux" = lib.homeManagerConfiguration {
+        modules = [./homes/korsilyn/pollux.nix ./homes/korsilyn/nixpkgs.nix];
+        pkgs = pkgsFor.x86_64-linux;
+        extraSpecialArgs = {
+          inherit inputs outputs;
+        };
+      };
+
+      # Work laptop (gamma gem), Intel i5-1155G7
+      "korsilyn@alhena" = lib.homeManagerConfiguration {
+        modules = [./homes/korsilyn/alhena.nix ./homes/korsilyn/nixpkgs.nix];
+        pkgs = pkgsFor.x86_64-linux;
+        extraSpecialArgs = {
+          inherit inputs outputs;
+        };
+      };
+    };
+  };
 }

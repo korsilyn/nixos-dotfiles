@@ -74,4 +74,6 @@
       "D /nix/var/nix/profiles/per-user/root 755 root root - -"
     ];
   };
+
+  hardware.enableRedistributableFirmware = true;
 }

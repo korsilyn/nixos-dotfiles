@@ -6,7 +6,8 @@
   inherit (self) inputs;
   common = ../modules/common;
   hw = inputs.hardware.nixosModules;
-  shared = [common];
+  homix = inputs.homix.nixosModules.default;
+  shared = [common homix];
 in {
   # Gemini stars
   # Main desktop (alpha gem), Ryzen 5600G + RX6700XT

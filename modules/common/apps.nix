@@ -1,5 +1,8 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
+    neovim
+    direnv
+
     firefox
 
     _64gram

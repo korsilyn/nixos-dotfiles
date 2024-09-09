@@ -6,6 +6,11 @@
 }: let
   ifTheyExist = groups: builtins.filter (group: builtins.hasAttr group config.users.groups) groups;
 in {
+  import = [
+    inputs.homix.nixosModules.default
+    ../config
+  ];
+
   programs.zsh.enable = true;
 
   users = {
@@ -14,6 +19,7 @@ in {
       isNormalUser = true;
       hashedPassword = "$y$j9T$LC2eDV3/EXl9JJDcV04pH0$jbMXgkSGgDTJcQ4WDCmZ5Y6r45/bban2pUdhw0RMPc1";
       shell = pkgs.zsh;
+      homix = true;
       extraGroups = ifTheyExist [
         "audio"
         "docker"

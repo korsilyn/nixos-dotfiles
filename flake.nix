@@ -8,11 +8,10 @@
 
     hardware.url = "github:nixos/nixos-hardware"; # Hardware gimmicks
     impermanence.url = "github:nix-community/impermanence";
-    nix-colors.url = "github:Misterio77/nix-colors"; # Theming
 
     # Manage dotfiles
-    wrapper-manager = {
-      url = "github:viperML/wrapper-manager";
+    homix = {
+      url = "github:sioodmy/homix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

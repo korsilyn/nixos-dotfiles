@@ -1,6 +1,0 @@
-RUNPROTON="/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton"
-RUNWINE="/usr/share/steam/compatibilitytools.d/proton-ge-custom/files/bin/wine"
-PROTONVERSION="Proton-GE"
-PREVAID="1286680"
-PREVGAME="Tiny Tina's Wonderlands"
-PREVABSGAMEEXEPATH="/mnt/nvme/SteamLibrary/steamapps/common/Tiny Tina's Wonderlands/OakGame/Binaries/Win64/Wonderlands.exe"

@@ -34,7 +34,7 @@
     in {
       default = pkgs.${system}.mkShellNoCC {
         packages = with pkgs.${system}; [
-          (p2nix.mkPoetryEnv { projectDir = self; })
+          (p2nix.mkPoetryEnv {projectDir = self;})
           poetry
         ];
       };

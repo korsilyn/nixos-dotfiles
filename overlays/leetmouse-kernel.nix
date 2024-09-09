@@ -1,5 +1,10 @@
-{ stdenv, lib, fetchFromGitHub, kernel, kmod }:
-
+{
+  stdenv,
+  lib,
+  fetchFromGitHub,
+  kernel,
+  kmod,
+}:
 stdenv.mkDerivation rec {
   name = "leetmouse-${version}-${kernel.version}";
   version = "0.10.1";
@@ -12,7 +17,7 @@ stdenv.mkDerivation rec {
   };
 
   sourceRoot = "source/driver";
-  hardeningDisable = [ "pic" "format" ];
+  hardeningDisable = ["pic" "format"];
   nativeBuildInputs = kernel.moduleBuildDependencies;
 
   makeFlags = [
@@ -25,7 +30,7 @@ stdenv.mkDerivation rec {
     description = "A fork of fork of fork of kernel mouse driver with acceleration";
     homepage = "https://github.com/korsilyn/leetmouse";
     license = licenses.gpl2;
-    maintainers = [ maintainers.makefu ];
+    maintainers = [maintainers.makefu];
     platforms = platforms.linux;
   };
 }

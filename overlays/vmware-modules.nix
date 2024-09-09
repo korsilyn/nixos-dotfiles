@@ -1,4 +1,9 @@
-{ config, pkgs, lib, ...}: {
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}: {
   nixpkgs.overlays = [
     (self: super: {
       linuxPackages_latest = super.linuxPackages_latest.extend (lpself: lpsuper: {

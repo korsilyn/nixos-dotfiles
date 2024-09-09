@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=PAYDAY 3 Playtest
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/2478210
-Icon=/home/korsilyn/.config/steamtinkerlaunch/games/header/2478210.jpg
-Terminal=false
-Type=Application
-Categories=Game;

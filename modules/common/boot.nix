@@ -1,11 +1,11 @@
-{pkgs}: {
+{pkgs, config, lib, ...}: {
   boot = {
     tmp.useTmpfs = true;
     initrd = {
       verbose = false;
       systemd.enable = true;
     };
-    kernelPackages = mkDefault pkgs.linuxPackages_latest;
+    kernelPackages = lib.mkDefault pkgs.linuxPackages_latest;
     extraModulePackages = with config.boot.kernelPackages; [
       xpadneo
       zenpower

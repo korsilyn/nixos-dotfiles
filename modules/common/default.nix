@@ -1,4 +1,4 @@
-{
+_: {
   imports = [
     ./locale.nix
     ./graphics.nix
@@ -11,7 +11,6 @@
     ./bluetooth.nix
     ./network.nix
     ./nix.nix
-    ./users.nix
     ./git.nix
     ./leetmouse.nix
     ./apps.nix

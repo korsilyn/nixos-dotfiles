@@ -54,7 +54,7 @@
   in {
     font = "${pkgs.terminus_font}/share/consolefonts/ter-${variant}.psf.gz";
     earlySetup = true;
-    keyMap = "us";
+    keyMap = lib.mkDefault "us";
   };
 
   boot.binfmt.registrations = lib.genAttrs ["appimage" "AppImage"] (ext: {

@@ -1,20 +1,19 @@
 {
   pkgs,
   config,
+  lib,
   ...
 }: {
   console = {
     useXkbConfig = true;
-    earlySetup = false;
+    earlySetup = lib.mkDefault false;
   };
 
   boot = {
     plymouth = {
       enable = true;
-      theme = "spinner-monochrome";
-      themePackages = [
-        (pkgs.plymouth-spinner-monochrome.override {inherit (config.boot.plymouth) logo;})
-      ];
+      theme = "catppuccin-mocha";
+      themePackages = [ (pkgs.catppuccin-plymouth.override {variant = "mocha";}) ];
     };
     loader.timeout = 0;
     kernelParams = [

@@ -1,4 +1,4 @@
 {
   imports = [../../overlays/vmware-modules.nix];
-  virtualization.vmware.host.enable = true;
+  virtualisation.vmware.host.enable = true;
 }

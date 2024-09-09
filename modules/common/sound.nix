@@ -1,4 +1,8 @@
-{ lib, pkgs, ... }: {
+{
+  lib,
+  pkgs,
+  ...
+}: {
   hardware = {
     pulseaudio.enable = false;
     pulseaudio.support32Bit = true;
@@ -13,5 +17,5 @@
     pulse.enable = true;
     jack.enable = true;
   };
-  environment.systemPackages = with pkgs; [ helvum ];
+  environment.systemPackages = with pkgs; [helvum];
 }

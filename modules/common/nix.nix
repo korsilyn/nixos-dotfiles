@@ -9,10 +9,9 @@ in {
   environment = {
     sessionVariables.FLAKE = "/home/korsilyn/repos/nixos-dotfiles";
     etc."nix/flake-channels/nixpkgs".source = inputs.nixpkgs;
-    systemPackages =
-      (with pkgs; [
-        git
-      ]);
+    systemPackages = with pkgs; [
+      git
+    ];
     defaultPackages = [];
   };
 

@@ -10,11 +10,9 @@
     ../../modules/common/
 
     ../../modules/optional/docker.nix
-    ../../modules/optional/peripherals.nix
     ../../modules/optional/quietboot.nix
     ../../modules/optional/tlp.nix
     ../../modules/optional/vmware.nix
-    ../../modules/optional/wireless.nix
   ];
 
   networking.useDHCP = true;

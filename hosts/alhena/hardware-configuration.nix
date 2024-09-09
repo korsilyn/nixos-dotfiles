@@ -1,4 +1,4 @@
-{ pkgs }: {
+{pkgs}: {
   hardware.graphics = {
     extraPackages = with pkgs; [
       vpl-gpu-rt
@@ -12,7 +12,7 @@
       libvdpau-va-gl
     ];
   };
-  environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; }; # Force intel-media-driver
+  environment.sessionVariables = {LIBVA_DRIVER_NAME = "iHD";}; # Force intel-media-driver
 
   boot = {
     initrd = {

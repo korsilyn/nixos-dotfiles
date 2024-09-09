@@ -1,4 +1,9 @@
-{pkgs, config, lib, ...}: {
+{
+  pkgs,
+  config,
+  lib,
+  ...
+}: {
   boot = {
     tmp.useTmpfs = true;
     initrd = {

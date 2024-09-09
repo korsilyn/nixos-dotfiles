@@ -1,13 +1,11 @@
 {
-  # Inspired by:
-  # https://github.com/sioodmy/dotfiles/
   description = "NixOS configuration by korsilyn";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable"; # Main repo
 
     hardware.url = "github:nixos/nixos-hardware"; # Hardware gimmicks
-    impermanence.url = "github:nix-community/impermanence";
+    impermanence.url = "github:nix-community/impermanence"; # Sometimes XD
 
     # Manage dotfiles
     homix = {
@@ -20,7 +18,7 @@
       inputs.nixpkgs-lib.follows = "nixpkgs";
     };
 
-    # a tree-wide formatter
+    # a tree-wide formatter (nix fmt)
     treefmt-nix = {
       url = "github:numtide/treefmt-nix";
       inputs.nixpkgs.follows = "nixpkgs";

@@ -2,7 +2,7 @@
   # files in ~/.config/
   homix.".config/bat".source = ./bat;
   homix.".config/btop".source = ./btop;
-  homix.".config/fastfetch".source  = ./fastfetch;
+  homix.".config/fastfetch".source = ./fastfetch;
   homix.".config/fuzzel".source = ./fuzzel;
   #homix.".config/htop".source = ./htop;
   #xdg.configFile."hypr".source = ./hypr;

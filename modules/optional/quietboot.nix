@@ -13,7 +13,7 @@
     plymouth = {
       enable = true;
       theme = "catppuccin-mocha";
-      themePackages = [ (pkgs.catppuccin-plymouth.override {variant = "mocha";}) ];
+      themePackages = [(pkgs.catppuccin-plymouth.override {variant = "mocha";})];
     };
     loader.timeout = 0;
     kernelParams = [

@@ -1,0 +1,130 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+#########################################################################
+# ZINIT
+#########################################################################
+### Added by Zinit's installer
+if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
+  print -P "%F{33}▓▒░ %F{220}Installing DHARMA Initiative Plugin Manager (zdharma-continuum/zinit)…%f"
+  command mkdir -p $HOME/.zinit
+  command git clone https://github.com/zdharma-continuum/zinit $HOME/.zinit/bin && \
+  print -P "%F{33}▓▒░ %F{34}Installation successful.%F" || \
+  print -P "%F{160}▓▒░ The clone has failed.%F"
+fi
+source "$HOME/.zinit/bin/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+### End of Zinit installer's chunk
+#########################################################################
+# THEME
+#########################################################################
+zinit ice depth=1; zinit light romkatv/powerlevel10k
+#########################################################################
+# PLUGINS
+#########################################################################
+# AUTOSUGGESTIONS, TRIGGER PRECMD HOOK UPON LOAD
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+zinit ice wait="0a" lucid atload="_zsh_autosuggest_start"
+zinit light zsh-users/zsh-autosuggestions
+# TAB COMPLETIONS
+zinit ice wait="0b" lucid blockf
+zinit light zsh-users/zsh-completions
+zstyle ':completion:*' completer _expand _complete _ignored _approximate
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+zstyle ':completion:*' menu select=2
+zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
+zstyle ':completion:*:descriptions' format '-- %d --'
+zstyle ':completion:*:processes' command 'ps -au$USER'
+zstyle ':completion:complete:*:options' sort false
+zstyle ':fzf-tab:complete:_zlua:*' query-string input
+zstyle ':completion:*:*:*:*:processes' command "ps -u $USER -o pid,user,comm,cmd -w -w"
+zstyle ':fzf-tab:complete:kill:argument-rest' extra-opts --preview=$extract'ps --pid=$in[(w)1] -o cmd --no-headers -w -w' --preview-window=down:3:wrap
+zstyle ":completion:*:git-checkout:*" sort false
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# SYNTAX HIGHLIGHTING
+zinit ice wait="0c" lucid atinit="zpcompinit;zpcdreplay"
+zinit light zdharma-continuum/fast-syntax-highlighting
+#########################################################################
+# HISTORY
+#########################################################################
+[ -z "$HISTFILE" ] && HISTFILE="$HOME/.zhistory"
+HISTSIZE=1200
+SAVEHIST=1000
+#########################################################################
+# SETOPT
+#########################################################################
+# CD
+setopt AUTO_CD                # cd in dir if it isnt a command
+# COMPLETION
+setopt ALWAYS_TO_END          # move cursor to end after completion
+# HISTORY
+# setopt EXTENDED_HISTORY       # timestamp of commands
+setopt HIST_EXPIRE_DUPS_FIRST # delete dups from history first
+setopt HIST_FCNTL_LOCK        # newer file lock
+setopt HIST_FIND_NO_DUPS      # do not display dups
+setopt HIST_IGNORE_DUPS       # do not add same command one after another
+setopt HIST_IGNORE_SPACE      # default behaviour in some shells
+setopt HIST_REDUCE_BLANKS     # remove superfluous blanks
+setopt HIST_SAVE_NO_DUPS      # do not save dups
+# setopt INC_APPEND_HISTORY     # save to history file every time, not only on exit
+setopt SHARE_HISTORY          # share history between terminals
+# IO
+setopt RM_STAR_SILENT         # do not query user before deleting with rm *
+# REMOVE BEEPS FOR GOD SAKE
+unsetopt LIST_BEEP
+unsetopt HIST_BEEP
+unsetopt BEEP
+#########################################################################
+# COLORING
+#########################################################################
+autoload colors && colors
+#########################################################################
+# PATH
+#########################################################################
+export PATH=$PATH:/usr/local/go/bin:~/.local/bin:~/bin
+#########################################################################
+# ALIASES
+#########################################################################
+alias upgrade="cd ~/repos/nixos-dotfiles && nix flake update && sudo nixos-rebuild switch --flake ."
+alias clearswap="sudo swapoff -a && sudo swapon -a"
+alias cp="cp -irv"
+alias mv="mv -iv"
+alias rm="rm -r"
+alias cat="bat"
+alias du="dust -C"
+alias df="duf"
+alias find="fd"
+alias grep="rg"
+alias sed="sd"
+alias htop="glances"
+alias curl="curlie"
+alias ls="eza --color=always --icons=always"
+alias la="eza --color=always --icons=always -la"
+alias lt="eza --color=always --icons=always -lT"
+alias gia="git add"
+alias giaa="git add -A"
+alias gic="git commit -m"
+alias gips="git push"
+alias gipl="git pull"
+alias gisw="git switch"
+alias gibr="git branch"
+alias gist="git status"
+alias gid="git diff"
+alias giR="git reset --hard"
+alias .1="cd ../"
+alias .2="cd ../../"
+alias .3="cd ../../../"
+alias .4="cd ../../../../"
+alias .5="cd ../../../../../"
+alias .6="cd ../../../../../../"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# direnv
+eval "$(direnv hook zsh)"

@@ -1,0 +1,13 @@
+{
+    "custom": "{\"rules\": []}",
+    "def_outbound": "proxy",
+    "direct_dns": "tls://dns.adguard-dns.com",
+    "direct_ip": "geoip:ru\ngeoip:private",
+    "dns_final_out": "proxy",
+    "dns_routing": true,
+    "domain_strategy": "AsIs",
+    "outbound_domain_strategy": "AsIs",
+    "remote_dns": "tls://dns.adguard-dns.com",
+    "sniffing_mode": 1,
+    "use_dns_object": false
+}

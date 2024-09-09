@@ -1,0 +1,45 @@
+Wed May 15 02:13:45 PM MSK 2024 INFO - initAID - Set AID from STEAM_COMPAT_APP_ID to '12100'
+Wed May 15 02:13:45 PM MSK 2024 INFO - initAID - Set OSCDP to STEAM_COMPAT_DATA_PATH '/mnt/nvme/SteamLibrary/steamapps/compatdata/12100'
+Wed May 15 02:13:45 PM MSK 2024 INFO - loadLangFile - Language from command line is 'english'
+Wed May 15 02:13:45 PM MSK 2024 INFO - loadLangFile - SYSTEMSTLCFGDIR is '/usr/share/steamtinkerlaunch'
+Wed May 15 02:13:45 PM MSK 2024 INFO - loadLangFile - Command line language 'english' is no file - trying to find its absolute path
+Wed May 15 02:13:45 PM MSK 2024 INFO - loadLangFile - Loading found system wide /usr/share/steamtinkerlaunch/lang//english.txt
+Wed May 15 02:13:45 PM MSK 2024 INFO - getCurrentCommandline - Running checkFirstTimeRun with arguments 'run /home/korsilyn/.local/share/Steam/legacycompat/iscriptevaluator.exe legacycompat\evaluatorscript_12100.vdf'
+Wed May 15 02:13:45 PM MSK 2024 INFO - saveOrgVars - Storing some original variables to restore them later
+Wed May 15 02:13:45 PM MSK 2024 INFO - emptyVars - Emptied some original variables as they slowdown several system calls when started from steam
+Wed May 15 02:13:45 PM MSK 2024 INFO - emptyVars - Set $PATH to '/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:'
+Wed May 15 02:13:45 PM MSK 2024 START - ######### Initializing Game Launch 12100 using SteamTinkerLaunch v12.12 #########
+Wed May 15 02:13:45 PM MSK 2024 INFO - main - Starting with a clean log
+Wed May 15 02:13:45 PM MSK 2024 INFO - main - Start creating default configs
+Wed May 15 02:13:45 PM MSK 2024 INFO - createDefaultCfgs - START
+Wed May 15 02:13:45 PM MSK 2024 INFO - loadLanguage - First load the default language 'english' to make sure all variables are filled
+Wed May 15 02:13:45 PM MSK 2024 INFO - loadLangFile - Language from command line is 'english'
+Wed May 15 02:13:45 PM MSK 2024 INFO - loadLangFile - GLOBALSTLLANGDIR is '/usr/share/steamtinkerlaunch/lang'
+Wed May 15 02:13:45 PM MSK 2024 INFO - loadLangFile - Command line language 'english' is no file - trying to find its absolute path
+Wed May 15 02:13:45 PM MSK 2024 INFO - loadLangFile - Loading found system wide /usr/share/steamtinkerlaunch/lang/english.txt
+Wed May 15 02:13:45 PM MSK 2024 INFO - loadLanguage - Loading STLLANG from '/home/korsilyn//.config/steamtinkerlaunch/global.conf'
+Wed May 15 02:13:45 PM MSK 2024 INFO - loadLanguage - STLLANG from '/home/korsilyn//.config/steamtinkerlaunch/global.conf' is 'english'
+Wed May 15 02:13:45 PM MSK 2024 INFO - createDefaultCfgs - setSteamPaths:
+Wed May 15 02:13:45 PM MSK 2024 INFO - setSteamPaths - Reading Steam Path variables from '/dev/shm/steamtinkerlaunch/steampaths.txt'
+Wed May 15 02:13:45 PM MSK 2024 INFO - getGameOS - Starting game OS detection
+Wed May 15 02:13:45 PM MSK 2024 WARN - getGameOS - Could not extract the full game binary path from the incoming game launch command, so assuming this is a Windows game!
+Wed May 15 02:13:45 PM MSK 2024 INFO - setWin - '' determined to be a Windows Game
+Wed May 15 02:13:45 PM MSK 2024 INFO - listAllSettingsEntries - '/dev/shm/steamtinkerlaunch/setentries.txt' already exists - nothing to do
+Wed May 15 02:13:45 PM MSK 2024 INFO - createDefaultCfgs - STOP
+Wed May 15 02:13:45 PM MSK 2024 SKIP - listSteamLibraries - not recreating already available '/dev/shm/steamtinkerlaunch/SteamLibraries.txt'
+Wed May 15 02:13:45 PM MSK 2024 INFO - setSteamLibraryPaths - STEAM_COMPAT_LIBRARY_PATHS set to '/mnt/nvme/SteamLibrary/steamapps:/home/korsilyn/.local/share/Steam/steamapps:/mnt/hdd/SteamLibrary/steamapps'
+Wed May 15 02:13:45 PM MSK 2024 INFO - setSteamLibraryPaths - STEAM_COMPAT_MOUNTS set to '/home/korsilyn/.local/share/Steam/steamapps/common/Steamworks Shared:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_soldier:/mnt/hdd/SteamLibrary/steamapps/common/SteamLinuxRuntime_sniper:/mnt/nvme/SteamLibrary/steamapps/common/SteamLinuxRuntime_soldier'
+Wed May 15 02:13:45 PM MSK 2024 INFO - setSteamLibraryPaths - STEAM_COMPAT_TOOL_PATHS set to '/home/korsilyn/.local/share/Steam/steamapps/common/Steamworks Shared:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_soldier:/mnt/hdd/SteamLibrary/steamapps/common/SteamLinuxRuntime_sniper:/mnt/nvme/SteamLibrary/steamapps/common/SteamLinuxRuntime_soldier'
+Wed May 15 02:13:45 PM MSK 2024 INFO - main - Checking internal dependencies:
+Wed May 15 02:13:45 PM MSK 2024 INFO - setAwkBin - Found 'gawk' as an 'awk' variant. It should work without any issues, because 'gawk' was tested completely
+Wed May 15 02:13:45 PM MSK 2024 INFO - checkIntDeps - Result of version check for yad binary '/usr/bin/yad' is '13.0'
+Wed May 15 02:13:45 PM MSK 2024 INFO - main - Initializing first Proton:
+Wed May 15 02:13:45 PM MSK 2024 INFO - initOldProtonArr - Creating an initial array with available Proton versions using the file '/dev/shm/steamtinkerlaunch/ProtonCSV.txt' which was created during a previous run
+Wed May 15 02:13:45 PM MSK 2024 INFO - initFirstProton - Initializing Proton
+Wed May 15 02:13:45 PM MSK 2024 INFO - initFirstProton - Initial Proton version 'FIRSTUSEPROTON' from '/home/korsilyn//.config/steamtinkerlaunch/default_template.conf' is 'Proton-GE'
+Wed May 15 02:13:45 PM MSK 2024 INFO - main - Initializing default window resolution
+Wed May 15 02:13:45 PM MSK 2024 INFO - setInitWinXY - Using '1920x1080' from config '/dev/shm/steamtinkerlaunch/defres.txt'
+Wed May 15 02:13:45 PM MSK 2024 INFO - main - Welcome to SteamTinkerLaunch
+Wed May 15 02:13:45 PM MSK 2024 INFO - removeEmptyFiles - Removing empty files from '/home/korsilyn//.config/steamtinkerlaunch/games/appinfo'
+Wed May 15 02:13:45 PM MSK 2024 INFO - removeEmptyFiles - Removing empty files from '/home/korsilyn//.config/steamtinkerlaunch/games/header'
+Wed May 15 02:13:45 PM MSK 2024 INFO - main - Checking command line: incoming arguments 'run /home/korsilyn/.local/share/Steam/legacycompat/iscriptevaluator.exe legacycompat\evaluatorscript_12100.vdf'

@@ -1,0 +1,21 @@
+"evaluatorscript"
+{
+	"0"
+	{
+		"appid"		"12110"
+		"mode"		"2"
+		"language"		""
+		"commonredist"		"0"
+		"SteamID"		"76561198965450592"
+		"compat_installscript"
+		{
+			"Registry"
+			{
+				"HKEY_LOCAL_MACHINE\\SOFTWARE\\Rockstar Games\\Grand Theft Auto Vice City\\1.00.000"
+				{
+				}
+			}
+		}
+		"linux_install_path"		"/mnt/nvme/SteamLibrary/steamapps/common/Grand Theft Auto Vice City"
+	}
+}

@@ -1,0 +1,137 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+       	"type": "field",
+        "outboundTag": "blocked",
+        "ip": [
+          "geoip:private",
+          "geoip:ru"
+        ]
+      },
+      {
+       	"type": "field",
+        "outboundTag": "blocked",
+        "domain": [
+          "geosite:category-ads-all"
+        ]
+      },
+      {
+       	"type": "field",
+        "outboundTag": "IPv4",
+        "domain": [
+          "geosite:google",
+          "geosite:netflix"
+        ]
+      }
+    ]
+  },
+  "dns": {
+    "servers": ["1.1.1.1"]
+  },
+  "inbounds": [
+    {
+      "listen": "0.0.0.0",
+      "port": 443,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "email": "User1Name",
+            "flow": "xtls-rprx-vision",
+            "id": "User1ID"
+          },
+          {
+            "email": "User2Name",
+            "flow": "xtls-rprx-vision",
+            "id": "User2ID"
+          }
+	    ],
+	    "decryption": "none",
+        "fallbacks": []
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "dest": "www.googletagmanager.com:443",
+          "maxClient": "",
+          "maxTimediff": 0,
+          "minClient": "",
+          "privateKey": "ServerPrivateKey",
+          "serverNames": [
+            "www.googletagmanager.com",
+            "googletagmanager.com"
+          ],
+          "shortIds": [
+            "shortID"
+          ],
+          "show": true,
+          "xver": 0
+        },
+	    "security": "reality",
+        "tcpSettings": {
+          "acceptProxyProtocol": false,
+          "header": {
+            "type": "none"
+          }
+	    }
+      },
+      "tag": "inbound-443",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    },
+    {
+      "tag": "blocked",
+      "protocol": "blackhole",
+      "settings": {}
+    },
+    {
+      "tag": "IPv4",
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "UseIPv4"
+      }
+    }
+  ],
+  "transport": null,
+  "policy": {
+    "levels": {
+      "0": {
+	"statsUserDownlink": true,
+        "statsUserUplink": true
+      }
+    },
+    "system": {
+      "statsInboundDownlink": true,
+      "statsInboundUplink": true
+    }
+  },
+  "api": {
+    "tag": "api",
+    "services": [
+      "HandlerService",
+      "LoggerService",
+      "StatsService"
+    ]
+  },
+  "stats": {},
+  "reverse": null,
+  "fakedns": null,
+  "observatory": null,
+  "burstObservatory": null
+}

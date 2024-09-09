@@ -1,0 +1,179 @@
+Sat Sep  9 15:59:16 MSK 2023 INFO - initAID - Set AID from STEAM_COMPAT_APP_ID to '2478210'
+Sat Sep  9 15:59:16 MSK 2023 INFO - initAID - Set OSCDP to STEAM_COMPAT_DATA_PATH '/mnt/nvme/SteamLibrary/steamapps/compatdata/2478210'
+Sat Sep  9 15:59:16 MSK 2023 INFO - loadLangFile - Language from command line is 'english'
+Sat Sep  9 15:59:16 MSK 2023 INFO - loadLangFile - SYSTEMSTLCFGDIR is '/usr/share/steamtinkerlaunch'
+Sat Sep  9 15:59:16 MSK 2023 INFO - loadLangFile - Command line language 'english' is no file - trying to find its absolute path
+Sat Sep  9 15:59:16 MSK 2023 INFO - loadLangFile - Loading found system wide /usr/share/steamtinkerlaunch/lang//english.txt
+Sat Sep  9 15:59:17 MSK 2023 INFO - getCurrentCommandline - No Proton in command line arguments 'waitforexitandrun /mnt/nvme/SteamLibrary/steamapps/common/PAYDAY 3 Playtest/PAYDAY3.exe'
+Sat Sep  9 15:59:17 MSK 2023 INFO - saveOrgVars - Storing some original variables to restore them later
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - emptyVars - Emptied some original variables as they slowdown several system calls when started from steam
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - emptyVars - Set $PATH to '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin:/usr/lib/llvm/16/bin:'
+Sat Sep  9 03:59:17 PM MSK 2023 START - ######### Initializing Game Launch 2478210 using SteamTinkerLaunch v12.0 #########
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - main - Starting with a clean log
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - main - Start creating default configs
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - createDefaultCfgs - START
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - loadLanguage - First load the default language 'english' to make sure all variables are filled
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - loadLangFile - Language from command line is 'english'
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - loadLangFile - GLOBALSTLLANGDIR is '/usr/share/steamtinkerlaunch/lang'
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - loadLangFile - Command line language 'english' is no file - trying to find its absolute path
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - loadLangFile - Loading found system wide /usr/share/steamtinkerlaunch/lang/english.txt
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - loadLanguage - Loading STLLANG from '/home/korsilyn/.config/steamtinkerlaunch/global.conf'
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - loadLanguage - STLLANG from '/home/korsilyn/.config/steamtinkerlaunch/global.conf' is 'english'
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - createDefaultCfgs - setSteamPaths:
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - setSteamPaths - Reading Steam Path variables from '/dev/shm/steamtinkerlaunch/steampaths.txt'
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - getGameOS - Starting game OS detection
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - getGameOS - Making some checks on '/mnt/nvme/SteamLibrary/steamapps/common/PAYDAY 3 Playtest/PAYDAY3.exe' to determine the OS version of the game
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - getGameOS - Looks like this is a Windows game!
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - setWin - 'PAYDAY3' determined to be a Windows Game
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - createDefaultCfgs - createProtonList:
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - createDefaultCfgs - createProtonList end
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - listAllSettingsEntries - '/dev/shm/steamtinkerlaunch/setentries.txt' already exists - nothing to do
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - createDefaultCfgs - STOP
+Sat Sep  9 03:59:17 PM MSK 2023 SKIP - listSteamLibraries - not recreating already available '/dev/shm/steamtinkerlaunch/SteamLibraries.txt'
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - setSteamLibraryPaths - STEAM_COMPAT_LIBRARY_PATHS set to '/mnt/nvme/SteamLibrary/steamapps:/home/korsilyn/.local/share/Steam/steamapps:/mnt/hdd/SteamLibrary/steamapps:/mnt/hddwin/SteamLibrary/steamapps:/mnt/ssd/SteamLibrary/steamapps'
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - setSteamLibraryPaths - STEAM_COMPAT_MOUNTS set to '/home/korsilyn/.local/share/Steam/steamapps/common/Steamworks Shared:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_soldier'
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - setSteamLibraryPaths - STEAM_COMPAT_TOOL_PATHS set to '/home/korsilyn/.local/share/Steam/steamapps/common/Steamworks Shared:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_sniper:/home/korsilyn/.local/share/Steam/steamapps/common/SteamLinuxRuntime_soldier'
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - main - Checking internal dependencies:
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - setAwkBin - Found 'gawk' as an 'awk' variant. It should work without any issues, because 'gawk' was tested completely
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - checkIntDeps - Result of version check for yad binary '/usr/bin/yad' is '10.1'
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - main - Initializing first Proton:
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - initOldProtonArr - Creating an initial array with available Proton versions using the file '/dev/shm/steamtinkerlaunch/ProtonCSV.txt' which was created during a previous run
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - initFirstProton - Initializing Proton
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - fixProtonVersionMismatch - Incoming category is 'USEPROTON' with value 'proton-7.0-6e'
+Sat Sep  9 03:59:17 PM MSK 2023 INFO - fixProtonVersionMismatch - Looking for an alternative similar version for 'proton-7.0-6e'
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - fixProtonVersionMismatch - Automatically selecting newest official one
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - setNOP - Selecting newest official Proton available
+Sat Sep  9 03:59:18 PM MSK 2023 SKIP - setNOP - Haven't found anything
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - fixProtonVersionMismatch - Automatically updating USEPROTON to 'proton-7.0-6e' in '/home/korsilyn/.config/steamtinkerlaunch/default_template.conf'
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - updateConfigEntry - Option 'USEPROTON' is updated with the new value 'proton-7.0-6e' in config 'default_template.conf'
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - initFirstProton - Initial Proton version 'FIRSTUSEPROTON' from '/home/korsilyn/.config/steamtinkerlaunch/default_template.conf' is 'proton-7.0-6e'
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - main - Initializing default window resolution
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - setInitWinXY - Using '1920x1080' from config '/dev/shm/steamtinkerlaunch/defres.txt'
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - main - Welcome to SteamTinkerLaunch
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - main - Checking command line: incoming arguments 'waitforexitandrun /mnt/nvme/SteamLibrary/steamapps/common/PAYDAY 3 Playtest/PAYDAY3.exe'
+Sat Sep  9 03:59:18 PM MSK 2023 SKIP - getGameOS - ISGAME is already set to '2' - nothing to determine
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - linkLog - Symlink '/home/korsilyn/.config/steamtinkerlaunch/logs/steamtinkerlaunch/title/PAYDAY 3 Playtest.log' already exists
+Sat Sep  9 03:59:18 PM MSK 2023 START - ######### Game Launch: PAYDAY 3 - Beta (2478210) #########
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - prepareLaunch - Game launch args '/mnt/nvme/SteamLibrary/steamapps/common/PAYDAY 3 Playtest/PAYDAY3.exe'
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - prepareLaunch - Gamedir '/mnt/nvme/SteamLibrary/steamapps/common/PAYDAY 3 Playtest'
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - prepareLaunch - Proton wineprefix '/mnt/nvme/SteamLibrary/steamapps/compatdata/2478210/pfx'
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - prepareLaunch -------------------
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - prepareLaunch - CreateGameCfg:
+Sat Sep  9 03:59:18 PM MSK 2023 SKIP - updateConfigFile - Config file '/home/korsilyn/.config/steamtinkerlaunch/gamecfgs/id/2478210.conf' already at version 'v12.0'
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - linkGameCfg - Symlink '/home/korsilyn/.config/steamtinkerlaunch/gamecfgs/title/PAYDAY 3 Playtest.conf' already exists
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - prepareLaunch - First LoadCfg: /home/korsilyn/.config/steamtinkerlaunch/gamecfgs/id/2478210.conf
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - loadCfg - '/home/korsilyn/.config/steamtinkerlaunch/gamecfgs/id/2478210.conf' START
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - loadCfg - Loading game config '/home/korsilyn/.config/steamtinkerlaunch/gamecfgs/id/2478210.conf'
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - migrateCfgOption - File '/home/korsilyn/.config/steamtinkerlaunch/dxvk/2478210.conf' does not exist - nothing to do
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - loadCfg - '/home/korsilyn/.config/steamtinkerlaunch/gamecfgs/id/2478210.conf' STOP
+Sat Sep  9 03:59:18 PM MSK 2023 SKIP - autoBumpReShade - '5.4.2' is the latest version of 'ReShade' - not updating
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - prepareLaunch - Initial Proton version from the game config: 'GE-Proton8-11'
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - prepareLaunch - Initializing internal Proton Vars for 'GE-Proton8-11' using setNewProtVars
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - setNewProtVars - Setting new Proton Variables based on '/home/korsilyn/git-repos/proton-ge/GE-Proton8-11/proton'
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - setNewProtVars - Continuing with RUNPROTON='/home/korsilyn/git-repos/proton-ge/GE-Proton8-11/proton'
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - setRunWineServer - Initiated from 'setNewProtVars'
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - setRunWineServer - Set the wine binary for proton in path '/home/korsilyn/git-repos/proton-ge/GE-Proton8-11/proton'
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - setRunWineServer - to '/home/korsilyn/git-repos/proton-ge/GE-Proton8-11/files/bin/wine'
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - setRunWineServer - and wineserver to '/home/korsilyn/git-repos/proton-ge/GE-Proton8-11/files/bin/wineserver'
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - prepareLaunch - OpenTrayIcon:
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - autoCollectionSettings - Searching collections for game '2478210' in '/home/korsilyn/.local/share/Steam/userdata/1005184864/7/remote/sharedconfig.vdf'
+Sat Sep  9 03:59:18 PM MSK 2023 SKIP - autoCollectionSettings - Global Config '' not found - skipping
+Sat Sep  9 03:59:18 PM MSK 2023 SKIP - autoCollectionSettings - Collections Directory Config '' not found - skipping
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - setFullGameExePath - Using the directory '/home/korsilyn/Downloads' of the used custom command as absolute game exe path
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - openTrayIcon - Opening trayIcon:
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - prepareLaunch - sortGameArgs:
+Sat Sep  9 03:59:18 PM MSK 2023 SKIP - sortGameArgs - Sorting the game arguments is disabled
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - prepareLaunch - AskSettings:
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - askSettings - Using game specific requester timeout '2'
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - askSettings - Opening Requester with timeout '2'
+Sat Sep  9 03:59:18 PM MSK 2023 INFO - getGameTextFiles - Searching for at least one editable textfile in '/mnt/nvme/SteamLibrary/steamapps/compatdata/2478210/pfx/drive_c/users/steamuser'
+Sat Sep  9 03:59:19 PM MSK 2023 INFO - getRes - Detected screen resolution '2560x1440'
+Sat Sep  9 03:59:19 PM MSK 2023 INFO - pollWinRes - Using GEOM '--geometry=1920x1080+0+0' from '/home/korsilyn/.config/steamtinkerlaunch/guicfgs/2560x1440/2478210/SteamTinkerLaunch-OpenSettings.conf'
+Sat Sep  9 03:59:19 PM MSK 2023 INFO - updateWinRes - Starting resolution-poll for '/home/korsilyn/.config/steamtinkerlaunch/guicfgs/2560x1440/2478210/SteamTinkerLaunch-OpenSettings.conf' with incoming '1920x1080'
+Sat Sep  9 03:59:19 PM MSK 2023 INFO - setShowPic - Determining game picture
+Sat Sep  9 03:59:19 PM MSK 2023 INFO - setShowPic - Using '/home/korsilyn/.config/steamtinkerlaunch/games/header/2478210.jpg' as game picture
+Sat Sep  9 03:59:19 PM MSK 2023 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-OpenSettings'
+Sat Sep  9 03:59:19 PM MSK 2023 WARN - prepareSteamDeckCompatInfo - Can't get Steam Deck compatibility information because 'jq' is not installed
+Sat Sep  9 03:59:19 PM MSK 2023 INFO - askSettings - Could not retrieve Steam Deck compatibility rating, defaulting to Unknown - Maybe 'jq' is missing or we are offline?
+Sat Sep  9 03:59:19 PM MSK 2023 INFO - askSettings - Steam Deck compatibility rating string is '<b>Steam Deck Compatibility:</b> '
+Sat Sep  9 03:59:19 PM MSK 2023 INFO - askSettings - Preparing to show Wait Requester
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-OpenSettings'
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - askSettings - Selected CANCEL - Starting game without opening the Settings Menu
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - updateConfigEntry - 'ASKCNT' option missing in config '2478210.conf' - adding a new line
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - Second LoadCfg after menus: /home/korsilyn/.config/steamtinkerlaunch/gamecfgs/id/2478210.conf
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - loadCfg - '/home/korsilyn/.config/steamtinkerlaunch/gamecfgs/id/2478210.conf' START
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - loadCfg - Loading game config '/home/korsilyn/.config/steamtinkerlaunch/gamecfgs/id/2478210.conf'
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - migrateCfgOption - File '/home/korsilyn/.config/steamtinkerlaunch/dxvk/2478210.conf' does not exist - nothing to do
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - loadCfg - '/home/korsilyn/.config/steamtinkerlaunch/gamecfgs/id/2478210.conf' STOP
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - setDxvkVars - Exporting variable 'DXVK_FRAME_RATE=none' to limit game framerate
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - autoCollectionSettings - Searching collections for game '2478210' in '/home/korsilyn/.local/share/Steam/userdata/1005184864/7/remote/sharedconfig.vdf'
+Sat Sep  9 03:59:20 PM MSK 2023 SKIP - autoCollectionSettings - Global Config '' not found - skipping
+Sat Sep  9 03:59:20 PM MSK 2023 SKIP - autoCollectionSettings - Collections Directory Config '' not found - skipping
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - sortGameArgs again, in case something changed above:
+Sat Sep  9 03:59:20 PM MSK 2023 SKIP - sortGameArgs - Sorting the game arguments is disabled
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - symlinkSteamUser:
+Sat Sep  9 03:59:20 PM MSK 2023 SKIP - symlinkSteamUser - Symlinking steamuser is disabled - Checking if a symlink needs to be reverted
+Sat Sep  9 03:59:20 PM MSK 2023 SKIP - symlinkSteamUser - '/mnt/nvme/SteamLibrary/steamapps/compatdata/2478210/pfx/drive_c/users/steamuser' is no symlink - nothing to do
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - restoreSteamUser:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - restoreSteamUser - Using configured value 'none' for RESTORESTEAMUSER
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - restoreSteamUser - Restoration of steamuser data is disabled with RESTORESTEAMUSER being 'none
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - prepareProton:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - setLinGameVals :
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - CheckTweakLaunch:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - checkXliveless:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - chooseWinetricks:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - checkExtDeps:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - checkExtDeps done
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - setWineVars:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - CheckWinetricksLaunch:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - CheckWineCfgLaunch:
+Sat Sep  9 03:59:20 PM MSK 2023 WARN - checkWineCfgLaunch - Function was called but RUN_WINECFG ('0') was not enabled - skipping
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - CustomRegs:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - TogWindows:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - StateSteamWebHelper:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - InstallReshade:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - installDepth3DReshade:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - checkReshade:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - autoCollectionSettings - Searching collections for game '2478210' in '/home/korsilyn/.local/share/Steam/userdata/1005184864/7/remote/sharedconfig.vdf'
+Sat Sep  9 03:59:20 PM MSK 2023 SKIP - autoCollectionSettings - Global Config '' not found - skipping
+Sat Sep  9 03:59:20 PM MSK 2023 SKIP - autoCollectionSettings - Collections Directory Config '' not found - skipping
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - setFullGameExePath - Using the directory '/home/korsilyn/Downloads' of the used custom command as absolute game exe path
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - useSpecialK:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - setFullGameExePath - Using the directory '/home/korsilyn/Downloads' of the used custom command as absolute game exe path
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - configureGeoElf:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - setFullGameExePath - Using the directory '/home/korsilyn/Downloads' of the used custom command as absolute game exe path
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - ChooseShaders:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - UseNyrnaz:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - UseReplay:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - CheckSBSVRLaunch:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - checkMO2:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - setNewRes:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - getRes - Detected screen resolution '2560x1440'
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - customUserScriptStart:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - redirectSCDP:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - redirectSCDP - Using Proton version with minor version fix 'GE-Proton8-11' for compatdata directory name
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - redirectSCDP - Using regular compatdata '/mnt/nvme/SteamLibrary/steamapps/compatdata/2478210'
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - checkIGCSInjector:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - checkOpenVRFSR:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - CheckFWS:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - loadCustomVars - Empty global config '/home/korsilyn/.config/steamtinkerlaunch/gamecfgs/customvars/global-custom-vars.conf' for user defined custom variables not loaded
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - loadCustomVars - Empty game-specific config '/home/korsilyn/.config/steamtinkerlaunch/gamecfgs/customvars/2478210.conf' for user defined custom variables not loaded
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - prepareLaunch - CheckCustomLaunch:
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - checkCustomLaunch - USECUSTOMCMD is set to '1' - trying to start custom program '/home/korsilyn/Downloads/VC_redist.x64.exe'
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - checkCustomLaunch - FORK_CUSTOMCMD is set to 0 - starting the custom program regularly
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - launchCustomProg - '/home/korsilyn/Downloads/VC_redist.x64.exe' not found - searching in gamedir
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - launchCustomProg - '/home/korsilyn/Downloads/VC_redist.x64.exe' also not in '/mnt/nvme/SteamLibrary/steamapps/common/PAYDAY 3 Playtest//home/korsilyn/Downloads/VC_redist.x64.exe' - checking if absolute path was provided
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - launchCustomProg - '/home/korsilyn/Downloads/VC_redist.x64.exe' is absolute path
+Sat Sep  9 03:59:20 PM MSK 2023 INFO - launchCustomProg - Changed pwd into the custom directory '/home/korsilyn/Downloads'
+Sat Sep  9 03:59:21 PM MSK 2023 INFO - launchCustomProg - '/home/korsilyn/Downloads/VC_redist.x64.exe' seems to be a MS Windows program - starting through proton
+Sat Sep  9 03:59:21 PM MSK 2023 INFO - launchCustomProg - '/home/korsilyn/Downloads/VC_redist.x64.exe' seems to be a MS gui program - starting regularly
+Sat Sep  9 03:59:21 PM MSK 2023 INFO - setRunProtonFromUseProton - Setting ORUNPROTON to '/home/korsilyn/git-repos/proton-ge/GE-Proton8-11/proton'
+Sat Sep  9 03:59:21 PM MSK 2023 SKIP - setRunProtonFromUseProton - RUNPROTON '/home/korsilyn/git-repos/proton-ge/GE-Proton8-11/proton' hasn't changed
+Sat Sep  9 03:59:21 PM MSK 2023 INFO - extProtonRun - Continuing with RUNPROTON='/home/korsilyn/git-repos/proton-ge/GE-Proton8-11/proton'
+Sat Sep  9 03:59:21 PM MSK 2023 INFO - extProtonRun - Starting '/home/korsilyn/Downloads/VC_redist.x64.exe' regularly
+Sat Sep  9 03:59:21 PM MSK 2023 INFO - restoreOrgVars - Restoring previously cleared Variables
+Sat Sep  9 15:59:21 MSK 2023 INFO - extProtonRun - Starting with launch command '/home/korsilyn/git-repos/proton-ge/GE-Proton8-11/proton run /home/korsilyn/Downloads/VC_redist.x64.exe'
+Sat Sep  9 03:59:21 PM MSK 2023 INFO - updateWinRes - Waiting for Window 'SteamTinkerLaunch-OpenSettings'
+Sat Sep  9 03:59:22 PM MSK 2023 SKIP - updateWinRes - Timeout waiting for Window 'SteamTinkerLaunch-OpenSettings'
+Sat Sep  9 15:59:22 MSK 2023 INFO - stlCleanup - Ensuring tray icon is definitely removed
+Sat Sep  9 15:59:22 MSK 2023 INFO - stlCleanup - Closing SteamTinkerLaunch

@@ -1,7 +1,10 @@
-{ ... }: {
-  environment.systemPackages = [
-    inputs.nixvim.packages.x86_64-linux.default
-  ];
+{
+  programs.nixvim = {
+    enable = true;
+    defaultEditor = true;
+    viAlias = true;
+    vimAlias = true;
+  };
   imports = [
     # General Configuration
     ./settings.nix

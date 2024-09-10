@@ -1,13 +1,15 @@
 {
-  plugins.schemastore = {
-    enable = true;
-
-    json = {
+  programs.nixvim = {
+    plugins.schemastore = {
       enable = true;
-    };
 
-    yaml = {
-      enable = true;
+      json = {
+        enable = true;
+      };
+
+      yaml = {
+        enable = true;
+      };
     };
   };
 }

@@ -1,5 +1,7 @@
 {pkgs, ...}: {
-  extraPlugins = with pkgs.vimPlugins; [
-    nvim-web-devicons
-  ];
+  programs.nixvim = {
+    extraPlugins = with pkgs.vimPlugins; [
+      nvim-web-devicons
+    ];
+  };
 }

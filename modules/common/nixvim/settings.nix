@@ -1,5 +1,5 @@
 {
-  config = {
+  programs.nixvim = {
     extraConfigLuaPre =
       # lua
       ''

@@ -7,7 +7,8 @@
   common = ../modules/common;
   hw = inputs.hardware.nixosModules;
   homix = inputs.homix.nixosModules.default;
-  shared = [common homix];
+  nixvim = inputs.nixvim.nixosModules.nixvim;
+  shared = [common homix nixvim];
 in {
   # Gemini stars
   # Main desktop (alpha gem), Ryzen 5600G + RX6700XT

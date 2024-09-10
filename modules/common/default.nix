@@ -18,5 +18,6 @@ _: {
     ./fonts.nix
     ./sound.nix
     ./sway.nix
+    ./nixvim
   ];
 }

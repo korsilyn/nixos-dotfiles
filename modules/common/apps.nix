@@ -2,8 +2,6 @@
   environment.systemPackages = with pkgs; [
     direnv
 
-    firefox
-
     _64gram
     vesktop
 

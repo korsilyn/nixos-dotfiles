@@ -19,5 +19,6 @@ _: {
     ./sound.nix
     ./sway.nix
     ./nixvim
+    ./firefox.nix
   ];
 }

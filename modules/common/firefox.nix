@@ -83,7 +83,7 @@
         Locked = true;
       };
       Extensions = {
-        Uninstall = ["amazondotcom@search.mozilla.org" "ebay@search.mozilla.org"];
+        Uninstall = ["amazondotcom@search.mozilla.org" "ebay@search.mozilla.org" "bing@search.mozilla.org" "wikipedia@search.mozilla.org" "google@search.mozilla.org"];
       };
       ExtensionSettings = {
         "*".installation_mode = "blocked";
@@ -95,7 +95,7 @@
       };
       SearchEngines = {
         PreventInstalls = true;
-        Remove = ["Amazon.com" "eBay"];
+        Remove = ["Amazon.com" "eBay" "Bing" "Wikipedia (en)" "Google"];
         Default = "DuckDuckGo";
       };
       Preferences = {

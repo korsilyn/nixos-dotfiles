@@ -51,7 +51,6 @@
       };
       HttpsOnlyMode = "enabled";
       NetworkPrediction = false;
-      NewTabPage = false;
       NoDefaultBookmarks = true;
       OfferToSaveLogins = false;
       OverrideFirstRunPage = "";
@@ -101,6 +100,10 @@
       Preferences = {
         "extensions.htmlaboutaddons.recommendations.enabled" = {
           Value = false;
+          Status = "locked";
+        };
+        "privacy.globalprivacycontrol.enabled" = {
+          Value = true;
           Status = "locked";
         };
       };

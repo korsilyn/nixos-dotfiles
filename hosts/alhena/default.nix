@@ -1,6 +1,7 @@
 {
   pkgs,
   inputs,
+  lib,
   ...
 }: {
   imports = [
@@ -56,6 +57,15 @@
     ];
   };
   environment.sessionVariables = {LIBVA_DRIVER_NAME = "iHD";}; # Force intel-media-driver
+
+  # Work certs and git settings (only for alhena)
+  security.pki.certificateFiles = [
+    ./work_certs/vsphere.pem
+    #./work_certs/gitlab.pem
+  ];
+  programs.git = {
+    config.user.email = lib.mkDefault "egladkov@ysts.ru";
+  };
 
   system.stateVersion = "24.05";
 }

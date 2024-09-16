@@ -31,6 +31,8 @@
       kitty
       waybar
       mako
+      grim
+      slurp
     ];
   };
   #programs.waybar.enable = true;

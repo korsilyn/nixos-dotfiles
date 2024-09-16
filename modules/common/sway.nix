@@ -33,6 +33,7 @@
       mako
       grim
       slurp
+      cliphist
     ];
   };
   #programs.waybar.enable = true;

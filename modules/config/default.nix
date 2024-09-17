@@ -19,9 +19,9 @@
   #xdg.configFile."scripts".source = ./scripts;
   #xdg.configFile."StardewValley".source = ./StardewValley; # tmp
   #xdg.configFile."steamtinkerlaunch".source = ./steamtinkerlaunch;
-  homix.".config/sway".source = ./sway;
-  homix.".config/swayidle".source = ./swayidle;
-  homix.".config/swaylock".source = ./swaylock;
+  #homix.".config/sway".source = ./sway;
+  #homix.".config/swayidle".source = ./swayidle;
+  #homix.".config/swaylock".source = ./swaylock;
   homix.".config/waybar".source = ./waybar;
   #xdg.configFile."wireplumber".source = ./wireplumber;
 

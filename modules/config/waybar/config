@@ -5,16 +5,15 @@
   "height": 56,
   "margin-left": 15,
   "margin-right": 15,
-  "modules-left": ["sway/workspaces"],
+  "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["idle_inhibitor", "cpu", "memory", "disk", "pulseaudio", "network", "sway/language"],
-  "sway/workspaces": {
-    "disable-scroll-wraparound": true
+  "modules-right": ["idle_inhibitor", "cpu", "memory", "disk", "pulseaudio", "network", "hyprland/language"],
+  "hyprland/workspaces": {
+     "on-scroll-up": "hyprctl dispatch workspace e+1",
+     "on-scroll-down": "hyprctl dispatch workspace e-1"
   },
-  "sway/language": {
+  "hyprland/language": {
 	  "format": "  {short}",
-    "on-click": "swaymsg input type:keyboard xkb_switch_layout next",
-	  "min-length": 6
   },
   "idle_inhibitor": {
     "format": "{icon}",

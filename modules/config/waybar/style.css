@@ -45,7 +45,7 @@ tooltip {
   border-radius: 20px;
 }
 
-#workspaces button.focused {
+#workspaces button.active {
   color: @text;
   background-color: @overlay0;
   border-radius: 20px;

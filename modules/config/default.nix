@@ -5,14 +5,13 @@
   homix.".config/fastfetch".source = ./fastfetch;
   homix.".config/fuzzel".source = ./fuzzel;
   #homix.".config/htop".source = ./htop;
-  #xdg.configFile."hypr".source = ./hypr;
+  homix.".config/hypr".source = ./hypr;
   #xdg.configFile."imv".source = ./imv;
   homix.".config/kitty".source = ./kitty;
   homix.".config/mako".source = ./mako;
   #xdg.configFile."MangoHud".source = ./MangoHud;
   #xdg.configFile."nekoray".source = ./nekoray; # + config file
   # xdg.configFile."neofetch".source = ./neofetch;
-  #homix.".config/nvim".source = ./nvim;
   # xdg.configFile."pipewire".source = ./pipewire;
   #xdg.configFile."qt5ct".source = ./qt5ct;
   #xdg.configFile."qt6ct".source = ./qt6ct;

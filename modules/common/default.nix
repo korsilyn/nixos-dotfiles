@@ -17,7 +17,8 @@ _: {
     ./services.nix
     ./fonts.nix
     ./sound.nix
-    ./sway.nix
+    #./sway.nix
+    ./hyprland.nix
     ./nixvim
     ./firefox.nix
   ];

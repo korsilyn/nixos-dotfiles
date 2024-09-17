@@ -15,18 +15,16 @@
   services = {
     hypridle.enable = true;
   };
-  # TODO review
   environment.variables = {
     NIXOS_OZONE_WL = "1";
-    GDK_BACKEND = "wayland,x11";
+    GDK_BACKEND = "wayland,x11,*";
     DIRENV_LOG_FORMAT = "";
-    WLR_DRM_NO_ATOMIC = "1";
-    QT_QPA_PLATFORM = "wayland";
+    QT_QPA_PLATFORM = "wayland;xcb";
     QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
     MOZ_ENABLE_WAYLAND = "1";
-    WLR_BACKEND = "vulkan";
-    WLR_RENDERER = "vulkan";
+    XDG_CURRENT_DESKTOP = "Hyprland";
     XDG_SESSION_TYPE = "wayland";
+    XDG_SESSION_DESKTOP = "Hyprland";
   };
   environment.systemPackages = with pkgs; [
     hyprpaper
@@ -39,7 +37,8 @@
     fuzzel
     kitty
     mako
-    grimblast
+    grim
+    slurp
     cliphist
   ];
 

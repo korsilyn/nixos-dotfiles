@@ -14,7 +14,6 @@ in {
       isNormalUser = true;
       hashedPassword = "$y$j9T$LC2eDV3/EXl9JJDcV04pH0$jbMXgkSGgDTJcQ4WDCmZ5Y6r45/bban2pUdhw0RMPc1";
       shell = pkgs.zsh;
-      homix = true;
       extraGroups = ifTheyExist [
         "audio"
         "docker"

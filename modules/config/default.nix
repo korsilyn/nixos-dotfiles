@@ -18,7 +18,6 @@
     #xdg.configFile."qt6ct".source = ./qt6ct;
     # xdg.configFile."river".source = ./river;
     #xdg.configFile."scripts".source = ./scripts;
-    #xdg.configFile."StardewValley".source = ./StardewValley; # tmp
     #xdg.configFile."steamtinkerlaunch".source = ./steamtinkerlaunch;
     #homix.".config/sway".source = ./sway;
     #homix.".config/swayidle".source = ./swayidle;

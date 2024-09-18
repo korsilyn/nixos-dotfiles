@@ -202,26 +202,6 @@
         "type": "github"
       }
     },
-    "homix": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1720719665,
-        "narHash": "sha256-BKcOoDlMC86zExMKXFXQ04HO99fUNFmtEdvP+gB45Pk=",
-        "owner": "sioodmy",
-        "repo": "homix",
-        "rev": "62bc58f2350cbb061e61ac0f3d63018663fbe4cb",
-        "type": "github"
-      },
-      "original": {
-        "owner": "sioodmy",
-        "repo": "homix",
-        "type": "github"
-      }
-    },
     "impermanence": {
       "locked": {
         "lastModified": 1725690722,
@@ -329,7 +309,6 @@
         "flake-parts": "flake-parts",
         "hardware": "hardware",
         "home-manager": "home-manager",
-        "homix": "homix",
         "impermanence": "impermanence",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",

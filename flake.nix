@@ -7,9 +7,8 @@
     hardware.url = "github:nixos/nixos-hardware"; # Hardware gimmicks
     impermanence.url = "github:nix-community/impermanence"; # Sometimes XD
 
-    # Manage dotfiles
-    homix = {
-      url = "github:sioodmy/homix";
+    home-manager = {
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

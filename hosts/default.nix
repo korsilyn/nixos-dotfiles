@@ -7,8 +7,9 @@
   common = ../modules/common;
   hw = inputs.hardware.nixosModules;
   homix = inputs.homix.nixosModules.default;
+  hm = inputs.home-manager.nixosModules.home-manager;
   nixvim = inputs.nixvim.nixosModules.nixvim;
-  shared = [common homix nixvim];
+  shared = [common homix hm nixvim];
 in {
   # Gemini stars
   # Main desktop (alpha gem), Ryzen 5600G + RX6700XT
@@ -42,6 +43,11 @@ in {
       [
         {networking.hostName = "alhena";}
         ./alhena
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.korsilyn = import ../modules/common/home.nix;
+        }
       ]
       ++ shared;
     specialArgs = {inherit inputs;};

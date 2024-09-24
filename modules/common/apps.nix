@@ -1,7 +1,7 @@
 {pkgs, ...}: {
-  environment.systemPackages = with pkgs; [
-    direnv
+  programs.direnv.enable = true;
 
+  environment.systemPackages = with pkgs; [
     _64gram
     vesktop
 

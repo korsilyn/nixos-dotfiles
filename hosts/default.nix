@@ -10,10 +10,16 @@
   hm-config = {
     home-manager.useGlobalPkgs = true;
     home-manager.useUserPackages = true;
-    home-manager.users.korsilyn = import ../modules/common/home.nix;
+    home-manager.users.korsilyn = {
+      imports = [
+        ../modules/common/home.nix
+        inputs.catppuccin.homeManagerModules.catppuccin
+      ];
+    };
   };
   nixvim = inputs.nixvim.nixosModules.nixvim;
-  shared = [common hm hm-config nixvim];
+  catppuccin = inputs.catppuccin.nixosModules.catppuccin;
+  shared = [common hm hm-config nixvim catppuccin];
 in {
   # Gemini stars
   # Main desktop (alpha gem), Ryzen 5600G + RX6700XT

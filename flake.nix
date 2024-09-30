@@ -28,6 +28,9 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # Catppuccin theme in one line
+    catppuccin.url = "github:catppuccin/nix";
   };
 
   outputs = {flake-parts, ...} @ inputs:

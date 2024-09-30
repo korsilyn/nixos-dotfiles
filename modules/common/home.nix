@@ -5,8 +5,10 @@
     stateVersion = "24.05";
   };
 
-  # Dotfiles
-  imports = [../config];
+  imports = [
+    ./home # Home config
+    ../config # Dotfiles
+  ];
 
   programs.home-manager.enable = true;
 }

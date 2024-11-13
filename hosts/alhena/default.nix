@@ -18,6 +18,7 @@
     ../../modules/optional/quietboot.nix
     ../../modules/optional/tlp.nix
     ../../modules/optional/vmware.nix
+    ../../modules/optional/gaming.nix
   ];
 
   networking.useDHCP = true;
